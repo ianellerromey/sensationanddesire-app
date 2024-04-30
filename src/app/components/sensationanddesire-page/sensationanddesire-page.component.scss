@@ -1,0 +1,120 @@
+// https://paletton.com/#uid=54E0v0kTSsVxsOfRQFPUWnhW0he
+
+.sad-header {
+  text-align: center;
+  font-family: 'Lucida Console', 'Courier New', monospace;
+  font-size: 36px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  text-shadow: -2px -2px 3px #FFE790;
+  cursor: default;
+
+  .sad-moontide {
+    color: #20049F;
+  };
+
+  .sad-crossbridge {
+    color: #5D029A;
+  };
+
+  .sad-revelry {
+    color: #B5006E;
+  };
+
+  .sad-select {
+    margin-top: 5px;
+    font-size: medium;
+
+    select {
+      cursor: pointer;
+    };
+  };
+
+  .sad-audio {
+    color: #890DDD;
+    cursor: pointer;
+  };
+  
+  .sad-audio.muted {
+    color: #37015C;
+    text-decoration: line-through;
+  };
+};
+
+.sad-page {
+  display: flex;
+  flex-direction: row;
+};
+
+.sad-content {
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  white-space: pre;
+  flex-grow: 2;
+  margin-top: 30px;
+  width: 80%;
+  z-index: 1;
+};
+
+.sad-content-full {
+  font-family: 'Lucida Console', 'Courier New', monospace;
+  text-wrap: wrap;
+};
+
+.sad-update {
+  flex-grow: 1;
+  margin: 0px 50px;
+  cursor: pointer;
+};
+
+.sad-update.prev {
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #3E1AE0;
+    border-radius: 50%;
+    cursor: pointer;
+  };
+};
+
+.sad-update.next {
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #E9008D;
+    border-radius: 50%;
+    cursor: pointer;
+  };
+};
+
+.sad-update.sad-disabled {
+  opacity: 50%;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: unset !important;
+    border-radius: unset !important;
+    cursor: default !important;
+  };
+};
+
+.sad-background {
+  img {
+    opacity: .666;
+    z-index: 0;
+  };
+};
+
+.sad-background.left {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+};
+
+.sad-background.right {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+};

@@ -1,0 +1,78 @@
+<div class="sad-header">
+  <!--audio hidden muted>
+    <source src="../../../assets/sensationanddesire.mp3" type="audio/mpeg">
+  </audio-->
+  <span>
+    <span class="sad-moontide">MOONTIDE</span> <span class="sad-crossbridge">CROSSBRIDGE</span> <span class="sad-revelry">REVELRY</span>
+  </span>
+  <span *ngIf="sadNode" class="sad-select">
+    <select #sadSelect (change)="updateSadNode(+sadSelect.value)">
+      <option *ngFor="let sad of sads"
+        [value]="sad.id"
+        [selected]="sadNode?.id === sad.id">
+        {{sad.id + 1}}: {{sad.title}}
+      </option>
+    </select>
+  </span>
+</div>
+<div class="sad-page">
+  <div class="sad-navigation" style="width: 150px">
+    <div style="position: fixed; top: 130px">
+      <img
+        [ngClass]="{
+          'prev': true,
+          'sad-update': true,
+          'sad-disabled': (!sadNode || sadNode.id === 0)
+        }"
+        src="../../../assets/sad-first.png"
+        (click)="sadNode && updateSadNode(firstSad?.id)"
+      />
+    </div>
+    <div style="position: fixed; top: 200px">
+      <img
+        [ngClass]="{
+          'prev': true,
+          'sad-update': true,
+          'sad-single': true,
+          'sad-disabled': (!sadNode || sadNode.previousSad === null)
+        }"
+        src="../../../assets/sad-prev.png"
+        (click)="sadNode && updateSadNode(sadNode.previousSad?.id)"
+      />
+    </div>
+  </div>
+  <div class="sad-content">
+    <div *ngIf="sadNode" class="sad-content-full">{{sadNode.contentFull}}</div>
+  </div>
+  <div class="sad-navigation" style="width: 150px">
+    <div style="position: fixed; top: 130px">
+      <img
+        [ngClass]="{
+          'next': true,
+          'sad-update': true,
+          'sad-disabled': (!sadNode || sadNode.id === sads[sads.length - 1].id)
+        }"
+        src="../../../assets/sad-last.png"
+        (click)="sadNode && updateSadNode(lastSad?.id)"
+      />
+    </div>
+    <div style="position: fixed; top: 200px">
+      <img
+        [ngClass]="{
+          'next': true,
+          'sad-update': true,
+          'sad-single': true,
+          'sad-disabled': (!sadNode || sadNode.nextSad === null)
+        }"
+        src="../../../assets/sad-next.png"
+        (click)="sadNode && updateSadNode(sadNode.nextSad?.id)"
+      />
+    </div>
+  </div>
+  <div class="sad-background left">
+    <img src="../../../assets/sad-background-left.png" />
+  </div>
+  <div class="sad-background right">
+    <img src="../../../assets/sad-background-right.png" />
+  </div>
+</div>

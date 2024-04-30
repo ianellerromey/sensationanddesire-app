@@ -1,0 +1,19 @@
+{
+    "sads":  [
+                 {
+                     "content":  "sad_00_dedication.txt",
+                     "title":  "dedication",
+                     "id":  0
+                 },
+                 {
+                     "content":  "sad_01_stage_1.txt",
+                     "title":  "stage_1",
+                     "id":  1
+                 },
+                 {
+                     "content":  "sad_02_encounter_1.txt",
+                     "title":  "encounter_1",
+                     "id":  2
+                 }
+             ]
+}
