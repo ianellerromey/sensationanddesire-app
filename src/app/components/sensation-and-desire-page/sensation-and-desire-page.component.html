@@ -2,10 +2,13 @@
   <!--audio hidden muted>
     <source src="../../../assets/sensationanddesire.mp3" type="audio/mpeg">
   </audio-->
-  <span>
+  <div class="sad-title">
     <span class="sad-moontide">MOONTIDE</span> <span class="sad-crossbridge">CROSSBRIDGE</span> <span class="sad-revelry">REVELRY</span>
-  </span>
-  <span *ngIf="sadNode" class="sad-select">
+  </div>
+  <div>
+    <span class="sad-extra" (click)="openDisclaimerDialog()">disclaimer</span>|<span class="sad-extra" (click)="openUpdatesDialog()">updates</span>|<span style="color: grey; text-decoration: line-through;">audio</span>
+  </div>
+  <div *ngIf="sadNode" class="sad-select">
     <select #sadSelect (change)="updateSadNode(+sadSelect.value)">
       <option *ngFor="let sad of sads"
         [value]="sad.id"
@@ -13,7 +16,7 @@
         {{sad.id + 1}}: {{sad.title}}
       </option>
     </select>
-  </span>
+  </div>
 </div>
 <div class="sad-page">
   <div class="sad-navigation" style="width: 150px">

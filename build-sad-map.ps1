@@ -7,6 +7,8 @@ $SadContentArrayMap = @($SadContentFiles | ForEach-Object { $i = 0 } {
   }; $i++ })
 $SadContentArrayMap
 $SadContentMap = @{
+  disclaimer = Get-Content -Path '.\src\assets\sad-disclaimer.txt' | Out-String
+  updates = Get-Content -Path '.\src\assets\sad-updates.txt' | Out-String
   sads = $SadContentArrayMap
 }
 $SadContent = ($SadContentMap | ConvertTo-Json)

@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { take } from 'rxjs';
-import { Sad, SadNode, SensationAndDesireService } from 'src/app/services/sensationanddesire.service';
+import { Sad, SadNode, SensationAndDesireService } from 'src/app/services/sensation-and-desire.service';
+import { SadDialogInput, SensationAndDesireDialogComponent } from '../sensation-and-desire-dialog/sensation-and-desire-dialog.component';
 
 @Component({
-  selector: 'app-sensationanddesire-page',
-  templateUrl: './sensationanddesire-page.component.html',
-  styleUrls: ['./sensationanddesire-page.component.scss']
+  selector: 'app-sensation-and-desire-page',
+  templateUrl: './sensation-and-desire-page.component.html',
+  styleUrls: ['./sensation-and-desire-page.component.scss']
 })
 export class SensationAndDesirePageComponent implements OnInit {
   sadNode: SadNode | null = null;
@@ -13,7 +15,8 @@ export class SensationAndDesirePageComponent implements OnInit {
   muted: boolean = false;
 
   constructor(
-    private sadService: SensationAndDesireService
+    private _sadService: SensationAndDesireService,
+    private _dialog: MatDialog
   ) { }
 
   get firstSad(): Sad {
@@ -27,9 +30,9 @@ export class SensationAndDesirePageComponent implements OnInit {
   ngOnInit(): void {
     // the SensationAndDesireService property `sads` is only populated after the SensationAndDesireService performs the initial fetch;
     // once it has been populated, it won't change during the lifecycle of the app, so we only need to take(1)
-    this.sadService.sadStream.pipe(take(1))
-      .subscribe(_ => this.sads = this.sadService.sads);
-    this.sadService.sadStream.subscribe((sadNode: SadNode | null) => {
+    this._sadService.sadStream.pipe(take(1))
+      .subscribe(_ => this.sads = this._sadService.sads);
+    this._sadService.sadStream.subscribe((sadNode: SadNode | null) => {
         this.sadNode = sadNode;
       });
 
@@ -39,7 +42,29 @@ export class SensationAndDesirePageComponent implements OnInit {
   }
 
   updateSadNode(newCurrentSadId: number | undefined): void {
-    newCurrentSadId !== undefined && this.sadService.updateSadNode(this.sads[newCurrentSadId]);
+    newCurrentSadId !== undefined && this._sadService.updateSadNode(this.sads[newCurrentSadId]);
+  }
+
+  openDisclaimerDialog(): void {
+    this._dialog.open(
+      SensationAndDesireDialogComponent,
+      {
+        data: {
+          text: this._sadService.disclaimer
+        } as SadDialogInput
+      }
+    );
+  }
+
+  openUpdatesDialog(): void {
+    this._dialog.open(
+      SensationAndDesireDialogComponent,
+      {
+        data: {
+          text: this._sadService.updates
+        } as SadDialogInput
+      }
+    );
   }
 
   /*toggleAudio(): void {

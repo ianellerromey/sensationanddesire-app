@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { SensationAndDesireService } from './sensationanddesire.service';
+import { SensationAndDesireService } from './sensation-and-desire.service';
 
 describe('SensationAndDesirePageComponent', () => {
   let service: SensationAndDesireService;

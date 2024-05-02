@@ -3,24 +3,31 @@
 .sad-header {
   text-align: center;
   font-family: 'Lucida Console', 'Courier New', monospace;
-  font-size: 36px;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  text-shadow: -2px -2px 3px #FFE790;
-  cursor: default;
 
-  .sad-moontide {
-    color: #20049F;
+  .sad-title {
+    font-size: 36px;
+    text-shadow: -2px -2px 3px #FFE790;
+
+    .sad-moontide {
+      color: #20049F;
+    };
+
+    .sad-crossbridge {
+      color: #5D029A;
+    };
+
+    .sad-revelry {
+      color: #B5006E;
+    };
   };
 
-  .sad-crossbridge {
-    color: #5D029A;
-  };
-
-  .sad-revelry {
-    color: #B5006E;
-  };
+  .sad-extra {
+    color: grey;
+    cursor: pointer;
+  }
 
   .sad-select {
     margin-top: 5px;

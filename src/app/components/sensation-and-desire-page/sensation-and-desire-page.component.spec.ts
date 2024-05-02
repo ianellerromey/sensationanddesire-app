@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SensationAndDesirePageComponent } from './sensationanddesire-page.component';
+import { SensationAndDesirePageComponent } from './sensation-and-desire-page.component';
 
 describe('SensationAndDesirePageComponent', () => {
   let component: SensationAndDesirePageComponent;
