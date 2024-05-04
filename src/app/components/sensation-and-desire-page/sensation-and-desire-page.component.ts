@@ -36,9 +36,9 @@ export class SensationAndDesirePageComponent implements OnInit {
         this.sadNode = sadNode;
       });
 
-    /*window.onload = () => {
+    window.onload = () => {
       this.setAudio(true);
-    };*/
+    };
   }
 
   updateSadNode(newCurrentSadId: number | undefined): void {
@@ -67,7 +67,7 @@ export class SensationAndDesirePageComponent implements OnInit {
     );
   }
 
-  /*toggleAudio(): void {
+  toggleAudio(): void {
     this.setAudio(!this.muted);
   }
 
@@ -86,6 +86,6 @@ export class SensationAndDesirePageComponent implements OnInit {
         audioElement.play();
       }
     }
-  }*/
+  }
 
 }

@@ -1,13 +1,13 @@
 <div>
   <div class="sad-header">
-    <!--audio hidden muted>
+    <audio hidden muted>
       <source src="../../../assets/sensationanddesire.mp3" type="audio/mpeg">
-    </audio-->
+    </audio>
     <div class="sad-title">
       <div class="sad-moontide">MOONTIDE</div> <div class="sad-crossbridge">CROSSBRIDGE</div> <div class="sad-revelry">REVELRY</div>
     </div>
     <div>
-      <span class="sad-extra" (click)="openDisclaimerDialog()">disclaimer</span>|<span class="sad-extra" (click)="openUpdatesDialog()">updates</span>|<span style="color: grey; text-decoration: line-through;">audio</span>
+      <span class="sad-extra" (click)="openDisclaimerDialog()">disclaimer</span>|<span class="sad-extra" (click)="openUpdatesDialog()">updates</span>|<span [ngClass]="{'sad-extra': true, 'sad-audio': true, 'muted': muted}" (click)="toggleAudio()">audio</span>
     </div>
     <div *ngIf="sadNode" class="sad-select">
       <select #sadSelect (change)="updateSadNode(+sadSelect.value)">

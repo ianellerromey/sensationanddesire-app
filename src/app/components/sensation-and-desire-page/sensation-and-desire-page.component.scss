@@ -25,13 +25,13 @@
   };
 
   .sad-extra {
-    color: grey;
+    color: aliceblue;
     cursor: pointer;
+  };
 
-    &:hover {
-      color: white;
-    };
-  }
+  .sad-extra.sad-audio.muted {
+    text-decoration: line-through;
+  };
 
   .sad-select {
     margin-top: 5px;
@@ -40,16 +40,6 @@
     select {
       cursor: pointer;
     };
-  };
-
-  .sad-audio {
-    color: #890DDD;
-    cursor: pointer;
-  };
-  
-  .sad-audio.muted {
-    color: #37015C;
-    text-decoration: line-through;
   };
 };
 
@@ -80,29 +70,23 @@
 };
 
 .sad-update.prev {
-  &:hover {
-    background-color: #3E1AE0;
-    border-radius: 50%;
-    cursor: pointer;
-  };
+  filter: drop-shadow(1px 1px 3px rgba(62, 26, 225, .90));
+  border-radius: 50%;
+  cursor: pointer;
 };
 
 .sad-update.next {
-  &:hover {
-    background-color: #E9008D;
+    filter: drop-shadow(1px 1px 3px rgba(233, 0, 141, .90));
     border-radius: 50%;
     cursor: pointer;
-  };
 };
 
 .sad-update.sad-disabled {
   opacity: 50%;
 
-  &:hover {
-    background-color: unset !important;
-    border-radius: unset !important;
-    cursor: default !important;
-  };
+  filter: unset !important;
+  border-radius: unset !important;
+  cursor: default !important;
 };
 
 .sad-background {
