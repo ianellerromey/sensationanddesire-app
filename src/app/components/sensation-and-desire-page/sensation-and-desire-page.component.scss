@@ -27,6 +27,10 @@
   .sad-extra {
     color: grey;
     cursor: pointer;
+
+    &:hover {
+      color: white;
+    };
   }
 
   .sad-select {
@@ -59,7 +63,7 @@
   text-shadow: 1px 1px 3px black;
   white-space: pre;
   flex-grow: 2;
-  margin-top: 30px;
+  margin: 30px 64px 0px 64px;
   width: 80%;
   z-index: 1;
 };
@@ -71,14 +75,12 @@
 
 .sad-update {
   flex-grow: 1;
-  margin: 0px 50px;
+  margin: 0px 5px;
   cursor: pointer;
 };
 
 .sad-update.prev {
-  &:hover,
-  &:active,
-  &:focus {
+  &:hover {
     background-color: #3E1AE0;
     border-radius: 50%;
     cursor: pointer;
@@ -86,9 +88,7 @@
 };
 
 .sad-update.next {
-  &:hover,
-  &:active,
-  &:focus {
+  &:hover {
     background-color: #E9008D;
     border-radius: 50%;
     cursor: pointer;
@@ -98,9 +98,7 @@
 .sad-update.sad-disabled {
   opacity: 50%;
 
-  &:hover,
-  &:active,
-  &:focus {
+  &:hover {
     background-color: unset !important;
     border-radius: unset !important;
     cursor: default !important;
