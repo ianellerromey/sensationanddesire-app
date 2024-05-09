@@ -10,7 +10,7 @@ VJ swung their weapon once more, this time to clean off some of the blood and me
 So did they somehow control the luminescence themselves?
 VJ knelt down and pushed their left hand into the monster’s cracked and open skull. Viscous gobs of soft, fatty meat pumped out. Definitely not normal insides. The teenager reached deeper than seemed possible. Their expression changed subtly. They tensed and pulled out their hand. More meat splattered the asphalt.
 Wow, okay.
-A translucent green object glinted in VJ’s grip. It looked about the size of a playing card, but thicker. Notches lined one of the narrower edges, as though some other piece could receive and connect with the card. The teenager squeezed. Cracks appeared, lengthening with added pressure. The card shattered. The teenager held onto the remains and with their other hand reached into a pocket of their varsity jacket and retrieved some other object. They buried both this new thing and the shattered card back inside the mess of the monster’s head.
+A translucent green object glinted in VJ’s grip. It looked about the size of a playing card, but thicker. Notches lined one of the narrower edges, as though some other piece could receive and connect with the card. The teenager shook off as much viscera as they could, and then squeezed. The card began to crack. The fissures lengthened as VJ added pressure. The card shattered. The teenager held onto the remains and with their other hand reached into a pocket of their varsity jacket and retrieved some other object. They buried both this new thing and the shattered card back inside the mess of the monster’s head.
 It looked like a ritual.
 VJ stood up and saw Jhansi.
 Jhansi stared at the backlit silhouette standing before her beneath the thinnest sliver of the moon.
@@ -660,13 +660,12 @@ Stupid stupid stupid.
 At least the pit began to close.
 Mambele slowed and Jhansi looked up from her reverie.
 
-
 Encounter I End
 
 Kills
-0001 - endlings - Oren
-0001 - endlings - Velocity
-0000 - endlings - Jhansi
+0001 - blue endlings - Oren
+0001 - blue endlings - Velocity
+0000 - Jhansi
 
 Shares
 0000 - Oren
