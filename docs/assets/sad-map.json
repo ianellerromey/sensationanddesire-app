@@ -1,6 +1,6 @@
 {
-    "disclaimer":  "The author intends this story as a work of fiction.\r\nShe does not intend for the events herein to bear any resemblance to actual events, locales, or persons, either living or dead.\r\nShe intends this story only for mature audiences.\r\n\r\nNote: As the author creates this story she will likely need to retroactively alter completed portions. Please refer to the list of updates to see what has changed.\r\n",
-    "updates":  "5/1/24 - Dedication, Stage 1, Encounter 1\r\n",
+    "disclaimer":  "The author intends this story as a work of fiction.\r\nShe does not intend for the events herein to bear any resemblance to actual events, locales, or persons, either living or dead.\r\nShe intends this story only for mature audiences.\r\n\r\nUpdated daily, with however many words the author can produce. Refer to the list of updates to see what has changed.\r\n",
+    "updates":  "5/9/24 - Encounter 2 minor updates\r\n5/8/24 - Encounter 2 added, unfinished; Encounter 1 minor updates\r\n5/1/24 - Dedication added; Stage 1 added; Encounter 1 added\r\n",
     "sads":  [
                  {
                      "content":  "sad_00_dedication.txt",
@@ -16,6 +16,11 @@
                      "content":  "sad_02_encounter_1.txt",
                      "title":  "encounter_1",
                      "id":  2
+                 },
+                 {
+                     "content":  "sad_03_encounter_2.txt",
+                     "title":  "encounter_2",
+                     "id":  3
                  }
              ]
 }
