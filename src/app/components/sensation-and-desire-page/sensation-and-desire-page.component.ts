@@ -67,6 +67,17 @@ export class SensationAndDesirePageComponent implements OnInit {
     );
   }
 
+  openInstagramDialog(): void {
+    this._dialog.open(
+      SensationAndDesireDialogComponent,
+      {
+        data: {
+          text: 'Currently experiencing technical difficulties (ugh).'
+        } as SadDialogInput
+      }
+    );
+  }
+
   toggleAudio(): void {
     this.setAudio(!this.muted);
   }
