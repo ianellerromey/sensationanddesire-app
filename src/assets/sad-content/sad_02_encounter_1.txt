@@ -272,7 +272,7 @@ Hadn’t Oren killed it with ease?
 She asked, “How much fighting is there?”
 Velocity replied, “All of it.”
 Oren ran a hand through his hair.
-He explained, “The netherlume shift lasts for twenty-four hours in the sixty seconds between midnight and twelve-oh-one AM Eastern Standard Time.”
+He explained, “The netherlume shift lasts for twenty-four hours in the sixty seconds between midnight and twelve-oh-one AM local time.”
 Jhansi blinked.
 “Damn.”
 A whole fucking day.
