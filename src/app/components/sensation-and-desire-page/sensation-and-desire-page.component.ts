@@ -82,6 +82,36 @@ export class SensationAndDesirePageComponent implements OnInit {
     this.setAudio(!this.muted);
   }
 
+  disableScrolling(): boolean {
+    if(!this.sadNode) {
+      return true;
+    }
+
+    const { document: { body } } = window;
+    const tempSadContentFull = document.createElement('div');
+    tempSadContentFull.className = 'sad-content-full';
+    tempSadContentFull.innerText = this.sadNode.contentFull;
+    const tempSadContent = document.createElement('div');
+    tempSadContent.className = 'sad-content';
+    tempSadContent.appendChild(tempSadContentFull);
+    body.appendChild(tempSadContent);
+
+    const disable = tempSadContent.offsetHeight <= window.innerHeight;
+
+    body.removeChild(tempSadContent);
+    tempSadContent.remove();
+
+    return disable;
+  }
+
+  scrollToTop(): void {
+    window.scrollTo(0, 0);
+  }
+
+  scrollToBottom(): void {
+    window.scrollTo(0, window.document.body.scrollHeight);
+  }
+
   private setAudio(muted: boolean): void {
     this.muted = muted;
 

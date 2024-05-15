@@ -37,11 +37,21 @@
           [ngClass]="{
             'prev': true,
             'sad-update': true,
-            'sad-single': true,
             'sad-disabled': (!sadNode || sadNode.previousSad === null)
           }"
           src="../../../assets/sad-prev.png"
           (click)="sadNode && updateSadNode(sadNode.previousSad?.id)"
+        />
+      </div>
+      <div style="position: fixed; top: 320px; left: 0px;">
+        <img
+          [ngClass]="{
+            'prev': true,
+            'sad-update': true,
+            'sad-disabled': (!sadNode || disableScrolling())
+          }"
+          src="../../../assets/sad-top.png"
+          (click)="sadNode && scrollToTop()"
         />
       </div>
     </div>
@@ -65,11 +75,21 @@
           [ngClass]="{
             'next': true,
             'sad-update': true,
-            'sad-single': true,
             'sad-disabled': (!sadNode || sadNode.nextSad === null)
           }"
           src="../../../assets/sad-next.png"
           (click)="sadNode && updateSadNode(sadNode.nextSad?.id)"
+        />
+      </div>
+      <div style="position: fixed; top: 320px; right: 0px;">
+        <img
+          [ngClass]="{
+            'next': true,
+            'sad-update': true,
+            'sad-disabled': (!sadNode || disableScrolling())
+          }"
+          src="../../../assets/sad-bottom.png"
+          (click)="sadNode && scrollToBottom()"
         />
       </div>
     </div>
