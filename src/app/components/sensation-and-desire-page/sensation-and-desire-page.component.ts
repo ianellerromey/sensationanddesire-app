@@ -30,8 +30,15 @@ export class SensationAndDesirePageComponent implements OnInit {
   ngOnInit(): void {
     // the SensationAndDesireService property `sads` is only populated after the SensationAndDesireService performs the initial fetch;
     // once it has been populated, it won't change during the lifecycle of the app, so we only need to take(1)
-    this._sadService.sadStream.pipe(take(1))
-      .subscribe(_ => this.sads = this._sadService.sads);
+    this._sadService.sadStream
+      .pipe(take(1))
+      .subscribe(_ => {
+        this.sads = this._sadService.sads;
+
+        if(this._sadService.notice) {
+          this.openNoticeDialog();
+        }
+      });
     this._sadService.sadStream.subscribe((sadNode: SadNode | null) => {
         this.sadNode = sadNode;
       });
@@ -62,6 +69,17 @@ export class SensationAndDesirePageComponent implements OnInit {
       {
         data: {
           text: this._sadService.updates
+        } as SadDialogInput
+      }
+    );
+  }
+
+  openNoticeDialog(): void {
+    this._dialog.open(
+      SensationAndDesireDialogComponent,
+      {
+        data: {
+          text: this._sadService.notice
         } as SadDialogInput
       }
     );

@@ -9,6 +9,7 @@ $SadContentArrayMap
 $SadContentMap = @{
   disclaimer = Get-Content -Path '.\src\assets\sad-disclaimer.txt' | Out-String
   updates = Get-Content -Path '.\src\assets\sad-updates.txt' | Out-String
+  notice = Get-Content -Path '.\src\assets\sad-notice.txt' | Out-String
   sads = $SadContentArrayMap
 }
 $SadContent = ($SadContentMap | ConvertTo-Json)

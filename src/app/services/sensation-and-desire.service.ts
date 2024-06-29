@@ -19,6 +19,7 @@ export type SadNode = SadContent & {
 export type SadMap = {
   disclaimer: string;
   updates: string;
+  notice: string;
   sads: Sad[];
 };
 
@@ -28,6 +29,7 @@ export type SadMap = {
 export class SensationAndDesireService {
   private _disclaimer: string | null = null;
   private _updates: string | null = null;
+  private _notice: string | null = null;
   private _sads: Sad[] = [];
   private _sadNode: SadNode | null = null;
   private _sadStream: Subject<SadNode | null> = new Subject<SadNode | null>();
@@ -40,6 +42,10 @@ export class SensationAndDesireService {
     return this._updates || '';
   }
 
+  get notice(): string {
+    return this._notice || '';
+  }
+
   get sads(): Sad[] {
     return this._sads;
   }
@@ -49,9 +55,10 @@ export class SensationAndDesireService {
   constructor() {
     fetch('../../../assets/sad-map.json')
       .then(response => response.json())
-      .then(({ disclaimer, updates, sads }: SadMap) => {
+      .then(({ disclaimer, updates, notice, sads }: SadMap) => {
           this._disclaimer = disclaimer;
           this._updates = updates;
+          this._notice = notice;
           this._sads = sads;
           this.updateSadNode(this.sads[0]);
         });
