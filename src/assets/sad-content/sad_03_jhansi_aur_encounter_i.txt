@@ -117,7 +117,7 @@ She rolled her eyes, sagged her shoulders, and looked down at the asphalt.
 “Fine. I don't want to die.”
 Cueball deadpanned, “I’m glad.”
 Jhansi looked up.
-“So you’re taking me somewhere?”
+“You’re taking me somewhere?”
 Prepster nodded, then shrugged.
 “Yeah. Duet might know what to do with you. And either way, you’ll be safer with all of us.”
 Wonderful, a group.
@@ -177,7 +177,7 @@ The black miasma of the night hung heavy and viscous, limiting visibility to may
 Eerie.
 They approached. The light came from an illuminated streetlamp. A blue glow washed through the cabin, bathing Jhansi in a warmth she could only feel on the inside. A couple dozen meters later they neared and then passed another lit streetlamp, this one green. The cadence continued, blue and green lights intermittently flashing above. They didn't do much to push back the dark, but as Jhansi searched and her eyes adjusted, she found that she could spot them from much further away than she'd originally thought.
 Other things glowed too. A luminous yellow glare lit the interior of a noodle shop that passed by on their right. A lavender light beamed out from a bus stop with a busted glass awning. Orange rays shone from behind the closed window of a food truck.
-Jhansi asked, “So what's with the dark?”
+Jhansi asked, “What's with the dark?”
 Velocity said, “It's nighttime?”
 Oren replied, “That's the cloak.”
 Jhansi repeated, “The cloak.”
@@ -350,7 +350,7 @@ Velocity laughed again, once, ruefully.
 Jhansi rolled her eyes.
 “Watch me.” 
 She paused, then continued.
-“So what’s the deal? We have to get to the moon and stop Him? Is that how we win? What if He’s still alive after the twenty four hours are up?”
+“So what’s the deal? You have to get to the moon and stop Him? Is that how you win? What if He’s still alive after the twenty four hours are up?”
 The conversation stopped.
 The cabin flickered as nebulites passed by overhead.
 Darkness swelled in between each fleeting burst of light.
@@ -533,7 +533,7 @@ They leaned closer to Oren.
 They batted their eyelashes and asked in a mock whine, “Do I get chased?”
 Oren shook his head and said solemnly, “Dorks only mate with those who prove their worth. Chasing is for the Mesonoxian.”
 Velocity frowned in disgust.
-“Woof. Mood killer.”
+“Woof. Mood killer. Don't bring that shit here.”
 Jhansi interrupted.
 “I’m sorry, but you're making up words again.”
 Velocity gave her a look she didn't understand, then nodded toward Oren.
@@ -554,101 +554,160 @@ Jhansi blinked.
 Velocity raised both eyebrows.
 “Again, just how much do you know?”
 Jhansi pursed her lips and stayed quiet.
-Oren explained, “Yeah, the Mesonoxian is probably an endling, or more likely an alterling. Velocity wasn't kidding, though. Don’t summon that motherfucker.”
-An extra strong enemy, nothing surprising about that.
-Jhansi asked, “What's an alterling?”
+Oren explained, “The Mesonoxian probably isn't an endling. It's probably an alterling. Or at least, closer to. Either way, Velocity wasn't kidding. Don’t summon that motherfucker.”
+Jhansi repeated, “Alterling.”
+The word felt good in her mouth.
+She asked, “What's that?”
 Oren paused, then gave a strange sigh.
 “So, endlings worship Egaeus. He creates them, and they live and work in His service, harvesting memory cards as offerings.”
 Memory cards.
-That must refer to the object Jhansi had watched Oren crush and bury in the endling's body.
-“If Egaeus is pleased with an endling’s offerings at the end of the netherlume shift, He’ll reward them with new ranks and abilities, depending on the quality of their offerings. But there’s other stuff you can do with a memory card, you don’t have to offer it to Egaeus. If an endling chooses to consume a memory card, instead of giving it up as an offering, they’ll diverge from the traditional hierarchy of endling rank and ability and start developing in ways that otherwise wouldn't be possible. It's a complicated process, the results vary pretty wildly from alterling to altering, but regardless, the moment an endling first makes that decision, they become an alterling. Their uniform doesn't fit anymore, they can no longer wear the Sigil of Egaeus and live in His service. Instead, they live by their own design, hunting down memory cards and altering their experience further in alignment with their strengths and desires.”
-Jhansi thought about this.
-She asked, “So endlings and alterlings kill each other for memory cards?”
-Oren took his eyes off the road and looked at her for a moment, then turned back to the road ahead.
+That must refer to the object Oren had crushed and buried in the endling's body.
+“When the netherlume shift ends, Egaeus evaluates the offerings He’s received. The endlings who please Egaeus get rewarded with new ranks and abilities. There's a specific hierarchy.”
+Oren paused, seemed to quickly process some thought, and continued.
+“But you don't have to offer up the memory cards you harvest. They have other uses. For example, you can eat them.”
+An eager heat blossomed in Jhansi's stomach. She tried to imagine eating the splintered shards of the memory card Oren had crushed. She could practically feel the slight, plastic resistance snapping between her teeth. Something like vertigo took hold, then relented.
+Jhansi shook her head.
+She said, “Eat them.”
+Oren nodded.
+“If an endling makes the choice to consume a memory card instead of offering it up to Egaeus, it removes itself from the traditional hierarchy of endling rank and ability. It starts developing in ways that otherwise wouldn't be possible. It's …”
+Oren waved his hand in the air.
+“It's a complicated process, the results vary across extremities that are hard to describe, but yeah, that's an alterling. An endling who has made the choice to take control over the design of their life.”
+Velocity interjected, “Over their fate.”
+Oren didn't pause.
+“Their uniform doesn't fit anymore. They can no longer wear the Sigil of Egaeus and live in His service. He can’t sustain them. They must hunt every night for more memory cards, or die.”
+Jhansi asked, “Does every new memory card change them? Or do they have to reach some minimum sustenance threshold first?”
+She paused, then added, “Or something else?”
+Oren shrugged.
+“It depends.”
+Ugh.
+Of course.
+Jhansi thought about what she had learned.
+She asked, “Endlings and alterlings kill each other for memory cards?”
+Oren said, “Yep.”
+Jhansi nodded.
+“But Egaeus doesn’t kill all the alterlings at the end of the whateverlume shift?”
+Velocity snorted, “Whateverlume shift.”
+Jhansi added, “The alterlings aren’t fighting Egaeus the way you guys are?”
+Oren sighed. 
 “Yep.”
-“But alterlings aren't really fighting against Egaeus, the way you special ones are?”
-Oren blinked, then sighed. 
-“Yep.”
-Jhansi thought about this.
-“Then, wait, how do you fit into all this? Where do you come from?”
-Both teenagers paused for a much longer moment than Jhansi expected.
-At last Velocity said, “We’re on our second run.”
+Jhansi asked, “Why? Where do you guys come from? Why does Egaeus hate you so fucking much?”
+Oren said, “Those are two very different questions.”
+Velocity said, “We’re on our second run.”
 Jhansi narrowed her eyes.
 “Your second?”
-Oren said, slowly, “A new-game-plus.”
+Oren said, “A new-game-plus,” drawing out each vowel sound, but with deadpan inflection.
 Jhansi blinked.
-“So you beat the game already?”
+“You beat the game already?”
 She looked at Velocity.
-“But you just said that wasn’t possible.”
-Velocity smiled strangely, then laughed once.
+“But you literally just told me that nobody’s beaten the game.”
+Velocity smiled strangely.
 Oren sighed and said, “No, we didn’t beat the game.”
 He paused, then added, “We died.”
+Jhansi blinked.
 “What?”
-Jhansi scowled.
+She frowned.
 “But you just said–”
-“After I killed that endling, do you remember what I did with their memory card?”
-Jhansi paused.
-“Wait.”
+Oren interrupted.
+“After I killed that endling, do you remember what I did with its memory card?”
+Of course she remembered.
+“Hold on, that’s–”
+Oren interrupted again.
 “So you do remember.”
 Jhansi shook her head.
-“Yeah, but, no way. Seriously? That’s where you come from?”
-“Yep.”
+“Yeah, obviously, how could I not?”
+She paused to replay the scene in her mind. She saw the gross meat, the weird depth of the endling’s body, Oren’s messy arm. She saw the memory card, the crush, the extra little thing from Oren’s pocket. She saw the burial.
+“That’s where you come from?”
 Oren nodded.
+“Yep.”
+He paused.
 “That’s where we come from.”
-Jhansi stared at him, then looked at Velocity.
+Jhansi stared at him.
+Unbelievable.
+She looked at Velocity.
 “You were endlings?”
-Velocity stared back at her.
+Velocity stared back at her. A nebulite passed overhead. Blue light flickered across the teenager’s red lips and shell pendant. Their eye makeup swirled dangerously.
 Oren shrugged.
-“Yeah, pretty much.”
+“Pretty much.”
+What a weird reply.
 Jhansi blinked.
-She had no idea what that meant.
+She had no idea how to feel about this.
 At last she asked, “Why?”
 Neither of the other teenagers replied.
 Jhansi looked back and forth between them.
-She asked, “So wait, what happens if you guys consume a memory card?”
-For a moment neither teenager moved, then Oren gave the smallest smile, the corner of his mouth lifting the barest degree, and sighed.
-“It charges our gift.”
+“You don’t know why you were endlings?”
+Oren and Velocity stayed quiet.
+Oren kept his eyes on the road. His hands moved softly on the steering wheel, keeping Mambele pointed straight. The sedan straddled the broken line of the lane divider, swallowing each strip of white paint in a perfect rhythm.
+Velocity looked over their shoulder, out the passenger side window. A shadowed reflection stared back at them from the glass. They chewed their bottom lip, just once, then shifted, leaning their elbow up against the window and cupping their chin.
+Still staring into the night, they asked, “Ever heard of tact?”
+A spear of bruising static stabbed at Jhansi’s interior space.
+She whined, “I’m just trying to understand.”
+Velocity nodded.
+“So are we, dude.”
+Ugh.
+Jhansi didn’t want this to end the conversation.
+She asked, “What happens if you guys consume a memory card?”
+Jhansi’s worry swelled in the following beat of silence.
+The corner of Oren’s mouth lifted the barest degree.
+He sighed warmly.
+“We get bonus shares for our gift.”
 Jhansi blinked.
-“Your gift? You used that phrase earlier, too. Is that like a special power or something?”
+“Your gift?”
+She thought for a moment.
+“You used that phrase earlier. Is that like a special power or something?”
 Oren’s smile widened by a degree.
 “Exactly.”
 Fucking score.
-“It's a power we can't use ourselves. It has to be shared. And we have to consume memory cards to keep it charged.”
-Oren paused as if considering something, then continued.
-“It's hard to know how many shares are in a memory card–that depends on the strength of your gift, the strength of the memories inside the card, and some unknown factors besides–but you’ll always know how many shares you’ve got before you’ll need to consume another memory card.”
-“What, is there like a HUD or something?”
-Oren laughed and shook his head.
-“No. You just know. You can feel it inside you.”
-Huh.
-“Is there a limit to how many memory cards you can consume?”
+Oren continued.
+“It's a power we can't use ourselves. It has to be shared.”
+Jhansi leaned forward.
+“How’s that work?”
+Oren’s smile cracked fully into a grin.
+“It’s complicated.”
+Jhansi nodded.
+“Of course it is.”
+Oren explained, “Every special one has a mask. Put on your mask, get access to your gift. Gifts are shared through touch. I grab your hand and push. My gift fills you up. It changes you.”
+Oren paused, then added, “For a moment.”
+Jhansi tilted her head.
+“Changes you how?”
+Velocity said, “In so many cool ways.”
+Oren smirked. He turned to look at them, his eyes lingering for a long moment. He said nothing.
+Jhansi said, “And you have to consume memory cards in order to share your gift?”
 Oren shook his head.
-“No, you can consume as many as you want. But at some point you’ll get giftsick, and heinous shit will start happening whenever you try to share your gift.”
+“Your shares will charge gradually over time, and more quickly when you’re fighting. A killswing is usually enough to give you a full share. There’s a baseline number you can charge like this, we call those your natural shares. They’ll be your most powerful, and there’s a refractory period that follows.
+“There are also bonus shares. These are shares charged up above the baseline. They’re less powerful, but they can be used back to back, without a cooldown. You get bonus shares by consuming memory cards. If you’ve depleted your natural shares below your baseline, consuming a memory card will also refill your natural shares.
+“It's hard to know how many shares you’ll get from any given memory card–that depends on the strength of your gift, the strength of the contents of the memory card, and some unknown factors besides–but you’ll always know how many shares you’ve got charged up.”
+Fascinating.
+Jhansi asked, “Is there like a HUD or something?”
+Oren laughed and shook his head.
+“No. You just know. You can–”
+He gestured at the air.
+“–feel it inside you.”
+Huh.
+Jhansi asked, “Is there a limit to how many memory cards you can consume?”
+Oren shook his head.
+“No, you can consume as many as you want. But at some point you’ll get giftsick.”
+Jhansi repeated the word.
+“Giftsick?”
+Oren nodded.
+“Heinous shit will start happening when you try to share your gift. Anything can go wrong. You can permanently fuck up your gift if you’re really reckless.”
 Jhansi repeated, “Giftsick.”
 Velocity made a face.
-They said, “It's real grody.”
+“It's real grody.”
 “Right.”
 Jhansi furrowed her brows and thought for a moment.
-“How’s it work, sharing your gift?”
-Oren smiled.
-“You just touch and push.”
-“What happens? Their next attack gets a power boost or something?”
-Velocity grinned.
-“So much cool shit happens.”
-Oren nodded and let his smile widen.
-“Yeah, so much cool shit.”
-“Right.”
-Jhansi’s mind buzzed.
-She looked down at her hands, fidgeted for a moment, then looked back up.
-Oren turned Mambele onto another unfamiliar street.
-Jhansi asked, “So, wait. You’ve all still got your memory cards, right? But they’re just like, crushed up inside you?”
-Oren chuckled.
-“No, they’re very much intact.”
-He paused.
-“They’re just … a little different.”
+She reiterated, “So, you guys fight and kill endlings and alterlings. If you take a memory card and consume it, you get bonus shares for your gift. If you do that new-game-plus thing, you create a new special one.”
+Oren amended, “The new special one arrives the following night.”
+Jhansi nodded quickly, then slowly, then shook her head.
+“Hang on. So you’ve got a memory card inside you too, right? It’s just like, crushed up or something?”
+Oren paused for longer than Jhansi expected.
+At last he nodded, curtly.
+“Yes, special ones have memory cards too. They’re not crushed up. They’re intact. Just–”
+He thought for a long moment, then shrugged.
+“–different.”
 He ran a hand through his hair.
-“I don't think anyone can spend time on the netherlume shift without one.”
-Velocity raised their eyebrows at Oren, then looked at Jhansi with an inscrutable expression.
-Weirdly pointed, but okay.
+“Honestly, I don't think anyone can spend time on the netherlume shift without a memory card.”
+Velocity raised their eyebrows at Oren.
+Pointed, but okay.
 Jhansi asked, “So you can consume each other’s memory cards?”
 Velocity’s expression shifted sharply.
 They leaned forward and loomed over Jhansi.
