@@ -17,9 +17,10 @@ export type SadNode = SadContent & {
 };
 
 export type SadMap = {
+  notice: string;
   disclaimer: string;
   updates: string;
-  notice: string;
+  references: string;
   sads: Sad[];
 };
 
@@ -27,12 +28,18 @@ export type SadMap = {
   providedIn: 'root'
 })
 export class SensationAndDesireService {
+  private _notice: string | null = null;
   private _disclaimer: string | null = null;
   private _updates: string | null = null;
-  private _notice: string | null = null;
+  private _references: string | null = null;
   private _sads: Sad[] = [];
   private _sadNode: SadNode | null = null;
   private _sadStream: Subject<SadNode | null> = new Subject<SadNode | null>();
+  private _audible: boolean = true;
+
+  get notice(): string {
+    return this._notice || '';
+  }
 
   get disclaimer(): string {
     return this._disclaimer || '';
@@ -42,12 +49,16 @@ export class SensationAndDesireService {
     return this._updates || '';
   }
 
-  get notice(): string {
-    return this._notice || '';
+  get references(): string {
+    return this._references || '';
   }
 
   get sads(): Sad[] {
     return this._sads;
+  }
+
+  get audible(): boolean {
+    return this._audible;
   }
 
   sadStream = this._sadStream.asObservable();
@@ -55,13 +66,35 @@ export class SensationAndDesireService {
   constructor() {
     fetch('../../../assets/sad-map.json')
       .then(response => response.json())
-      .then(({ disclaimer, updates, notice, sads }: SadMap) => {
+      .then(({ notice, disclaimer, updates, references, sads }: SadMap) => {
+          this._notice = notice;
           this._disclaimer = disclaimer;
           this._updates = updates;
-          this._notice = notice;
+          this._references = references;
           this._sads = sads;
           this.updateSadNode(this.sads[0]);
         });
+  }
+
+  public toggleAudio(): void {
+    this.setAudio(!this._audible);
+  }
+
+  public setAudio(audible: boolean): void {
+    this._audible = audible;
+
+    const audioElements = document.getElementsByTagName('audio') as HTMLCollection;
+    const audioElement = audioElements.length && audioElements[0] as HTMLAudioElement;
+    
+    if(audioElement) {
+      if(this._audible) {
+        audioElement.loop = true;
+        audioElement.play();
+      }
+      else {
+        audioElement.pause();
+      }
+    }
   }
 
   public updateSadNode(newCurrentSad: Sad): void {

@@ -7,10 +7,10 @@
       <div class="sad-moontide">MOONTIDE</div> <div class="sad-crossbridge">CROSSBRIDGE</div> <div class="sad-revelry">REVELRY</div>
     </div>
     <div class="sad-subtitle">
-      a story
+      a story | 🔞
     </div>
     <div>
-      <span class="sad-extra" (click)="openDisclaimerDialog()">disclaimer</span>|<span class="sad-extra" (click)="openUpdatesDialog()">updates</span>|<span class="sad-extra" (click)="openInstagramLink()">instagram</span>|<span [ngClass]="{'sad-extra': true, 'sad-audio': true, 'muted': muted}" (click)="toggleAudio()">audio</span>
+      <span class="sad-menu" (click)="openMenu()">menu</span>
     </div>
     <div *ngIf="sadNode" class="sad-select">
       <select #sadSelect (change)="updateSadNode(+sadSelect.value)">

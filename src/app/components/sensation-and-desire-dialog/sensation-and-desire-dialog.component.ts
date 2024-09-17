@@ -19,4 +19,8 @@ export class SensationAndDesireDialogComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  okClose(): void {
+    this._dialogRef.close(true);
+  }
+
 }

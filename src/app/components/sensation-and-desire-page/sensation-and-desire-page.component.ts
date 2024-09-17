@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { take } from 'rxjs';
 import { Sad, SadNode, SensationAndDesireService } from 'src/app/services/sensation-and-desire.service';
 import { SadDialogInput, SensationAndDesireDialogComponent } from '../sensation-and-desire-dialog/sensation-and-desire-dialog.component';
+import { SensationAndDesireMenuComponent } from '../sensation-and-desire-menu/sensation-and-desire-menu.component';
 
 @Component({
   selector: 'app-sensation-and-desire-page',
@@ -12,7 +13,6 @@ import { SadDialogInput, SensationAndDesireDialogComponent } from '../sensation-
 export class SensationAndDesirePageComponent implements OnInit {
   sadNode: SadNode | null = null;
   sads: Sad[] = [];
-  muted: boolean = false;
 
   constructor(
     private _sadService: SensationAndDesireService,
@@ -44,34 +44,8 @@ export class SensationAndDesirePageComponent implements OnInit {
       });
 
     window.onload = () => {
-      this.setAudio(true);
+      this._sadService.setAudio(false);
     };
-  }
-
-  updateSadNode(newCurrentSadId: number | undefined): void {
-    newCurrentSadId !== undefined && this._sadService.updateSadNode(this.sads[newCurrentSadId]);
-  }
-
-  openDisclaimerDialog(): void {
-    this._dialog.open(
-      SensationAndDesireDialogComponent,
-      {
-        data: {
-          text: this._sadService.disclaimer
-        } as SadDialogInput
-      }
-    );
-  }
-
-  openUpdatesDialog(): void {
-    this._dialog.open(
-      SensationAndDesireDialogComponent,
-      {
-        data: {
-          text: this._sadService.updates
-        } as SadDialogInput
-      }
-    );
   }
 
   openNoticeDialog(): void {
@@ -85,12 +59,14 @@ export class SensationAndDesirePageComponent implements OnInit {
     );
   }
 
-  openInstagramLink(): void {
-    window.open('https://www.instagram.com/sensationanddesire', '_blank');
+  openMenu(): void {
+    this._dialog.open(
+      SensationAndDesireMenuComponent
+    );
   }
 
-  toggleAudio(): void {
-    this.setAudio(!this.muted);
+  updateSadNode(newCurrentSadId: number | undefined): void {
+    newCurrentSadId !== undefined && this._sadService.updateSadNode(this.sads[newCurrentSadId]);
   }
 
   disableScrolling(): boolean {
@@ -121,23 +97,6 @@ export class SensationAndDesirePageComponent implements OnInit {
 
   scrollToBottom(): void {
     window.scrollTo(0, window.document.body.scrollHeight);
-  }
-
-  private setAudio(muted: boolean): void {
-    this.muted = muted;
-
-    const audioElements = document.getElementsByTagName('audio') as HTMLCollection;
-    const audioElement = audioElements.length && audioElements[0] as HTMLAudioElement;
-    
-    if(audioElement) {
-      if(this.muted) {
-        audioElement.pause();
-      }
-      else {
-        audioElement.loop = true;
-        audioElement.play();
-      }
-    }
   }
 
 }

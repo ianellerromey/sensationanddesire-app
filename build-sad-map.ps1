@@ -1,19 +1,25 @@
 $SadContentFiles = Get-ChildItem -Path '.\src\assets\sad-content' -Name 'sad*' -File
-$SadContentArrayMap = @($SadContentFiles | ForEach-Object { $i = 0 } {
+
+$SadContentMapArray = @($SadContentFiles | ForEach-Object { $i = 0 } {
   @{
     id = $i
     title = [regex]::Matches($_, 'sad_\d+_(.+)\.txt').Groups[1].Value
     content = $_.ToString()
   }; $i++ })
-$SadContentArrayMap
-$SadContentMap = @{
+$SadContentMapArray
+
+$SadNotice = Get-Content -Path '.\src\assets\sad-notice.txt' | Out-String
+if ($SadNotice) { $SadNotice = 'NOTICE: ' + $SadNotice}
+
+$SadMap = @{
+  notice = $SadNotice
   disclaimer = Get-Content -Path '.\src\assets\sad-disclaimer.txt' | Out-String
   updates = Get-Content -Path '.\src\assets\sad-updates.txt' | Out-String
-  notice = Get-Content -Path '.\src\assets\sad-notice.txt' | Out-String
-  sads = $SadContentArrayMap
+  references = Get-Content -Path '.\src\assets\sad-references.txt' | Out-String
+  sads = $SadContentMapArray
 }
-$SadContent = ($SadContentMap | ConvertTo-Json)
+$SadMapJson = ($SadMap | ConvertTo-Json)
 
-New-Item -Path '.\src\assets\sad-map.json' -ItemType 'file' -Value $SadContent -Force
+New-Item -Path '.\src\assets\sad-map.json' -ItemType 'file' -Value $SadMapJson -Force
 
-Write-Host $SadContent
+Write-Host $SadMapJson

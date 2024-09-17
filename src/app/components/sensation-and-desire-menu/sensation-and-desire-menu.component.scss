@@ -1,7 +1,12 @@
-.sad-dialog {
+.sad-menu {
+  cursor: pointer;
   font-family: Tahoma, sans-serif;
   padding: 5px;
   white-space: pre-line;
+};
+
+.sad-menu.sad-audio.muted {
+  text-decoration: line-through;
 };
 
 .sad-okClose {
