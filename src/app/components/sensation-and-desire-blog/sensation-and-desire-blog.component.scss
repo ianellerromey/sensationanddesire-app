@@ -1,0 +1,62 @@
+.sad-okClose {
+  text-align: center;
+  margin-bottom: 10px;
+
+  input {
+    font-family: Tahoma, sans-serif;
+    line-height: 0;
+    padding: 3px;
+  };
+};
+
+.sad-select {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: medium;
+
+  select {
+    cursor: pointer;
+  };
+};
+
+
+.sad-blog {
+  display: flex;
+  flex-direction: row;
+
+  .sad-content {
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+  }
+};
+
+.sad-update {
+  flex-grow: 1;
+  margin: 0px 5px;
+  cursor: pointer;
+};
+
+.sad-update.prev {
+  filter: drop-shadow(1px 1px 3px rgba(62, 26, 225, .90));
+  border-radius: 50%;
+  cursor: pointer;
+};
+
+.sad-update.next {
+    filter: drop-shadow(1px 1px 3px rgba(233, 0, 141, .90));
+    border-radius: 50%;
+    cursor: pointer;
+};
+
+.sad-update.sad-disabled {
+  opacity: 50%;
+
+  filter: unset !important;
+  border-radius: unset !important;
+  cursor: default !important;
+};

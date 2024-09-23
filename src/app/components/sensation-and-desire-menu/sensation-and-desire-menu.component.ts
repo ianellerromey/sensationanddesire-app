@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
-import { SensationAndDesireService } from 'src/app/services/sensation-and-desire.service';
+import { SensationAndDesireBlogComponent } from '../sensation-and-desire-blog/sensation-and-desire-blog.component';
 import { SadDialogInput, SensationAndDesireDialogComponent } from '../sensation-and-desire-dialog/sensation-and-desire-dialog.component';
+import { SensationAndDesireService } from '../../services/sensation-and-desire.service';
 
 @Component({
   selector: 'app-sensation-and-desire-menu',
@@ -68,6 +69,12 @@ export class SensationAndDesireMenuComponent implements OnInit {
           text: this._sadService.references
         } as SadDialogInput
       }
+    );
+  }
+
+  openBlogDialog(): void {
+    this._dialog.open(
+      SensationAndDesireBlogComponent
     );
   }
 

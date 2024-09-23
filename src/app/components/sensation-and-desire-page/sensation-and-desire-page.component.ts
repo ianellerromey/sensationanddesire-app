@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { take } from 'rxjs';
-import { Sad, SadNode, SensationAndDesireService } from 'src/app/services/sensation-and-desire.service';
 import { SadDialogInput, SensationAndDesireDialogComponent } from '../sensation-and-desire-dialog/sensation-and-desire-dialog.component';
 import { SensationAndDesireMenuComponent } from '../sensation-and-desire-menu/sensation-and-desire-menu.component';
+import { Sad, SadNode, SensationAndDesireService } from '../../services/sensation-and-desire.service';
 
 @Component({
   selector: 'app-sensation-and-desire-page',

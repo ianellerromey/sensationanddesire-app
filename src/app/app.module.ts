@@ -5,9 +5,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { SensationAndDesirePageComponent } from './components/sensation-and-desire-page/sensation-and-desire-page.component';
+import { SensationAndDesireBlogComponent } from './components/sensation-and-desire-blog/sensation-and-desire-blog.component';
 import { SensationAndDesireDialogComponent } from './components/sensation-and-desire-dialog/sensation-and-desire-dialog.component';
 import { SensationAndDesireMenuComponent } from './components/sensation-and-desire-menu/sensation-and-desire-menu.component';
+import { SensationAndDesirePageComponent } from './components/sensation-and-desire-page/sensation-and-desire-page.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { SensationAndDesireMenuComponent } from './components/sensation-and-desi
     AppComponent,
     SensationAndDesirePageComponent,
     SensationAndDesireDialogComponent,
-    SensationAndDesireMenuComponent
+    SensationAndDesireMenuComponent,
+    SensationAndDesireBlogComponent
   ],
   imports: [
     BrowserModule,
