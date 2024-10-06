@@ -1,0 +1,6 @@
+@sensationanddesire.api_HostAddress = http://localhost:5059
+
+GET {{sensationanddesire.api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
