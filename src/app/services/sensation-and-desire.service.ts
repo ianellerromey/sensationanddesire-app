@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Subject, Observable } from 'rxjs';
+import { SensationAndDesireConfigService } from './sensation-and-desire-config-service.service';
+const CryptoJS = require('crypto-js');
 
 export type Sad = {
   id: number;
@@ -40,7 +42,7 @@ export class SensationAndDesireService {
   private _sads: Sad[] = [];
   private _sadNode: SadNode | null = null;
   private _sadStream: Subject<SadNode | null> = new Subject<SadNode | null>();
-  private _audible: boolean = true;
+  private _audible: boolean = false;
 
   get notice(): string {
     return this._notice || '';
@@ -72,7 +74,9 @@ export class SensationAndDesireService {
 
   sadStream = this._sadStream.asObservable();
 
-  constructor() {
+  constructor(
+    private configService: SensationAndDesireConfigService
+  ) {
     fetch('../../../assets/sad-map.json')
       .then(response => response.json())
       .then(({ notice, disclaimer, updates, references, blogs, sads }: SadMap) => {
@@ -84,6 +88,10 @@ export class SensationAndDesireService {
           this._sads = sads;
           this.updateSadNode(this.sads[0]);
         });
+  }
+
+  public validatePassword(password: string): boolean {
+    return CryptoJS.SHA512(password).toString() === this.configService.configHash;
   }
 
   public toggleAudio(): void {

@@ -2,7 +2,10 @@
   <div class="sad-okClose">
     <input type="button" value="ok" (click)="okClose()">
   </div>
-  <div class="sad-dialog">
+  <div *ngIf="_data.text" class="sad-dialog">
     {{_data.text}}
+  </div>
+  <div>
+    <input type="text" [placeholder]="_data.placeholder" [(ngModel)]="inputValue"/>
   </div>
 </mat-dialog-content>

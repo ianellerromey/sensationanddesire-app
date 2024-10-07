@@ -1,12 +1,24 @@
-$SadContentFiles = Get-ChildItem -Path '.\src\assets\sad-content' -Name 'sad*' -File
+$SadContentFiles = Get-ChildItem -Path '.\src\assets\sad-content' -Name 'sad*.txt' -File
 
+$id = 0
 $SadContentArray = @($SadContentFiles | ForEach-Object { $i = 0 } {
   @{
-    id = $i
+    id = $id + $i
     title = [regex]::Matches($_, 'sad_\d+_(.+)\.txt').Groups[1].Value
     content = $_.ToString()
   }; $i++ })
 $SadContentArray
+
+$SadContentDraftFiles = Get-ChildItem -Path '.\src\assets\sad-content' -Name 'sad*.draft' -File
+
+$id = $SadContentArray.Count
+$SadContentDraftArray = @($SadContentDraftFiles | ForEach-Object { $i = 0 } {
+  @{
+    id = $id + $i
+    title = [regex]::Matches($_, 'sad_\d+_(.+)\.draft').Groups[1].Value
+    content = $_.ToString()
+  }; $i++ })
+$SadContentDraftArray
 
 $SadBlogFiles = Get-ChildItem -Path '.\src\assets\sad-blog' -Recurse -Include '*.jpg' -File  | % { $_.FullName } | Resolve-Path -Relative
 $SadBlogMap = @{}
@@ -34,6 +46,7 @@ $SadMap = @{
   references = Get-Content -Path '.\src\assets\sad-references.txt' | Out-String
   blogs = $SadBlogMap
   sads = $SadContentArray
+  drafts = $SadContentDraftArray
 }
 $SadMapJson = ($SadMap | ConvertTo-Json)
 

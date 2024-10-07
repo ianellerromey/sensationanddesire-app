@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { take } from 'rxjs';
-import { SadDialogInput, SensationAndDesireDialogComponent } from '../sensation-and-desire-dialog/sensation-and-desire-dialog.component';
+import { SadDialogData, SensationAndDesireDialogComponent } from '../sensation-and-desire-dialog/sensation-and-desire-dialog.component';
 import { SensationAndDesireMenuComponent } from '../sensation-and-desire-menu/sensation-and-desire-menu.component';
 import { Sad, SadNode, SensationAndDesireService } from '../../services/sensation-and-desire.service';
 
@@ -54,7 +54,7 @@ export class SensationAndDesirePageComponent implements OnInit {
       {
         data: {
           text: this._sadService.notice
-        } as SadDialogInput
+        } as SadDialogData
       }
     );
   }
