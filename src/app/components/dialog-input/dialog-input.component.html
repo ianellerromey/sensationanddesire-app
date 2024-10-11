@@ -1,0 +1,13 @@
+<mat-dialog-content>
+  @if (data.text) {
+    <div class="sad-dialog">
+      {{data.text}}
+    </div>
+  }
+  <div>
+    <input type="text" [placeholder]="data.placeholder" [(ngModel)]="inputValue"/>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="inputValue">ok</button>
+</mat-dialog-actions>

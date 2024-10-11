@@ -1,0 +1,22 @@
+<div>
+  <app-header [menuOptions]="menuOptions">
+    <div class="sad-title">
+      <div class="sad-title-1">MOONTIDE</div>
+      <div class="sad-title-2">CROSSBRIDGE</div>
+      <div class="sad-title-3">REVELRY</div>
+    </div>
+    <div class="sad-subtitle" title="hyperviolent neon goth coming-of-age literary love fantasy">
+      broken dream survival meme
+    </div>
+  </app-header>
+</div>
+<div>
+  <app-mtcbrr-paged [entryId]="entryId"></app-mtcbrr-paged>
+  <div class="sad-page">
+    <div class="sad-content">
+      @if (node) {
+        <div class="sad-content-fulltext">{{node.entry.content}}</div>
+      }
+    </div>
+  </div>
+</div>

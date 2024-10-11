@@ -4,3 +4,140 @@
 body {
   background: black;
 }
+
+.sad-dialog {
+  font-family: Tahoma, sans-serif;
+  padding: 5px;
+  white-space: pre-line;
+};
+
+.sad-header {
+  text-align: center;
+  font-family: Tahoma, sans-serif;
+  margin-top: 20px;
+
+  .sad-title {
+    font-size: 36px;
+    text-shadow: -2px -2px 3px #FFE790;
+
+    div {
+      display: inline-block;
+      margin-left: 3px;
+      margin-right: 3px;
+    };
+
+    .sad-title-1 {
+      color: #20049F;
+    };
+
+    .sad-title-2 {
+      color: #5D029A;
+    };
+
+    .sad-title-3 {
+      color: #B5006E;
+    };
+  };
+
+  .sad-subtitle {
+    color: aliceblue;
+    text-shadow: -2px -2px 3px #FFE790;
+    padding-bottom: 3px;
+  };
+
+  .sad-menu {
+    color: aliceblue;
+    cursor: pointer;
+    padding-bottom: 5px;
+  };
+};
+
+.sad-menu-content {
+  .sad-menu-viewtext {
+    cursor: pointer;
+    font-family: Tahoma, sans-serif;
+    padding: 5px;
+    white-space: pre-line;
+  };
+  
+  .sad-menu-navigate {
+    cursor: pointer;
+    font-family: Tahoma, sans-serif;
+    padding: 5px;
+    white-space: pre-line;
+  };
+  
+  .sad-menu-toggle {
+    cursor: pointer;
+    font-family: Tahoma, sans-serif;
+    padding: 5px;
+    white-space: pre-line;
+  };
+  
+  .sad-menu-toggle.off {
+    text-decoration: line-through;
+    cursor: unset !important;
+  };
+};
+
+.sad-select {
+  margin-top: 5px;
+  font-size: medium;
+  text-align: center;
+
+  select {
+    cursor: pointer;
+  };
+};
+
+.sad-navigation {
+  .sad-update {
+    flex-grow: 1;
+    margin: 0px 5px;
+    cursor: pointer;
+  };
+
+  .sad-update.prev {
+    filter: drop-shadow(1px 1px 3px rgba(62, 26, 225, .90));
+    border-radius: 50%;
+    cursor: pointer;
+  };
+
+  .sad-update.next {
+      filter: drop-shadow(1px 1px 3px rgba(233, 0, 141, .90));
+      border-radius: 50%;
+      cursor: pointer;
+  };
+
+  .sad-update.sad-disabled {
+    opacity: 50%;
+
+    filter: unset !important;
+    border-radius: unset !important;
+    cursor: default !important;
+  };
+};
+
+.sad-page {
+  display: flex;
+  flex-direction: row;
+
+  .sad-content {
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    white-space: pre;
+    flex-grow: 2;
+    margin: 30px 64px 0px 64px;
+    width: 80%;
+    z-index: 1;
+    
+    .sad-content-fulltext {
+      font-family: 'Lucida Console', 'Courier New', monospace;
+      text-wrap: wrap;
+    };
+    
+    .sad-content-image {
+      text-align: center;
+    };
+  };
+};

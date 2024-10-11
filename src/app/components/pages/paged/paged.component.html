@@ -1,0 +1,89 @@
+@if(node) {
+  <div class="sad-select">
+    <select #sadSelect (change)="updateNode(+sadSelect.value)">
+      @for (entry of entries; track entry.id; let i = $index) {
+        <option
+          [value]="entry.id"
+          [selected]="node.entry.id === entry.id">
+          {{entry.id}}: {{entry.title}}
+        </option>
+      }
+    </select>
+  </div>
+}
+<div class="sad-navigation">
+  <div style="position: fixed; top: 150px; left: 0px;">
+    <!-- go to first entry -->
+    <img
+      [ngClass]="{
+        'prev': true,
+        'sad-update': true,
+        'sad-disabled': (!node || node.entry.id === 0)
+      }"
+      src="../../../assets/sad-first.png"
+      (click)="node && updateNode(first.id)"
+    />
+  </div>
+  <div style="position: fixed; top: 220px; left: 0px;">
+    <!-- go to previous entry -->
+    <img
+      [ngClass]="{
+        'prev': true,
+        'sad-update': true,
+        'sad-disabled': (!node || node.previous === null)
+      }"
+      src="../../../assets/sad-prev.png"
+      (click)="node && node.previous && updateNode(node.previous.id)"
+    />
+  </div>
+  <div style="position: fixed; top: 320px; left: 0px;">
+    <!-- scroll to top of page-->
+    <img
+      [ngClass]="{
+        'prev': true,
+        'sad-update': true,
+        'sad-disabled': (!node || disableScrolling())
+      }"
+      src="../../../assets/sad-top.png"
+      (click)="node && scrollToTop()"
+    />
+  </div>
+</div>
+<div class="sad-navigation">
+  <div style="position: fixed; top: 150px; right: 0px;">
+    <!-- go to last entry -->
+    <img
+      [ngClass]="{
+        'next': true,
+        'sad-update': true,
+        'sad-disabled': (!node || node.entry.id === entries[entries.length - 1].id)
+      }"
+      src="../../../assets/sad-last.png"
+      (click)="node && updateNode(last.id)"
+    />
+  </div>
+  <div style="position: fixed; top: 220px; right: 0px;">
+    <!-- go to next entry -->
+    <img
+      [ngClass]="{
+        'next': true,
+        'sad-update': true,
+        'sad-disabled': (!node || node.next === null)
+      }"
+      src="../../../assets/sad-next.png"
+      (click)="node && node.next && updateNode(node.next.id)"
+    />
+  </div>
+  <div style="position: fixed; top: 320px; right: 0px;">
+    <!-- scroll to bottom of page -->
+    <img
+      [ngClass]="{
+        'next': true,
+        'sad-update': true,
+        'sad-disabled': (!node || disableScrolling())
+      }"
+      src="../../../assets/sad-bottom.png"
+      (click)="node && scrollToBottom()"
+    />
+  </div>
+</div>

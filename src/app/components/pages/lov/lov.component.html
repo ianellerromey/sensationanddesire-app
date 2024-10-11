@@ -1,0 +1,23 @@
+<div>
+  <app-header [menuOptions]="menuOptions">
+    <div class="sad-title">
+      <div class="sad-title-1">LOGS</div>
+      <div class="sad-title-2">OF</div>
+      <div class="sad-title-3">VATES</div>
+    </div>
+  </app-header>
+</div>
+<div>
+  <app-lov-paged [entryId]="entryId"></app-lov-paged>
+  <div class="sad-page">
+    <div class="sad-content">
+      @if (node) {
+        @for (content of node.entry.content; track content) {
+          <div class="sad-content-image">
+            <img src="{{content}}" />
+          </div>
+        }
+      }
+    </div>
+  </div>
+</div>

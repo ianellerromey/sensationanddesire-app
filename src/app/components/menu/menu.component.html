@@ -1,0 +1,30 @@
+<mat-dialog-content>
+  <div class="sad-menu-content">
+    @for (menuOption of menuOptionsSorted; track menuOption.text; let i = $index) {
+      @switch(menuOption.type) {
+        @case (MenuOptionTypeViewText) {
+          <div class="sad-menu-viewtext" (click)="menuOption.handler()">
+            {{menuOption.text}}
+          </div>
+        }
+        @case (MenuOptionTypeNavigate) {
+          <div class="sad-menu-navigate" (click)="menuOption.handler()">
+            {{menuOption.text}}
+          </div>
+        }
+        @case (MenuOptionTypeToggle) {
+          <div [ngClass]="{'sad-menu-toggle': true, 'off': !checkOnOrOff(menuOption)}" (click)="menuOption.handler()">
+            {{menuOption.text}}
+          </div>
+        }
+      }
+      
+      @if((i + 1 !== menuOptionsSorted.length) && (menuOptionsSorted[i + 1].type !== menuOption.type)) {
+        <hr />
+      }
+    }
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="true">ok</button>
+</mat-dialog-actions>
