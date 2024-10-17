@@ -1,13 +1,76 @@
 import { Component, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { MatSlideToggle } from '@angular/material/slide-toggle';
 import { Router } from '@angular/router';
+import { SrvAudioService } from '../../../services/srv-audio.service';
+import { SrvConfigService } from '../../../services/srv-config.service';
 import { Mtcbrr, SrvMtcbrrService } from '../../../services/srv-mtcbrr.service';
 import { PagedEntryOrNull } from '../../../services/srv-paged.service';
 import { SrvStaticTextService } from '../../../services/srv-statictext.service';
-import { DialogTextComponent, DialogTextData } from '../../dialog-text/dialog-text.component';
 import { HeaderComponent } from '../../header/header.component';
 import { AnyMenuOption, MenuOptionType } from '../../menu/menu.component';
+import { MenuedComponent } from '../menued/menued.component';
 import { MtcbrrPagedComponent } from './mtcbrr-paged/mtcbrr-paged.component';
+
+async function encryptNewPassword(password: string): Promise<{
+  iv: number[],
+  key: number[],
+  passwordEncrypted: string
+}> {
+  const iv = window.crypto.getRandomValues(new Uint8Array(16));
+  const key = window.crypto.getRandomValues(new Uint8Array(16));
+  const keyEncoded = await window.crypto.subtle.importKey(
+    "raw",
+    key.buffer,
+    "AES-CTR",
+    false,
+    ["encrypt", "decrypt"],
+  );
+  const passwordBuffer = (new TextEncoder()).encode(password);
+  const passwordEncrypted = await window.crypto.subtle.encrypt(
+    {
+      name: "AES-CTR",
+      counter: iv,
+      length: 128,
+    },
+    keyEncoded,
+    passwordBuffer
+  );
+  const decoder = new TextDecoder('utf-8');
+
+  return {
+    iv: [...iv],
+    key: [...key],
+    passwordEncrypted: decoder.decode(passwordEncrypted)
+  };
+};
+
+async function encryptInputPassword(
+  iv: number[],
+  key: number[],
+  password: string
+): Promise<string> {
+  const keyEncoded = await window.crypto.subtle.importKey(
+    "raw",
+    (new Uint8Array(key)).buffer,
+    "AES-CTR",
+    false,
+    ["encrypt", "decrypt"],
+  );
+  const passwordBuffer = (new TextEncoder()).encode(password);
+  const passwordEncrypted = await window.crypto.subtle.encrypt(
+    {
+      name: "AES-CTR",
+      counter: (new Uint8Array(iv)).buffer,
+      length: 128,
+    },
+    keyEncoded,
+    passwordBuffer
+  );
+  const decoder = new TextDecoder('utf-8');
+
+  return decoder.decode(passwordEncrypted);
+}
 
 @Component({
   selector: 'app-mtcbrr',
@@ -17,7 +80,7 @@ import { MtcbrrPagedComponent } from './mtcbrr-paged/mtcbrr-paged.component';
   templateUrl: './mtcbrr.component.html',
   styleUrl: './mtcbrr.component.scss'
 })
-export class MtcbrrComponent {
+export class MtcbrrComponent extends MenuedComponent {
   get node(): { previous: PagedEntryOrNull; next: PagedEntryOrNull; entry: Mtcbrr; } | null {
     return this._mtcbrrService.node;
   }
@@ -25,21 +88,13 @@ export class MtcbrrComponent {
   get menuOptions(): AnyMenuOption[] {
     const mo: AnyMenuOption[] = this._staticTextService.notice
       ? [
-        {
-          type: MenuOptionType.ViewText,
-          text: 'notice',
-          handler: this.getNoticeDialogHandler()
-        }
+        this.noticeDialogMenuOption
       ]
       : [];
     
       return [
         ...mo,
-        {
-          type: MenuOptionType.ViewText,
-          text: 'disclaimer',
-          handler: this.getDisclaimerDialogHandler()
-        },
+        this.disclaimerDialogMenuOption,
         {
           type: MenuOptionType.ViewText,
           text: 'updates',
@@ -50,51 +105,43 @@ export class MtcbrrComponent {
           text: 'references',
           handler: this.getReferencesDialogHandler()
         },
-        {
-          type: MenuOptionType.Navigate,
-          text: 'Logs of Vates',
-          handler: this.getLovLinkHandler()
-        },
-        {
-          type: MenuOptionType.Navigate,
-          text: 'instagram',
-          handler: this.getInstagramLinkHandler()
-        },
+        this.lovLinkMenuOption,
+        this.instagramLinkMenuOption,
         {
           type: MenuOptionType.Toggle,
           text: 'drafts',
-          onOrOff: () => false,
+          onOrOff: this.getDraftsOnOrOffHandler(),
           handler: this.getDraftsToggleHandler()
         },
-        {
-          type: MenuOptionType.Toggle,
-          text: 'audio',
-          onOrOff: () => false,
-          handler: this.getAudioToggleHandler()
-        },
+        this.audioToggleMenuOption,
       ]
   }
 
   @Input() entryId: number = 0;
 
   constructor(
-    private _router: Router,
+    _router: Router,
+    _audioService: SrvAudioService,
+    _staticTextService: SrvStaticTextService,
+    _dialog: MatDialog,
     private _mtcbrrService: SrvMtcbrrService,
-    private _staticTextService: SrvStaticTextService,
-    private _dialog: MatDialog
+    private _configService: SrvConfigService
   ) {
-  }
-  
-  getNoticeDialogHandler(): () => void {
-    return () => {
-      this.openDialogText(this._staticTextService.notice);
-    };
-  }
+    super(
+      _router,
+      _staticTextService,
+      _audioService,
+      _dialog
+    );
 
-  getDisclaimerDialogHandler(): () => void {
-    return () => {
-      this.openDialogText(this._staticTextService.disclaimer);
-    };
+    setTimeout(async () => {
+      /*if(this._configService.password) {
+        const encrypted = await encryptNewPassword(this._configService.password);
+        console.log(
+          encrypted
+        );
+      }*/
+    });
   }
 
   getUpdatesDialogHandler(): () => void {
@@ -105,42 +152,44 @@ export class MtcbrrComponent {
 
   getReferencesDialogHandler(): () => void {
     return () => {
-      this.openDialogText(this._staticTextService.references);
+      this.openDialogText(this._staticTextService.references)
     };
   }
 
-  getLovLinkHandler(): () => void {
-    return () => {
-      this._router.navigate([`/lov/0`]);
-    };
+  getDraftsOnOrOffHandler(): () => boolean {
+    return () => this._mtcbrrService.draftsUnlocked;
   }
 
-  getInstagramLinkHandler(): () => void {
-    return () => {
-      window.open('https://www.instagram.com/sensationanddesire', '_blank');
-    };
-  }
+  getDraftsToggleHandler(): (value?: any) => void {
+    return (value: any) => {
+      const { checked, source }: { checked: boolean, source: MatSlideToggle } = value;
 
-  getDraftsToggleHandler(): () => void {
-    return () => {
-    };
-  }
+      if(checked) {
+        this.openDialogInput(
+          'unlock moontide crossbridge revelry draft chapters',
+          'input the secret password'
+        ).subscribe(async (inputValue: string) => {
+          const decrypted = await encryptInputPassword(
+            this._configService.encrypted?.iv || [],
+            this._configService.encrypted?.key || [],
+            inputValue);
 
-  getAudioToggleHandler(): () => void {
-    return () => {
-    };
-  }
+          if(decrypted === this._configService.encrypted?.passwordEncrypted) {
+            this._mtcbrrService.draftsUnlocked = true;
 
-  private openDialogText(text: string) {
-    const data: DialogTextData = {
-      text
-    };
+            this.openDialogText('unlocked!');
+          }
+          else {
+            source.checked = false;
+            this._mtcbrrService.draftsUnlocked = false;
 
-    this._dialog.open(
-      DialogTextComponent,
-      {
-        data
+            inputValue && this.openDialogText('sorry ...');
+          }
+        });
       }
-    );
+      else {
+        this._mtcbrrService.draftsUnlocked = false;
+      }
+    };
   }
 }

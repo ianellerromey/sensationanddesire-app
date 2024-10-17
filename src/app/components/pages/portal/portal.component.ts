@@ -1,27 +1,20 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { SrvAudioService } from '../../../services/srv-audio.service';
-import { Lov, SrvLovService } from '../../../services/srv-lov.service';
-import { PagedEntryOrNull } from '../../../services/srv-paged.service';
 import { SrvStaticTextService } from '../../../services/srv-statictext.service';
 import { HeaderComponent } from '../../header/header.component';
 import { AnyMenuOption } from '../../menu/menu.component';
 import { MenuedComponent } from '../menued/menued.component';
-import { LovPagedComponent } from './lov-paged/lov-paged.component';
 
 @Component({
-  selector: 'app-lov',
+  selector: 'app-portal',
   standalone: true,
-  imports: [HeaderComponent, LovPagedComponent],
-  templateUrl: './lov.component.html',
-  styleUrl: './lov.component.scss'
+  imports: [HeaderComponent],
+  templateUrl: './portal.component.html',
+  styleUrl: './portal.component.scss'
 })
-export class LovComponent extends MenuedComponent {
-  get node(): { previous: PagedEntryOrNull; next: PagedEntryOrNull; entry: Lov; } | null {
-    return this._mtcbrrService.node;
-  }
-
+export class PortalComponent extends MenuedComponent {
   get menuOptions(): AnyMenuOption[] {
     const mo: AnyMenuOption[] = this._staticTextService.notice
       ? [
@@ -33,19 +26,17 @@ export class LovComponent extends MenuedComponent {
         ...mo,
         this.disclaimerDialogMenuOption,
         this.mtcbrrLinkMenuOption,
+        this.lovLinkMenuOption,
         this.instagramLinkMenuOption,
         this.audioToggleMenuOption
       ]
   }
-
-  @Input() entryId: number = 0;
 
   constructor(
     _router: Router,
     _audioService: SrvAudioService,
     _staticTextService: SrvStaticTextService,
     _dialog: MatDialog,
-    private _mtcbrrService: SrvLovService
   ) {
     super(
       _router,
@@ -53,5 +44,13 @@ export class LovComponent extends MenuedComponent {
       _audioService,
       _dialog
     );
+  }
+
+  handleMtcbrrLink(): void {
+    this._router.navigate([`/mtcbrr/0`]);
+  }
+
+  handleLovLink(): void {
+    this._router.navigate([`/lov/0`]);
   }
 }

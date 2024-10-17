@@ -13,8 +13,13 @@
           </div>
         }
         @case (MenuOptionTypeToggle) {
-          <div [ngClass]="{'sad-menu-toggle': true, 'off': !checkOnOrOff(menuOption)}" (click)="menuOption.handler()">
-            {{menuOption.text}}
+          <div class="sad-menu-toggle">
+            <mat-slide-toggle
+              [checked]="checkOnOrOff(menuOption)"
+              [hideIcon]="true"
+              (change)="menuOption.handler($event)"
+              labelPosition="before">
+              {{menuOption.text}}</mat-slide-toggle>
           </div>
         }
       }

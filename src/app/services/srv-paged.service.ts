@@ -35,8 +35,7 @@ export class SrvPagedService<T extends PagedEntry> extends SrvSadmapService {
 
     this.loadSadMap()
       .then((response: SadMap) => {
-        this._entries = (response as any)[this.getSadMapEntriesProperty()];
-        this._currentEntryId && this.updateNode(this._currentEntryId);
+        this.setEntriesAndUpdateNode((response as any)[this.getSadMapEntriesProperty()]);
       });      
   }
 
@@ -76,5 +75,10 @@ export class SrvPagedService<T extends PagedEntry> extends SrvSadmapService {
 
   protected completeEntry(entry: PagedEntry): Promise<T> {
     return Promise.resolve({} as T); 
+  }
+
+  protected setEntriesAndUpdateNode(value: T[]): void {
+    this._entries = value;
+    this._currentEntryId && this.updateNode(this._currentEntryId);
   }
 }

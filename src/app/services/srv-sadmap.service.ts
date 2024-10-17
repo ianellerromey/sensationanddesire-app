@@ -25,6 +25,6 @@ export class SrvSadmapService {
 
   protected loadSadMap(): Promise<SadMap> {
     return fetch('../../../assets/sad-map.json')
-      .then(response => response.json());
+      .then((response: Response) => response.json());
   }
 }

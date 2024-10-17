@@ -21,7 +21,8 @@ export class HeaderComponent {
     this._dialog.open(
       MenuComponent,
       {
-        data: this.menuOptions
+        data: this.menuOptions,
+        autoFocus: false
       }
     );
   }

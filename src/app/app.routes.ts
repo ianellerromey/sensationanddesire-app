@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { LovComponent } from './components/pages/lov/lov.component';
 import { MtcbrrComponent } from './components/pages/mtcbrr/mtcbrr.component';
-import { PortalComponent } from './components/portal/portal.component';
+import { PortalComponent } from './components/pages/portal/portal.component';
 
 export const routes: Routes = [
   {

@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 export enum MenuOptionType {
   ViewText,
@@ -11,7 +12,7 @@ export enum MenuOptionType {
 type MenuOption = {
   type: MenuOptionType;
   text: string;
-  handler: () => void;
+  handler: (value?: any) => void;
 };
 
 export type MenuOptionViewText = MenuOption & {
@@ -35,7 +36,7 @@ export type AnyMenuOption =
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [CommonModule, MatDialogModule],
+  imports: [CommonModule, MatDialogModule, MatSlideToggleModule],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.scss'
 })
@@ -66,8 +67,8 @@ export class MenuComponent {
       if(x.type === MenuOptionType.Navigate) {
         return {
           ...x,
-          handler: () => {
-            x.handler();
+          handler: (value: any) => {
+            x.handler(value);
             this._dialogRef.close(true);
           }
         }
@@ -77,9 +78,6 @@ export class MenuComponent {
       }
     });
     this._menuOptionsSorted.sort((a, b) => a.type - b.type);
-  }
-
-  ngOnInit(): void {
   }
 
   checkOnOrOff(menuOption: AnyMenuOption): boolean {

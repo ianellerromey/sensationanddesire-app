@@ -1,4 +1,5 @@
 import { Component, Inject } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 
 export type DialogInputData = {
@@ -9,7 +10,7 @@ export type DialogInputData = {
 @Component({
   selector: 'app-input-dialog',
   standalone: true,
-  imports: [MatDialogModule],
+  imports: [FormsModule, MatDialogModule],
   templateUrl: './dialog-input.component.html',
   styleUrl: './dialog-input.component.scss'
 })
