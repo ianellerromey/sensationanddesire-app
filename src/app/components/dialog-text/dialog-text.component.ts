@@ -6,7 +6,7 @@ export type DialogTextData = {
 };
 
 @Component({
-  selector: 'app-text-dialog',
+  selector: 'app-dialog-text',
   standalone: true,
   imports: [MatDialogModule],
   templateUrl: './dialog-text.component.html',

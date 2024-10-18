@@ -10,8 +10,9 @@ export type SadMapPagedEntry = {
 export type SadMap = {
   notice: string;
   disclaimer: string;
-  updates: string;
-  references: string;
+  mtcbrrAbout: string;
+  mtcbrrUpdates: string;
+  mtcbrrReferences: string;
   lovs: PagedEntry[];
   mtcbrrs: PagedEntry[];
   drafts: PagedEntry[];

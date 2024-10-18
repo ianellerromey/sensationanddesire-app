@@ -97,13 +97,18 @@ export class MtcbrrComponent extends MenuedComponent {
         this.disclaimerDialogMenuOption,
         {
           type: MenuOptionType.ViewText,
+          text: 'about',
+          handler: this.getMtcbrrAboutDialogHandler()
+        },
+        {
+          type: MenuOptionType.ViewText,
           text: 'updates',
-          handler: this.getUpdatesDialogHandler()
+          handler: this.getMtcbrrUpdatesDialogHandler()
         },
         {
           type: MenuOptionType.ViewText,
           text: 'references',
-          handler: this.getReferencesDialogHandler()
+          handler: this.getMtcbrrReferencesDialogHandler()
         },
         this.lovLinkMenuOption,
         this.instagramLinkMenuOption,
@@ -144,15 +149,21 @@ export class MtcbrrComponent extends MenuedComponent {
     });
   }
 
-  getUpdatesDialogHandler(): () => void {
+  getMtcbrrAboutDialogHandler(): () => void {
     return () => {
-      this.openDialogText(this._staticTextService.updates);
+      this.openDialogText(this._staticTextService.mtcbrrAbout);
     };
   }
 
-  getReferencesDialogHandler(): () => void {
+  getMtcbrrUpdatesDialogHandler(): () => void {
     return () => {
-      this.openDialogText(this._staticTextService.references)
+      this.openDialogText(this._staticTextService.mtcbrrUpdates);
+    };
+  }
+
+  getMtcbrrReferencesDialogHandler(): () => void {
+    return () => {
+      this.openDialogText(this._staticTextService.mtcbrrReferences)
     };
   }
 

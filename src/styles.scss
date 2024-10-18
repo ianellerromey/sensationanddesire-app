@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/@angular/material/prebuilt-themes/indigo-pink.css";
+@import "../node_modules/@angular/cdk/overlay-prebuilt.css";
 
 body {
   background: black;
@@ -137,3 +138,22 @@ body {
     };
   };
 };
+
+.sad-overlay {
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  font-family: 'Lucida Console', 'Courier New', monospace;
+  text-wrap: wrap;
+  white-space: pre;
+  align-content: center;
+}
+
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 1000;
+}

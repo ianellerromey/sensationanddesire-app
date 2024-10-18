@@ -51,8 +51,9 @@ function main {
   $SadMap = @{
     notice = $SadNotice
     disclaimer = Get-Content -Path '.\src\assets\sad-disclaimer.txt' | Out-String
-    updates = Get-Content -Path '.\src\assets\sad-updates.txt' | Out-String
-    references = Get-Content -Path '.\src\assets\sad-references.txt' | Out-String
+    mtcbrrAbout = Get-Content -Path '.\src\assets\sad-mtcbrr-about.txt' | Out-String
+    mtcbrrUpdates = Get-Content -Path '.\src\assets\sad-mtcbrr-updates.txt' | Out-String
+    mtcbrrReferences = Get-Content -Path '.\src\assets\sad-mtcbrr-references.txt' | Out-String
     lovs = $SadLovArray
     mtcbrrs = $SadMtcbrrArray
     drafts = $SadMtcbrrDraftArray

@@ -8,7 +8,7 @@ export type DialogInputData = {
 };
 
 @Component({
-  selector: 'app-input-dialog',
+  selector: 'app-dialog-input',
   standalone: true,
   imports: [FormsModule, MatDialogModule],
   templateUrl: './dialog-input.component.html',
