@@ -19,6 +19,40 @@ export class LovPagedComponent extends PagedComponent<Lov> {
     super(_lovService);
   }
 
+  protected override disableScrollingCheck(): boolean {
+    const _mtcbrrService: SrvLovService = this._pagedService as SrvLovService;
+
+    const { document: { body } } = window;
+
+    const tempSadContent = document.createElement('div');
+    tempSadContent.className = 'sad-content';
+
+    _mtcbrrService.node?.entry.content?.forEach((content: string) => {
+      const tempSadContentImageDiv = document.createElement('div');
+      tempSadContentImageDiv.className = 'sad-content-image';
+
+      const tempSadContentImage = document.createElement('img');
+      tempSadContentImage.src = content || '';
+
+      tempSadContentImageDiv.appendChild(tempSadContentImage);
+      
+      tempSadContent.appendChild(tempSadContentImageDiv);
+    })
+
+    const tempSadPage = document.createElement('div');
+    tempSadPage.className = 'sad-page';
+    tempSadPage.appendChild(tempSadContent);
+
+    body.appendChild(tempSadPage);
+
+    const disable = tempSadPage.offsetHeight <= window.innerHeight;
+
+    body.removeChild(tempSadPage);
+    tempSadPage.remove();
+
+    return disable;
+  }
+
   protected override navigateToEntry(entryId: number): void
   {
     this._router.navigate([`/lov/${entryId}`]);

@@ -177,7 +177,7 @@ export class MtcbrrComponent extends MenuedComponent {
 
       if(checked) {
         this.openDialogInput(
-          'unlock moontide crossbridge revelry draft chapters',
+          'unlock Moontide Crossbridge Revelry draft chapters',
           'input the secret password'
         ).subscribe(async (inputValue: string) => {
           const decrypted = await encryptInputPassword(

@@ -19,6 +19,33 @@ export class MtcbrrPagedComponent extends PagedComponent<Mtcbrr> {
     super(_mtcbrrService);
   }
 
+  protected override disableScrollingCheck(): boolean {
+    const _mtcbrrService: SrvMtcbrrService = this._pagedService as SrvMtcbrrService;
+
+    const { document: { body } } = window;
+
+    const tempSadContentFulltext = document.createElement('div');
+    tempSadContentFulltext.className = 'sad-content-fulltext';
+    tempSadContentFulltext.innerText = _mtcbrrService.node?.entry.content || '';
+
+    const tempSadContent = document.createElement('div');
+    tempSadContent.className = 'sad-content';
+    tempSadContent.appendChild(tempSadContentFulltext);
+
+    const tempSadPage = document.createElement('div');
+    tempSadPage.className = 'sad-page';
+    tempSadPage.appendChild(tempSadContent);
+
+    body.appendChild(tempSadPage);
+
+    const disable = tempSadPage.offsetHeight <= window.innerHeight;
+
+    body.removeChild(tempSadPage);
+    tempSadPage.remove();
+
+    return disable;
+  }
+
   protected override navigateToEntry(entryId: number): void
   {
     this._router.navigate([`/mtcbrr/${entryId}`]);

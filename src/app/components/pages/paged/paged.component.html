@@ -20,6 +20,7 @@
         'sad-update': true,
         'sad-disabled': (!node || node.entry.id === 0)
       }"
+      title="first"
       src="../../../assets/sad-first.png"
       (click)="node && updateNode(first.id)"
     />
@@ -32,6 +33,7 @@
         'sad-update': true,
         'sad-disabled': (!node || node.previous === null)
       }"
+      title="previous"
       src="../../../assets/sad-prev.png"
       (click)="node && node.previous && updateNode(node.previous.id)"
     />
@@ -44,6 +46,7 @@
         'sad-update': true,
         'sad-disabled': (!node || disableScrolling())
       }"
+      title="top"
       src="../../../assets/sad-top.png"
       (click)="node && scrollToTop()"
     />
@@ -58,6 +61,7 @@
         'sad-update': true,
         'sad-disabled': (!node || node.entry.id === entries[entries.length - 1].id)
       }"
+      title="last"
       src="../../../assets/sad-last.png"
       (click)="node && updateNode(last.id)"
     />
@@ -70,6 +74,7 @@
         'sad-update': true,
         'sad-disabled': (!node || node.next === null)
       }"
+      title="next"
       src="../../../assets/sad-next.png"
       (click)="node && node.next && updateNode(node.next.id)"
     />
@@ -82,6 +87,7 @@
         'sad-update': true,
         'sad-disabled': (!node || disableScrolling())
       }"
+      title="bottom"
       src="../../../assets/sad-bottom.png"
       (click)="node && scrollToBottom()"
     />
