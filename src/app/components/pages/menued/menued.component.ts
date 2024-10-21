@@ -24,6 +24,14 @@ export class MenuedComponent {
     };
   }
 
+  protected get acknowledgementsDialogMenuOption(): AnyMenuOption {
+    return {
+      type: MenuOptionType.ViewText,
+      text: 'acknowledgements',
+      handler: this.getAcknowledgementsDialogHandler()
+    };
+  }
+
   protected get mtcbrrLinkMenuOption(): AnyMenuOption {
     return {
       type: MenuOptionType.Navigate,
@@ -74,6 +82,12 @@ export class MenuedComponent {
   getDisclaimerDialogHandler(): () => void {
     return () => {
       this.openDialogText(this._staticTextService.disclaimer);
+    };
+  }
+
+  getAcknowledgementsDialogHandler(): () => void {
+    return () => {
+      this.openDialogText(this._staticTextService.acknowledgements);
     };
   }
 

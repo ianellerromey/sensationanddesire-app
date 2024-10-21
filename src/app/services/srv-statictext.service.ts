@@ -7,6 +7,7 @@ import { SadMap, SrvSadmapService } from './srv-sadmap.service';
 export class SrvStaticTextService extends SrvSadmapService {
   private _notice: string = '';
   private _disclaimer: string = '';
+  private _acknowledgements: string = '';
   private _mtcbrrAbout: string = '';
   private _mtcbrrUpdates: string = '';
   private _mtcbrrReferences: string = '';
@@ -17,6 +18,10 @@ export class SrvStaticTextService extends SrvSadmapService {
 
   get disclaimer(): string {
     return this._disclaimer
+  }
+
+  get acknowledgements(): string {
+    return this._acknowledgements;
   }
 
   get mtcbrrAbout(): string {
@@ -39,6 +44,7 @@ export class SrvStaticTextService extends SrvSadmapService {
       .then((response: SadMap) => {
         this._notice = response.notice;
         this._disclaimer = response.disclaimer;
+        this._acknowledgements = response.acknowledgements;
         this._mtcbrrAbout = response.mtcbrrAbout;
         this._mtcbrrUpdates = response.mtcbrrUpdates;
         this._mtcbrrReferences = response.mtcbrrReferences;

@@ -95,6 +95,7 @@ export class MtcbrrComponent extends MenuedComponent {
       return [
         ...mo,
         this.disclaimerDialogMenuOption,
+        this.acknowledgementsDialogMenuOption,
         {
           type: MenuOptionType.ViewText,
           text: 'about',

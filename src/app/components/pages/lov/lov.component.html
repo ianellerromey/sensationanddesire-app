@@ -17,6 +17,16 @@
             <img src="{{content}}" />
           </div>
         }
+        @if (node.entry.references?.length) {
+          <div class="sad-content-fulltext">
+            <div>References:</div>
+            @for (reference of node.entry.references; track reference) {
+              <div>
+                <a href="{{reference}}">{{reference}}</a>
+              </div>
+            }
+          </div>
+        }
       }
     </div>
   </div>

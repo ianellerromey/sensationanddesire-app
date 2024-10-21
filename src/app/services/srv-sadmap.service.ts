@@ -10,6 +10,7 @@ export type SadMapPagedEntry = {
 export type SadMap = {
   notice: string;
   disclaimer: string;
+  acknowledgements: string;
   mtcbrrAbout: string;
   mtcbrrUpdates: string;
   mtcbrrReferences: string;

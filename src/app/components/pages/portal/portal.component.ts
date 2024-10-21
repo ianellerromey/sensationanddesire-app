@@ -25,6 +25,7 @@ export class PortalComponent extends MenuedComponent {
       return [
         ...mo,
         this.disclaimerDialogMenuOption,
+        this.acknowledgementsDialogMenuOption,
         this.mtcbrrLinkMenuOption,
         this.lovLinkMenuOption,
         this.instagramLinkMenuOption,

@@ -32,6 +32,7 @@ export class LovComponent extends MenuedComponent {
       return [
         ...mo,
         this.disclaimerDialogMenuOption,
+        this.acknowledgementsDialogMenuOption,
         this.mtcbrrLinkMenuOption,
         this.instagramLinkMenuOption,
         this.audioToggleMenuOption
