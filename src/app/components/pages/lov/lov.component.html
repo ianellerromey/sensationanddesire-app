@@ -18,11 +18,11 @@
           </div>
         }
         @if (node.entry.references?.length) {
-          <div class="sad-content-fulltext">
+          <div class="sad-content-fulltext" style="margin-top: 10px; margin-bottom: 10px;">
             <div>References:</div>
             @for (reference of node.entry.references; track reference) {
               <div>
-                <a href="{{reference}}">{{reference}}</a>
+                <a href="{{reference}}" target="_blank" rel="noopener noreferrer">{{reference}}</a>
               </div>
             }
           </div>

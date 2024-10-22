@@ -17,7 +17,6 @@ function Add-LovEntryMap($LovMap, $LovFile, $LovFileRegex) {
       $LovMap.Add($LovDate, [System.Collections.ArrayList]::new())
     }
     $LovMap[$LovDate].Add($LovValue)
-    $LovMap
 }
 
 function main {
@@ -37,7 +36,7 @@ function main {
   foreach($SadLovReferenceFile in $SadLovReferenceFiles) {
     Add-LovEntryMap -LovMap $SadLovMap -LovFile $SadLovReferenceFile -LovFileRegex '\.\\src\\assets\\lovs\\(\d+)\\(\w+\.txt)'
   }
-  $SadLovArray = @($SadLovMap.GetEnumerator() | ForEach-Object { $i = 0 } {
+  $SadLovArray = @($SadLovMap.GetEnumerator() | Sort-Object -Property Key -Descending | ForEach-Object { $i = 0 } {
     $Key = $_.Key
     @{
       id = $i

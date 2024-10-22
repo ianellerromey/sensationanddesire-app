@@ -17,13 +17,18 @@
     "acknowledgements":  "Thank you Ash, for pushing me to grow, and for always coming with.\r\n\r\nThank you John, for being there on the other side, and for challenging me to keep going.\r\n\r\nNOTE: Some of the code used to build the Sensation and Desire website was researched using the Google AI Overviews feature.\r\n",
     "lovs":  [
                  {
-                     "title":  "10/19/2024",
+                     "title":  "10/21/2024",
                      "id":  0,
+                     "location":  "lovs\\1729579940814\\0001.jpg;lovs\\1729579940814\\0002.jpg;lovs\\1729579940814\\references.txt"
+                 },
+                 {
+                     "title":  "10/19/2024",
+                     "id":  1,
                      "location":  "lovs\\1729406689900\\0001.jpg"
                  },
                  {
                      "title":  "10/17/2024",
-                     "id":  1,
+                     "id":  2,
                      "location":  "lovs\\1729228502795\\0001.jpg"
                  }
              ],
