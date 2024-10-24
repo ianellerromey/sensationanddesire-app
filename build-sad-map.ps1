@@ -58,6 +58,8 @@ function main {
     mtcbrrAbout = Get-Content -Path '.\src\assets\sad-mtcbrr-about.txt' | Out-String
     mtcbrrUpdates = Get-Content -Path '.\src\assets\sad-mtcbrr-updates.txt' | Out-String
     mtcbrrReferences = Get-Content -Path '.\src\assets\sad-mtcbrr-references.txt' | Out-String
+    linkInstagram = 'https://www.instagram.com/sensationanddesire'
+    linkPatreon = 'https://www.patreon.com/SensationandDesire'
     lovs = $SadLovArray
     mtcbrrs = $SadMtcbrrArray
     drafts = $SadMtcbrrDraftArray

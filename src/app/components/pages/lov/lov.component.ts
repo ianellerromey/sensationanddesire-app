@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { SrvAudioService } from '../../../services/srv-audio.service';
+import { SrvExternalLinkService } from '../../../services/srv-externallink.service';
 import { Lov, SrvLovService } from '../../../services/srv-lov.service';
 import { PagedEntryOrNull } from '../../../services/srv-paged.service';
 import { SrvStaticTextService } from '../../../services/srv-statictext.service';
@@ -34,6 +35,7 @@ export class LovComponent extends MenuedComponent {
         this.disclaimerDialogMenuOption,
         this.acknowledgementsDialogMenuOption,
         this.mtcbrrLinkMenuOption,
+        this.patreonLink,
         this.instagramLinkMenuOption,
         this.audioToggleMenuOption
       ]
@@ -45,12 +47,14 @@ export class LovComponent extends MenuedComponent {
     _router: Router,
     _audioService: SrvAudioService,
     _staticTextService: SrvStaticTextService,
+    _externalLinkService: SrvExternalLinkService,
     _dialog: MatDialog,
     private _mtcbrrService: SrvLovService
   ) {
     super(
       _router,
       _staticTextService,
+      _externalLinkService,
       _audioService,
       _dialog
     );

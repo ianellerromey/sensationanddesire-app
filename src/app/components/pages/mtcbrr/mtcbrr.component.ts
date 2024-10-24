@@ -4,6 +4,7 @@ import { MatSlideToggle } from '@angular/material/slide-toggle';
 import { Router } from '@angular/router';
 import { SrvAudioService } from '../../../services/srv-audio.service';
 import { SrvConfigService } from '../../../services/srv-config.service';
+import { SrvExternalLinkService } from '../../../services/srv-externallink.service';
 import { Mtcbrr, SrvMtcbrrService } from '../../../services/srv-mtcbrr.service';
 import { PagedEntryOrNull } from '../../../services/srv-paged.service';
 import { SrvStaticTextService } from '../../../services/srv-statictext.service';
@@ -112,6 +113,7 @@ export class MtcbrrComponent extends MenuedComponent {
           handler: this.getMtcbrrReferencesDialogHandler()
         },
         this.lovLinkMenuOption,
+        this.patreonLink,
         this.instagramLinkMenuOption,
         {
           type: MenuOptionType.Toggle,
@@ -129,6 +131,7 @@ export class MtcbrrComponent extends MenuedComponent {
     _router: Router,
     _audioService: SrvAudioService,
     _staticTextService: SrvStaticTextService,
+    _externalLinkService: SrvExternalLinkService,
     _dialog: MatDialog,
     private _mtcbrrService: SrvMtcbrrService,
     private _configService: SrvConfigService
@@ -136,6 +139,7 @@ export class MtcbrrComponent extends MenuedComponent {
     super(
       _router,
       _staticTextService,
+      _externalLinkService,
       _audioService,
       _dialog
     );

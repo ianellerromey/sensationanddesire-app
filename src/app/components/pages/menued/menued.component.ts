@@ -2,6 +2,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { Observable, Subject } from 'rxjs';
 import { SrvAudioService } from '../../../services/srv-audio.service';
+import { SrvExternalLinkService } from '../../../services/srv-externallink.service';
 import { SrvStaticTextService } from '../../../services/srv-statictext.service';
 import { DialogInputComponent, DialogInputData } from '../../dialog-input/dialog-input.component';
 import { DialogTextComponent, DialogTextData } from '../../dialog-text/dialog-text.component';
@@ -56,6 +57,14 @@ export class MenuedComponent {
     };
   }
 
+  protected get patreonLink(): AnyMenuOption {
+    return {
+      type: MenuOptionType.Navigate,
+      text: 'patreon',
+      handler: this.getPatreonLinkHandler()
+    };
+  }
+
   protected get audioToggleMenuOption(): AnyMenuOption {
     return {
       type: MenuOptionType.Toggle,
@@ -68,6 +77,7 @@ export class MenuedComponent {
   constructor(
     protected _router: Router,
     protected _staticTextService: SrvStaticTextService,
+    protected _externalLinkService: SrvExternalLinkService,
     protected _audioService: SrvAudioService,
     protected _dialog: MatDialog
   ) {
@@ -105,7 +115,13 @@ export class MenuedComponent {
 
   getInstagramLinkHandler(): () => void {
     return () => {
-      window.open('https://www.instagram.com/sensationanddesire', '_blank');
+      window.open(this._externalLinkService.linkInstagram, '_blank');
+    };
+  }
+
+  getPatreonLinkHandler(): () => void {
+    return () => {
+      window.open(this._externalLinkService.linkPatreon, '_blank');
     };
   }
 

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { SrvAudioService } from '../../../services/srv-audio.service';
+import { SrvExternalLinkService } from '../../../services/srv-externallink.service';
 import { SrvStaticTextService } from '../../../services/srv-statictext.service';
 import { HeaderComponent } from '../../header/header.component';
 import { AnyMenuOption } from '../../menu/menu.component';
@@ -28,6 +29,7 @@ export class PortalComponent extends MenuedComponent {
         this.acknowledgementsDialogMenuOption,
         this.mtcbrrLinkMenuOption,
         this.lovLinkMenuOption,
+        this.patreonLink,
         this.instagramLinkMenuOption,
         this.audioToggleMenuOption
       ]
@@ -37,11 +39,13 @@ export class PortalComponent extends MenuedComponent {
     _router: Router,
     _audioService: SrvAudioService,
     _staticTextService: SrvStaticTextService,
+    _externalLinkService: SrvExternalLinkService,
     _dialog: MatDialog,
   ) {
     super(
       _router,
       _staticTextService,
+      _externalLinkService,
       _audioService,
       _dialog
     );
