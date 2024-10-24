@@ -14,6 +14,8 @@ export type SadMap = {
   mtcbrrAbout: string;
   mtcbrrUpdates: string;
   mtcbrrReferences: string;
+  linkInstagram: string;
+  linkPatreon: string;
   lovs: PagedEntry[];
   mtcbrrs: PagedEntry[];
   drafts: PagedEntry[];
