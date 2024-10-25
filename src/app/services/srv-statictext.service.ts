@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { SrvConfigService } from './srv-config.service';
 import { SadMap, SrvSadmapService } from './srv-sadmap.service';
 
 @Injectable({
@@ -37,17 +38,31 @@ export class SrvStaticTextService extends SrvSadmapService {
   }
 
   constructor(
+    _configService: SrvConfigService
   ) {
-    super();
+    super(_configService);
 
     this.loadSadMap()
-      .then((response: SadMap) => {
-        this._notice = response.notice;
-        this._disclaimer = response.disclaimer;
-        this._acknowledgements = response.acknowledgements;
-        this._mtcbrrAbout = response.mtcbrrAbout;
-        this._mtcbrrUpdates = response.mtcbrrUpdates;
-        this._mtcbrrReferences = response.mtcbrrReferences;
+      .then((sadMap: SadMap | null) => {
+        if(!sadMap) {
+          return;
+        }
+        
+        const {
+          notice,
+          disclaimer,
+          acknowledgements,
+          mtcbrrAbout,
+          mtcbrrUpdates,
+          mtcbrrReferences
+        } = sadMap;
+
+        this._notice = notice;
+        this._disclaimer = disclaimer;
+        this._acknowledgements = acknowledgements;
+        this._mtcbrrAbout = mtcbrrAbout;
+        this._mtcbrrUpdates = mtcbrrUpdates;
+        this._mtcbrrReferences = mtcbrrReferences;
       });
   }
 }

@@ -64,11 +64,14 @@ function main {
     mtcbrrs = $SadMtcbrrArray
     drafts = $SadMtcbrrDraftArray
   }
-  $SadMapJson = ($SadMap | ConvertTo-Json)
+  $SadMapFile = ('sad-map-' + (Get-Date).Ticks.ToString() + '.json')
 
-  New-Item -Path '.\src\assets\sad-map.json' -ItemType 'file' -Value $SadMapJson -Force
+  Get-ChildItem -Path '.\src\assets\sad-map-*.json' | Remove-Item
+  New-Item -Path ('.\src\assets\' + $SadMapFile) -ItemType 'file' -Value ($SadMap | ConvertTo-Json) -Force
 
-  Write-Host $SadMapJson
+  $SadConfig = Get-Content -Path '.\src\assets\sad-config.json' -Encoding UTF8 | ConvertFrom-Json
+  $SadConfig.sadMapFile = $SadMapFile
+  New-Item -Path '.\src\assets\sad-config.json' -ItemType 'file' -Value ($SadConfig | ConvertTo-Json) -Force
 }
 
 main;

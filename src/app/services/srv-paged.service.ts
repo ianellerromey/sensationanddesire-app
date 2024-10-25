@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
+import { SrvConfigService } from './srv-config.service';
 import { SadMap, SrvSadmapService } from './srv-sadmap.service';
 
 export type PagedEntry = {
@@ -30,12 +31,17 @@ export class SrvPagedService<T extends PagedEntry> extends SrvSadmapService {
   nodeStream = this._nodeStream.asObservable();
 
   constructor(
+    _configService: SrvConfigService
   ) {
-    super();
+    super(_configService);
 
     this.loadSadMap()
-      .then((response: SadMap) => {
-        this.setEntriesAndUpdateNode((response as any)[this.getSadMapEntriesProperty()]);
+      .then((sadMap: SadMap | null) => {
+        if(!sadMap) {
+          return;
+        }
+
+        this.setEntriesAndUpdateNode((sadMap as any)[this.getSadMapEntriesProperty()]);
       });      
   }
 

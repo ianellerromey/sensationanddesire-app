@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { SrvConfigService } from './srv-config.service';
 import { SrvSadmapService } from './srv-sadmap.service';
 
 @Injectable({
@@ -20,8 +21,9 @@ export class SrvAudioService extends SrvSadmapService {
   }
 
   constructor(
+    _configService: SrvConfigService
   ) {
-    super();
+    super(_configService);
   }
 
   private setAudio(): void {

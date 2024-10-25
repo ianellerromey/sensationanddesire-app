@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { SrvConfigService } from './srv-config.service';
 import { SadMap, SrvSadmapService } from './srv-sadmap.service';
 
 @Injectable({
@@ -17,13 +18,18 @@ export class SrvExternalLinkService extends SrvSadmapService {
   }
 
   constructor(
+    _configService: SrvConfigService
   ) {
-    super();
+    super(_configService);
 
     this.loadSadMap()
-      .then((response: SadMap) => {
-        this._linkInstagram = response.linkInstagram;
-        this._linkPatreon = response.linkPatreon;
+      .then((sadMap: SadMap | null) => {
+        if(!sadMap) {
+          return;
+        }
+
+        this._linkInstagram = sadMap.linkInstagram;
+        this._linkPatreon = sadMap.linkPatreon;
       });
   }
 }

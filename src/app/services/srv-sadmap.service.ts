@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { SrvConfig, SrvConfigService } from './srv-config.service';
 import { PagedEntry } from './srv-paged.service';
 
 export type SadMapPagedEntry = {
@@ -25,10 +26,21 @@ export type SadMap = {
   providedIn: 'root'
 })
 export class SrvSadmapService {
-  constructor() { }
+  constructor(
+    protected _configService: SrvConfigService
+  ) { }
 
-  protected loadSadMap(): Promise<SadMap> {
-    return fetch('../../../assets/sad-map.json')
-      .then((response: Response) => response.json());
+  protected loadSadMap(): Promise<SadMap | null> {
+    return new Promise(resolve => {
+      this._configService.loaded.subscribe((config: SrvConfig | null) => {
+        if(!config) {
+          resolve(null);
+        } 
+
+        fetch(`../../../assets/${config?.sadMapFile}`)
+          .then((response: Response) => response.json())
+          .then(resolve);
+      });
+    });
   }
 }

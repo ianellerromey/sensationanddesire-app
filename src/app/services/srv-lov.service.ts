@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { SrvConfigService } from './srv-config.service';
 import { PagedEntry, SrvPagedService } from './srv-paged.service';
 
 export type Lov = {
@@ -15,8 +16,9 @@ export class SrvLovService extends SrvPagedService<Lov> {
   }
 
   constructor(
+    _configService: SrvConfigService
   ) {
-    super();
+    super(_configService);
   }
 
   protected override getSadMapEntriesProperty(): string {

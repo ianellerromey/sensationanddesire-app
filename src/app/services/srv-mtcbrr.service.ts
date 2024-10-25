@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { SrvConfigService } from './srv-config.service';
 import { PagedEntry, SrvPagedService } from './srv-paged.service';
 import { SadMap } from './srv-sadmap.service';
 
@@ -31,8 +32,9 @@ export class SrvMtcbrrService extends SrvPagedService<Mtcbrr> {
   }
 
   constructor(
+    _configService: SrvConfigService
   ) {
-    super();
+    super(_configService);
   }
 
   protected override getSadMapEntriesProperty(): string {
@@ -52,7 +54,11 @@ export class SrvMtcbrrService extends SrvPagedService<Mtcbrr> {
 
   private updateWithDraftsUnlocked(): void {
     this.loadSadMap()
-      .then((sadMap: SadMap) => {
+      .then((sadMap: SadMap | null) => {
+        if(!sadMap) {
+          return;
+        }
+
         const newEntries: Mtcbrr[] = (this.draftsUnlocked)
           ? [
             ...sadMap[mtcbrrSadMapEntries] as Mtcbrr[],
