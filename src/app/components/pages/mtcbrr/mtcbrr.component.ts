@@ -115,12 +115,12 @@ export class MtcbrrComponent extends MenuedComponent {
         this.lovLinkMenuOption,
         this.patreonLink,
         this.instagramLinkMenuOption,
-        /*{
+        {
           type: MenuOptionType.Toggle,
           text: 'drafts',
           onOrOff: this.getDraftsOnOrOffHandler(),
           handler: this.getDraftsToggleHandler()
-        },*/
+        },
         this.audioToggleMenuOption,
       ]
   }
@@ -185,12 +185,12 @@ export class MtcbrrComponent extends MenuedComponent {
           'unlock Moontide Crossbridge Revelry draft chapters',
           'input the secret password'
         ).subscribe(async (inputValue: string) => {
-          const decrypted = await encryptInputPassword(
+          const encrypted = await encryptInputPassword(
             this._configService.draftUnlockingEncrypted?.iv || [],
             this._configService.draftUnlockingEncrypted?.key || [],
             inputValue);
 
-          if(decrypted === this._configService.draftUnlockingEncrypted?.passwordEncrypted) {
+          if(encrypted === this._configService.draftUnlockingEncrypted?.passwordEncrypted) {
             this._mtcbrrService.draftsUnlocked = true;
 
             this.openDialogText('unlocked!');
