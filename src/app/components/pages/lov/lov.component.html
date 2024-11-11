@@ -11,6 +11,9 @@
   <app-lov-paged [entryId]="entryId"></app-lov-paged>
   <div class="sad-page">
     <div class="sad-content">
+      <div>
+        NOTE: This page currently has issues displaying correctly on Firefox and mobile.
+      </div>
       @if (node) {
         @for (content of node.entry.content; track content) {
           <div class="sad-content-image">
