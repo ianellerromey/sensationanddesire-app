@@ -181,7 +181,7 @@ export class MtcbrrComponent extends MenuedComponent {
       const { checked, source }: { checked: boolean, source: MatSlideToggle } = value;
 
       if(checked) {
-        this.openDialogInput(
+        /*this.openDialogInput(
           'unlock Moontide Crossbridge Revelry draft chapters',
           'input the secret password'
         ).subscribe(async (inputValue: string) => {
@@ -201,7 +201,10 @@ export class MtcbrrComponent extends MenuedComponent {
 
             inputValue && this.openDialogText('sorry ...');
           }
-        });
+        });*/
+        this._mtcbrrService.draftsUnlocked = true;
+
+        this.openDialogText('unlocked!');
       }
       else {
         this._mtcbrrService.draftsUnlocked = false;
