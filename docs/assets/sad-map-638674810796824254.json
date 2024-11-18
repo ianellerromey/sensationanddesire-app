@@ -38,33 +38,38 @@
     "acknowledgements":  "Thank you Ash, for pushing me to grow, and for always coming with.\r\n\r\nThank you John, for being there on the other side, and for challenging me to keep going.\r\n\r\nThank you Chloe, for being the first to engage with the entire experience.\r\n\r\nNOTE: Some of the code used to build the Sensation and Desire website was researched using the Google AI Overviews feature.\r\n",
     "lovs":  [
                  {
-                     "title":  "10/30/2024",
+                     "title":  "11/17/2024",
                      "id":  0,
+                     "location":  "lovs\\1731912811430\\0001.jpg;lovs\\1731912811430\\references.txt"
+                 },
+                 {
+                     "title":  "10/30/2024",
+                     "id":  1,
                      "location":  "lovs\\1730334664146\\0001.jpg"
                  },
                  {
                      "title":  "10/27/2024",
-                     "id":  1,
+                     "id":  2,
                      "location":  "lovs\\1730091467700\\0001.jpg"
                  },
                  {
                      "title":  "10/22/2024",
-                     "id":  2,
+                     "id":  3,
                      "location":  "lovs\\1729660717143\\0001.jpg;lovs\\1729660717143\\references.txt"
                  },
                  {
                      "title":  "10/21/2024",
-                     "id":  3,
+                     "id":  4,
                      "location":  "lovs\\1729579940814\\0001.jpg;lovs\\1729579940814\\0002.jpg;lovs\\1729579940814\\references.txt"
                  },
                  {
                      "title":  "10/19/2024",
-                     "id":  4,
+                     "id":  5,
                      "location":  "lovs\\1729406689900\\0001.jpg"
                  },
                  {
                      "title":  "10/17/2024",
-                     "id":  5,
+                     "id":  6,
                      "location":  "lovs\\1729228502795\\0001.jpg"
                  }
              ],
