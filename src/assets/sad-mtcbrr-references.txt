@@ -5,6 +5,8 @@ Berserk | written by Kentaro Miura
 Blood and Iron: A Novel of the Promethean Age | written by Elizabeth Bear
 Bloodborne | developed by FromSoftware
 Blood Meridian; or, The Evening Redness in the West | written by Cormac McCarthy
+Born to Die | recorded by Lana Del Rey
+Breath of Fire: Dragon Quarter | Capcom Production Studio 3
 Castlevania: Symphony of the Night | developed by Konami Computer Entertainment Tokyo
 Danganronpa: Trigger Happy Havoc | developed by Spike
 Danger Days: The True Lives of the Fabulous Killjoys | recorded by My Chemical Romance
@@ -27,6 +29,7 @@ The Illusion of Gaia | developed by Quintet
 It | written by Stephen King
 Jerusalem | written by Alan Moore
 Killer7 | developed by Grasshopper Manufacture and Capcom
+Made in Abyss | written by Akihito Tsukushi
 The Magicians Trilogy | written by Lev Grossman
 Mega Man Legends | developed by Capcom Production Studio 2
 Metal Gear Solid | developed by Konami Computer Entertainment Japan
@@ -42,6 +45,7 @@ The Sane Society | written by Erich Fromm
 Saturdays = Youth | recorded by M83
 The Secret History | written by Donna Tartt
 The Secret of Mana | developed by Square
+Sempiternal | recorded by Bring Me The Horizon
 Shin Megami Tensei III: Nocturne | developed by Atlus
 Silent Hill 2 | developed by Team Silent
 Sisters of the Red Death | recorded by Vendetta Red
@@ -53,3 +57,4 @@ Strange Desire | recorded by Bleachers
 UGLY DEATH NO REDEMPTION ANGEL CURSE I LOVE YOU | recorded by Ada Rook
 Welcome to Night Vale | created by Joseph Fink and Jeffrey Cranor
 Worm | written by John C. "Wildbow" McCrae
+Yona of the Dawn | Mizuho Kusanagi
