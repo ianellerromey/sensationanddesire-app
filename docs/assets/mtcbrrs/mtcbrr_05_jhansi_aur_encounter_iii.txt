@@ -866,7 +866,7 @@ Binyelum nodded.
 They paused, then asked, “How many shares do you all have?”
 Everyone replied at once.
 “Twelve!”
-“Five.”
+“Three.”
 “Six.”
 Nancy held up one finger.
 Binyelum chuckled.
@@ -875,7 +875,7 @@ Binyelum chuckled.
 “Velocity?”
 “Twelve.”
 “Nice. Sebastian?”
-“Five.”
+“Three.”
 “Cool. And I’ve got two.”
 They paused for a second.
 “So, Jhansi. Remember. Focus on collecting memory cards. Nancy and I will be out front; that's way too dangerous for you. Keep near Oren, Velocity, and Sebastian. Don't fall too far behind. As soon as an endling goes down, grab its memory card. Hold onto it. That was really good thinking, grabbing that bag. Whenever someone’s in need, take care of ‘em. If you can keep track of which memory cards came from which endlings, that would be great. It’s impossible to tell how many shares anyone will gain from a memory card, but memory cards from stronger endlings will always impart more shares. Prioritize Sebastian, and then Oren and Velocity. If you can keep track of how many shares everyone has at any given moment, that would be phenomenal, but also, our masks will dim when we’re out of shares, so you can always look out for that. Also, Velocity’s gift will use one of their own shares, along with a share of the recipient’s.”
@@ -998,11 +998,11 @@ A pool of blood spread outward from the interlocked monsters.
 Red and blue endlings continued to obliterate each other around both floors of the food court.
 Jhansi panted.
 A cold darkness pushed her away from the world, into her interior. But her body felt hot. An eager heat pulled at her from somewhere.
-A Voice said, I want that.
-Jhansi said, What the fuck?
-The Voice said, I want to be like that.
+The dark shape said, {“That would feel so good.”}
+Jhansi said, {“What the fuck?”}
+The dark shape said, {“You want to feel good like that.”}
 Jhansi reached for anything with spikes inside her. Static shards pierced her hand. She grabbed tight and lashed out, striking wildly at her interior space.
-Jhansi screamed, No I don't!
+Jhansi screamed, {“No I don't!”}
 The claw at the end of the green endling's prehensile appendage trailed white afterimages. The claw found purchase in the purple endling’s right eye and pushed in deep. Killcolors flashed. A low, rumbling killchime signaled the end.
 Binyelum beamed.
 “They fucking did it!”
@@ -1026,7 +1026,7 @@ The red endling turned toward them.
 Jhansi didn’t need further encouragement. She turned and ran, nearly stumbling up the inert escalator steps. The fire extinguisher banged against her chest. She gripped it even tighter.
 Sebastian shoved her up the steps, calling up to the others.
 “Red guy coming!”
-Binyelum had already reached the second floor landing. They looked back, stepping aside to make room for Nancy. Jhansi looked over her shoulder. Half the escalator stretched out beneath her. Sebastian’s eyes had never looked so wide. The red endling hurled forward, two short paces from the bottom of the escalator.
+Binyelum had already reached the second floor landing. They looked back, stepping aside to make room for Nancy. Jhansi looked over her shoulder. Half the escalator stretched out beneath her. Sebastian’s eyes had never looked so wide. The red endling hurtled forward, two short paces from the bottom of the escalator.
 Sebastian yelled, “I can’t take him!”
 Oren reached the landing. The red endling reached stepped onto the escalator. Binyelum grabbed Oren’s hand. Oren’s headphones pulsed, then dimmed. Binyelum disappeared. A screeching pinch harmonic exploded in Jhanis’s ears. A guitar cabinet appeared in midair behind the red endling. A distorted shockwave exploded from the cabinet. Binyelum reappeared, rocketing down toward the endling. The cab disappeared. The monster turned, its face a mask of fury. It raised a claw, reaching to strike, but too late. Binyelum’s machete sank in deep between the endling’s eyes. Killcolors flashed. Binyelum’s killchime sounded as they smashed into the endling’s body, knocking it back down onto the escalator.
 Holy shit.
@@ -1109,7 +1109,7 @@ A loose semicircle of six blue endlings in slate gray uniforms closed in around 
 Dr. Chef’s mask pulsed and dimmed. A powerful sine wave burst from beneath Scuba Scooper’s feet, rippling the glass floor. Dr. Chef and Whack-a-knight stumbled, then pressed together harder. Neither fell.
 The wave spread, cresting higher as it surged. Nebulite luminescence refracted wildly through the distorted glass. The wave hit the four closest endlings hard enough to throw them through the air. One crashed into another, claws tangling and orange blood spraying as they both went down. Another landed on its neck with a loud snap. Its body convulsed. The other two hit the floor at a distance, dazed but unharmed. The wave dissipated before reaching the endlings at the edges of the formation.
 Whack-a-knight pushed themselves between both other teenagers. They reached into a pocket, grabbed something, pushed up their helmet, and popped the something into their mouth. Dr. Chef grabbed one of their wrists, Scuba Scooper the other. Whack-a-knight tensed. Their knight’s helm pulsed and dimmed. Both other teenagers struck rigid T-poses, their swords pointing toward each of the blue endlings remaining upright. The spear-headed shovel and elongated chef’s knife shot forward, though with less force than Jhansi had seen before. Both weapons flashed killcolors and pierced their targets with a killchime, but neither carved through, remaining stuck in their respective corpses.
-The teenagers raced in unison toward the corpse embedded with the chef’s knife. The dazed endlings pushed themselves to their feet. The red endling on the escalator reached the second floor landing. The green endling hurled itself toward the teens with a triumphant roar. Nancy and Oren pushed past three converging blue endlings. Velocity and Sebastian took one down with a coordinated strike. Binyelum's oxfords pounded the glass as they rushed to catch up. Jhansi pulled a memory card free from another endling’s corpse.
+The teenagers raced in unison toward the corpse embedded with the chef’s knife. The dazed endlings pushed themselves to their feet. The red endling on the escalator reached the second floor landing. The green endling hurtled itself toward the teens with a triumphant roar. Nancy and Oren pushed past three converging blue endlings. Velocity and Sebastian took one down with a coordinated strike. Binyelum's oxfords pounded the glass as they rushed to catch up. Jhansi pulled a memory card free from another endling’s corpse.
 The railing across the food court exploded.
 Glass and metal shrapnel blossomed, twinkling, hanging suspended in air as a massive shape emerged, rising as though in slow motion.
 The enormous quadruped cleared the glass shelf and landed on its forepaws. The impact reverberated in Jhansi's teeth. The glass groaned. Jhansi’s stomach tightened. A moaning howl resounded from deep within the alterling’s throat, calling prey inward. Goosebumps pricked Jhansi’s flesh.
@@ -1208,10 +1208,10 @@ Binyelum shrugged.
 Dr. Chef reiterated, “Bullshit.”
 They added, “You really expect me to believe you’re here just for fun?”
 Binyelum shook their head.
-“No way. Empty Chest initiation.”
-Dr. Chef spat, “Fuck you.”
+“No way. Final Hand initiation.”
+Dr. Chef spat, “Fuck you. Final Hand doesn’t do initiations.”
 Binyelum chuckled.
-“Sounds like there’s a story there.”
+“So you’re not a complete idiot.”
 The knife pressed hard into Jhansi’s neck.
 “Quit fucking around. Give. Me. The. Fucking. Memory card. Or your girlfriend is a ghost.”
 Girlfriend?!
@@ -1233,7 +1233,7 @@ The fist released Jhansi's hair. The knife pulled away from her neck. Dr. Chef s
 Ah.
 Jhansi understood.
 Dr. Chef reached for the memory card. Jhansi gripped the handles of the canvas bag, planted her feet, and swung around as hard as she could. The world blurred. Other figures moved across her vision, but she didn’t know to what ends. Jhansi kept her eyes focused on the arc of the bag.
-Dr. Chef snatched the memory card out of the air. They turned. Jhansi's canvas bag, with the fire extinguisher and memory cards inside, smashed into their face. The memory cards inside the bag audibly shattered.
+Dr. Chef snatched the memory card out of the air. They turned. Jhansi's canvas bag, with the fire extinguisher and memory cards inside, smashed into their face. The memory cards inside the bag shattered audibly.
 Welp.
 Dr. Chef cursed. They stumbled. They still held tight to the cursed tardigrade’s memory card.
 Fuck.
@@ -1242,7 +1242,7 @@ A metallic impact split the air. Jhansi whirled. Whack-a-knight had swung on Nan
 Dr. Chef spat through their surgical mask.
 “Fucking pejudo.”
 Jhansi’s heart pounded in her chest. She panted. She stared at the curve of Dr. Chef’s forehead, her fingers tightening on the handles of the canvas bag. A dark shape swelled from the bottom of her interior space.
-A Voice said, Hurt them.
+The dark shape said, {“Hurt them.”}
 She squeezed the handles of the canvas bag.
 Binyelum stared at her.
 She turned, startled, then blushed and looked away.
@@ -1254,7 +1254,7 @@ Ooh.
 It made sense now.
 Binyelum stepped forward.
 Dr. Chef looked up at them.
-“You’re not with the Empty Chest, are you?”
+“Why are you like this?”
 Binyelum chuckled dryly.
 “Playing nice as a last resort.”
 They hadn’t said it as a question.
@@ -1285,7 +1285,6 @@ A reverberation echoed down from the north end of the mall.
 Everyone turned toward the sound.
 Jhansi’s chest tightened.
 What the fuck now?
-
 Jhansi Aur - Encounter III End
 
 Kills
