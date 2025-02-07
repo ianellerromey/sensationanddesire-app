@@ -115,12 +115,12 @@ export class MtcbrrComponent extends MenuedComponent {
         this.lovLinkMenuOption,
         this.patreonLink,
         this.instagramLinkMenuOption,
-        {
+        /*{
           type: MenuOptionType.Toggle,
           text: 'drafts',
           onOrOff: this.getDraftsOnOrOffHandler(),
           handler: this.getDraftsToggleHandler()
-        },
+        },*/
         this.audioToggleMenuOption,
       ]
   }
