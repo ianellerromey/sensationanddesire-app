@@ -12,6 +12,7 @@ Danganronpa: Trigger Happy Havoc | developed by Spike
 Danger Days: The True Lives of the Fabulous Killjoys | recorded by My Chemical Romance
 Deliver Us | recorded by Darkest Hour
 Devil May Cry | developed by Capcom Production Studio 4
+Dino Crisis | developed by Capcom Production Studio 4
 Dreamside Maroon | developed by terraced
 EarthBound | developed by Ape Inc. and HAL Laboratory
 Eat-Man | written by Akihito Yoshitomi
@@ -41,6 +42,7 @@ Outlaw Star | produced by Sunrise
 Phantasy Star Online | developed by Sonic Team
 Pokemon Blue Version | developed by Game Freak
 Quake II | developed by id Software
+Resident Evil (2002) | developed by Capcom Production Studio 4
 Ringworld | written by Larry Niven
 The Sane Society | written by Erich Fromm
 Saturdays = Youth | recorded by M83
