@@ -418,7 +418,7 @@ Oren agreed.
 “Fair.”
 Velocity stared at Jhansi.
 Jhansi stared back, watching Velocity's expression shift through a patchwork of indecipherable shapes.
-At last Velocity said, “You really were just wandering around out there, huh?”
+Velocity said, “You really were just wandering around out there, huh?”
 They leaned back.
 “And you just fucking stumbled into the netherlume shift.”
 They shook their head.
@@ -426,13 +426,14 @@ They shook their head.
 They leaned back toward Jhansi.
 “What were you doing today? Like, during the day. Did you do anything different? Anything special?”
 That word again.
-Jhansi considered the question.
-She replied honestly.
+Well.
+What had she done that day?
+Jhansi replied honestly.
 “I don’t even remember my day.”
 Oren agreed.
 “Most of us don’t. That’s the thing with the daydreaming.”
 So much formal terminology.
-Jhansi cocked her head.
+Jhansi gave Oren a look.
 “Another important word? There’s not going to be a test, is there?”
 Velocity shook their head.
 “It’s all a test, babe.”
@@ -1204,16 +1205,20 @@ Velocity joined.
 Oren smirked. He turned to look at Velocity. His eyes lingered for a long moment. He said nothing.
 Jhansi said, “And you have to consume memory cards in order to share your gift?”
 Oren shook his head.
-“Shares charge gradually over time. More quickly when you’re fighting. A killswing usually imparts a full share. Shares charged like this are your natural shares. They’ll be your most powerful, and there’s a refractory period between uses. Consuming a memory card or getting a killswing will usually resolve a refractory period. You can charge your natural shares up to a maximum threshold, and can never have more than that.”
-He paused.
-“Usually.”
-Right.
-Always a caveat.
-Oren held up a finger.
-“And! There are also bonus shares. These are shares charged up above the threshold. They’re less powerful, but they can be used back to back, without a cooldown. Bonus shares are charged when you consume memory cards while your threshold of natural shares is full. Bonus shares are always used before natural shares.”
+“Everyone has a different baseline of available shares, and a different refractory and recharge duration enforced after each use. A gift can’t be shared in refractory. Then the recharge kicks in, gradually adding back used up shares, up to the original baseline. Active fighting hastens the recharge. A killswing usually adds back a full share. Or more, depending on the enemy.”
+Oren paused.
+“Consuming a memory card will immediately end the refractory period, and add back at least one full share.”
+Something felt weird in Jhansi’s stomach.
+Hm.
+She tried to stay focused.
+Oren continued.
+“Those are the natural shares. The most powerful. But.”
+He held up a finger.
+“There are also bonus shares. These are shares charged up above the baseline. They’re less powerful, but they can be used back to back, without a cooldown. Bonus shares are charged only by consuming memory cards with a full baseline of natural shares. These are always used before natural shares.”
 Oren waved his hand.
-“It's hard to know how many shares you’ll get from any given memory card–it depends on the strength of your gift, the strength of the contents of the memory card, and some unknown factors besides–but you’ll always know how many shares you’ve got charged up.”
-Genuinely fascinating.
+“It's hard to know how many shares any given memory card will impart to any given special one–it depends on the strength of the gift, the strength of the contents of the memory card, and some unknown factors besides–but everyone always knows how many shares they’ve got charged up.”
+Fascinating.
+Genuinely.
 Jhansi said, “Is there like a HUD or something?”
 Oren laughed and shook his head.
 “No. You just know. You can–”
