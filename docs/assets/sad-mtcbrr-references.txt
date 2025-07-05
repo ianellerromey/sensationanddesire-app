@@ -2,6 +2,7 @@ Alphabetically,
 
 All About Love: New Visions | written by bell hooks
 Berserk | written by Kentaro Miura
+Black Lagoon | produced by Madhouse
 Bleed American | recorded by Jimmy Eat World
 Blood and Iron: A Novel of the Promethean Age | written by Elizabeth Bear
 Bloodborne | developed by FromSoftware
@@ -22,6 +23,7 @@ Fate/stay night | developed by Type-Moon
 Final Fantasy 8 | developed by Square
 Forget Your Own Face | recorded by Black Dresses
 Galerians | developed by Polygon Magic
+Gankutsuou: The Count of Monte Cristo | produced by Gonzo
 Gormenghast | written by Mervyn Peake
 Grey | written by Jon Armstrong
 Half-Life | developed by Valve
@@ -39,10 +41,13 @@ The King of Dragons | developed by Capcom
 The Legend of Zelda: Breath of the Wild | developed by Nintendo EPD
 Made in Abyss | written by Akihito Tsukushi
 The Magicians Trilogy | written by Lev Grossman
+The Matrix series | created by Lana Wachowski and Lilly Wachowski
 Mega Man Legends | developed by Capcom Production Studio 2
+Mega Man Zero | developed by Inti Creates
 Metal Gear Solid | developed by Konami Computer Entertainment Japan
 Metal Gear Solid 4: Guns of the Patriots | developed by Kojima Productions
 Metal Gear Solid V: The Phantom Pain | developed by Konami Digital Entertainment
+Mistborn: The Final Empire | written by Brandon Sanderson
 Neon Genesis Evangelion | produced by Gainax
 Outlaw Star | produced by Sunrise
 Phantasy Star Online | developed by Sonic Team
@@ -60,6 +65,7 @@ Shin Megami Tensei III: Nocturne | developed by Atlus
 Silent Hill 2 | developed by Team Silent
 Sisters of the Red Death | recorded by Vendetta Red
 Sonic the Hedgehog 2 | developed by Sega Technical Institute
+Speed Racer (2008) | written and directed by Lana Wachowski and Lilly Wachowski
 Star Fox | developed by Nintendo EAD and Argonaut Software
 Star Fox 64 | developed by Nintendo EAD
 The Strange Bird: A Borne Story | written by Jeff VanderMeer
@@ -67,4 +73,4 @@ Strange Desire | recorded by Bleachers
 UGLY DEATH NO REDEMPTION ANGEL CURSE I LOVE YOU | recorded by Ada Rook
 Welcome to Night Vale | created by Joseph Fink and Jeffrey Cranor
 Worm | written by John C. "Wildbow" McCrae
-Yona of the Dawn | Mizuho Kusanagi
+Yona of the Dawn | written by Mizuho Kusanagi
