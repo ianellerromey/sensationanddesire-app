@@ -2816,7 +2816,7 @@ He gestured at the web of shadows.
 He pointed to the right, then froze.
 Everyone followed his gesture.
 Goldbar Bay rolled away into the night thirty meters or so down a slight incline, beyond the edge of a flat expanse of concrete. Twelve pairs of headlights cut through the scene at varying angles. The light revealed intricate patterns painted across the concrete. Curving dotted lines, multicolored ribbons running in parallel, boxes filled with words that Jhansi couldn’t read at this distance. A different language than the graffiti in the tunnel.
-The diffuse radiance traced hundreds of stacked shipping containers arranged in an esoteric grid around the edge of the terminal. Tall shadows reached back to merge with the cloak. Jhansi found it challenging to grasp the full geometry of it all.
+The diffuse radiance traced hundreds of stacked shipping containers arranged in an esoteric grid around the the terminal. Tall shadows reached back to merge with the cloak. Jhansi found it challenging to grasp the full geometry of it all.
 Wait.
 Not all the shipping containers sat neatly in stacks.
 Three parallel stacks lay toppled, strewn, and smashed on the ground at the far end of the terminal.
@@ -3092,7 +3092,7 @@ Shortstop scoffed.
 Binyelum nodded at the Asterlings, then popped the trunk.
 Velocity exchanged an esoteric look with Binyelum, received no reply, and shrugged.
 Everyone filed out of Mambele.
-A crisp breeze welcomed Jhansi onto the asphalt. Goosebumps prickled her skin. Her nose filled with the smell of the bay. The skyward sprawling cloak pressed down onto her shoulders. All her senses flared. She stretched. Her elbows popped. She stepped back a pace and her flats caught against a crack in the concrete.
+A breeze welcomed Jhansi onto the asphalt. Goosebumps prickled her skin. Her nose filled with the smell of the bay. The skyward sprawling cloak pressed down onto her shoulders. All her senses flared. She stretched. Her elbows popped. She stepped back a pace and her flats caught against a crack in the concrete.
 All of it felt so vital.
 Something like an astronaut’s homecoming?
 The Asterlings divested of their arms and Binyelum closed up Mambele.
@@ -3178,89 +3178,282 @@ Jhansi followed their motion.
 The scene around the fallen IDON came into focus.
 A ratioed mix of Acura Integras–most of them late second generation models–and Rounded Line Chevrolet Blazers circled the corpse. The entire fleet wore the same shade of true red paint, clearly detailed at the beginning of the night but now flecked with grime and splattered with orange blood. Every license plate identifier began with an FH, followed by a zero-padded number: FH00568 on one of the Acuras, and FH00200 on one of the Blazers.
 Figures patrolled the perimeter in pairs, while others worked to disassemble the IDON. The alterling’s body diminished moment by moment beneath the methodical coordination. Two dozen bonesaws chewed slowly but inexorably through the monster’s armored flesh. Intermittent percussions resounded, each signaling another piece of leg or body falling to the concrete. Organized piles of gore leaned against a stack of shipping containers. A solitary pair of soldiers supervised the work from atop the stack. Another solitary pair struggled to pull free one of the IDON’s pylons.
+A new voice called from behind.
 “What’s this?”
 Jhansi whipped around.
-Another tall soldier walked toward the group, with two more soldiers locked together flanking behind. They moved with more grace than their peers, their stride fluid even in spite of the bulky armor. A bright, polished section of rebar hung at their side. They didn’t carry any other weapons.
-Shortstop and Tallboy stiffened. Shortstop tugged away from Tallboy. Both soldiers saluted, placing their right hand over their heart and extending their left hand, palm up.
-Both said, “Captain.”
+Another tall soldier walked out from the cloak, with two more soldiers locked together flanking behind.
+Polished rebar glittered in the free hand of both escorts.
+The leader wore what looked like the shorter side of a heavy metal bedframe slung across their hip.
+Damn.
+Shortstop and Tallboy stiffened and unlocked their gauntlets. Both soldiers slammed their right hand over their heart and reached gently forward with their left hand, palm held upward. A salute.
+Both soliders spoke in unison.
+“Captain.”
 Captain nodded.
 Shortstop and Tallboy relaxed.
 Captain repeated themselves.
 “What’s this?”
 They nodded at the Asterlings.
-Shortstop said, “Looks like they’re the reason that thing showed up.”
-Captain said nothing.
-They looked toward the corpse, then up toward the moon, then toward the Asterlings, then back toward the soldiers.
-“What the hell does that mean? They led it here?”
+Shortstop said, “Looks like they’re the reason–”
+They pointed toward the corpse of the IDON.
+“–that thing showed up.”
+Captain blinked.
+They said nothing.
+They looked toward the carnage.
+Jhansi followed their gaze.
+Further details coalesced.
+She saw a lot of red blood.
+More than she had originally assumed.
+Captain looked up toward the moon, then toward the Asterlings, then back to the Shortstop.
+“What then?”
+Their voice hardened.
+“They led it here?”
 Shortstop shook their head.
-“No sir. It chased them.”
+“No sir.”
+They paused.
+“Not technically.”
+They glanced at Binyelum.
+“It chased them here.”
 Captain huffed.
-“That’s the same thing, Carden.”
-Carden stammered.
+“Cardner, that’s the same thing.”
+Cardner shook his head.
+“I don’t like it either, sir.”
+He glanced at Jhansi.
+“But I don’t think they did it on purpose.”
+Huh?
+Wait.
+Why glance at Jhansi?
+Captain cocked their head.
+“That’s generous amnesty.”
+They glanced around at the Asterlings.
+“I’m not so sure they’ve actually earned it.”
+Cardner nodded.
+“Yes, sir.”
 Captain turned to the Asterlings.
 “You led that thing here?”
-Binyelum nodded.
-“More or less. We led it to the Strawberri Eight.”
-Captain looked toward the city, then back toward Binyelum.
+Binyelum nodded, then shrugged.
+“More or less.”
+They gestured behind them.
+“We led it to the Strawberri Eight.”
+Captain followed Binyelum’s gesture and looked toward the city.
+“The Strawberri Eight.”
+They paused.
 “Why?”
-Binyelum said evenly, “To get away from it.”
-Captain crossed their arms.
-“So how’d you end up down here?”
-“We got away.”
-Captain shook their head.
+Binyelum shrugged again.
+“We wanted to get away from it.”
+Captain stepped closer to Binyelum.
 “You think you’re smart?”
 Binyelum smiled ruefully.
 “Bad habit.”
-They added, “We followed it.”
-“You’re telling me you managed to escape that thing, and then you turned around and followed it? Why would you do something that stupid?”
-Binyelum scratched the back of their head.
-“Ahhh. Well it’s pretty embarrassing, now that I have to say it to a soldier.”
-Captain rolled their eyes.
-“Really?”
-Binyelum shrugged.
-“We wanted to see if we could get the doctor to mention us again.”
-Captain snorted.
-“The doctor mentioned you?”
-Binyelum nodded.
-“That thing caught up with us at Bridgemall.”
-Captain looked toward the soldiers disassembling the corpse.
-They stood silent for a long moment.
-At last they said, “You dumbasses,” still keeping their attention on the working soldiers.
-Binyelum chuckled nervously.
-Captain continued.
-“You just couldn’t stop yourselves, could you? Had to go and show your fucking faces here. Dumbass clout chasers. What were you expecting? A warm welcome?”
-They turned back to face Binyelum.
-“You think the doctor gives a shit how many of my men I had to watch die because of that thing?”
-Binyelum raised both hands.
-They said, with direct sincerity, “Pej. I am so sorry.”
-Captain rolled their eyes.
-“I should–”
-They cut themselves off.
-They huffed.
-“Whatever.”
-They turned to Carden.
-“Why the hell did you bring them over here?”
-Carden nodded.
-“That one said they knew something useful about the pylons attached to that thing’s body.”
-Captain looked at Binyelum, then toward the corpse.
-“Frankly, Carden, I don’t really give a shit.”
-Nobody said anything.
-At last Carden said, “What should we do with them?”
+Captain cocked their head.
+“You’re luck’s gonna run out before you know it.”
+Binyelum grinned.
+“That’s when it gets really interesting.”
 Captain shook their head.
-“I don’t care. Throw them into the bay.”
-Carden blanched.
+They took a step back.
+“How did you get away?”
+Binyelum furrowed their brows.
+“I told you. We escaped into the Strawberri Eight.”
+Captain crossed their arms.
+“And it didn’t just crush you inside the building?”
+Binyelum made a face.
+“Am I in trouble or something?”
+Captain opened their arms wide.
+“That’s what we’re trying to figure out.”
+Binyelum shook their head.
+“I’m not obligated to reveal our gifts to you.”
+Captain snorted.
+“You escaped using your gift?”
+Binyelum shrugged.
+“Isn’t that what everyone does?”
+Captain stared at Binyelum.
+“How did you end up down here?”
+They gestured around at the terminal.
+Binyelum huffed.
+“It’s embarrassing to say it to a soldier.”
+Captain raised their eyebrows.
+Binyelum thrust their hands into their pockets.
+“We followed it.”
+Captain blinked.
+They shook their head.
+“Pejudo.”
+They briefly held their head in both hands.
+“Hang on.”
+They glared.
+“You’re telling me you managed to escape that thing–”
+They gestured toward the corpse of the IDON.
+“–and then you turned around and followed it?”
+They shook their head.
+“Just how rancid is your brain?”
+They shook their head again.
+“Whatever. Just explain why the fuck you followed it.”
+Binyelum scratched the back of their head.
+They chuckled.
+“Uh, because …”
+They paused.
+“… we wanted to see if we could get the doctor to mention us again.”
+Captain froze.
+They stared at Binyelum.
+Jhansi heard their teeth click together.
+Both Captian’s hands curled into shuddering fists.
+“You fucking–”
+They exhaled.
+“–dumbasses.”
+Binyelum opened their mouth.
+Captain interrupted.
+“You just couldn’t fucking stop yourselves, could you? Had to fucking come and show your faces here, grab one more shot of the butchery for your fucking bait reel.”
+They straightened.
+“Dumbass fucking clout chasers.”
+They stepped forward and pushed a clawed finger against Binyelum’s chest.
+“What were you expecting? A warm welcome?”
+Binyelum opened their mouth.
+Captain interrupted.
+“Do you have any idea how many of my fri–”
+They paused.
+“–how many of my men I had to watch die because of your pathetic fucking ego stunt?”
+They jabbed their finger into Binyelum’s chest.
+A dark stain of blood soaked through Binyelum’s jacket. 
+“Well?”
+Binyelum raised both hands.
+Their expression softened entirely.
+They spoke with direct sincerity.
+“I am so fucking sorry.”
+Captain snorted.
+“You don’t–”
+They cut themselves off.
+They looked around at Cardner and Tallboy and both stoic escorts.
+They huffed and shook their head.
+“Whatever.”
+They turned to Cardner.
+“Cardner, why the hell did you bring them over here?”
+Cardner nodded.
+“Sir. It seemed right to let you vet the authenticity of their story. I’d pull off my own arms if they were dangerous and I sent them away.”
+He paused, then pointed at Binyelum.
+“And that one said they knew something useful about the pylons on that monster’s body.”
+Captain nodded.
+They looked at Binyelum, then toward the corpse of the IDON.
+“Cardner, you have good instincts.”
+They paused.
+“But I don’t give a hero’s squirty shit what they have to say.”
+Wow.
+Fucking.
+Gross.
+Nobody spoke.
+The methodical sound of dismemberment continued in the background.
+Cardner said, “Understood, sir.”
+He paused.
+“What should we do with them?”
+Captain shook their head.
+“I don’t fucking care.”
+They gestured.
+“Tie ‘em to a pylon and throw ‘em into the bay.”
+Cardner didn’t move.
 “Captain?”
 Captain shook their head again.
-“No. Don’t throw them into the bay.”
-They paused, then added, “I really don’t care. Send them to the others. They’re a good fit.”
-Carden nodded.
-Both Carden and Tallboy saluted.
-“Captain.”
-Captain nodded, turned, and headed toward their men, both flanking soldiers following quickly behind.
-Carden, Tallboy, and the Asterlings watched them walk away.
+“No.”
+They held their head with both hands.
+“Don’t throw them into the bay.”
+They let their hands fall.
+“I really don’t care.”
+They gestured.
+“Introduce them to the others. They’re a good fit.”
+Cardner nodded.
+Captain muttered, “Fucking jergers.”
+Wait.
+Hold the fuck on.
+Even if Jhansi didn’t know what that word meant–
+Jhansi said, “Hey!”
+Everyone turned to look at her.
+Binyelum groaned quietly.
+Well.
+Fuck them.
+Jhansi stepped forward.
+She gestured toward the mess.
+“We fucking got away from that thing.”
+Captain stared at her.
+Jhansi shook her head.
+She stared back.
+“Six fucking losers.”
+Captain continued to stare.
+Jhansi stared back.
+“Better job than your power armor army thugs.”
+Captain continued to stare.
+Jhansi stared back.
+Captain laughed.
+Once.
+A couple more times.
+They held their head in both hands.
+“I can’t believe this.”
+They turned to Jhansi.
+“Are you fucking serious, broodwife?”
+What?!
+Jhansi blinked.
+“What the fuck did you just call me?”
+Captain stepped toward her.
+They fucking loomed.
+Light glanced across a single eye shining beneath their helmet.
+“Have you ever lost anything?”
+What?
+Jhansi blinked.
+“What?”
+Captain shook their head.
+Their single eye never wavered.
+They took another step closer.
+“How long do you think they’re going to last, realistically?”
+What?
+Jhansi blinked again.
+“What?”
+A cruel smile spread bright behind the tusks of Captian’s helmet.
+They lowered their voice.
+“Your friends.”
+They nodded toward the Asterlings.
+“How long do you think they’re going to last?”
+Last?
+Like how?
+Oh.
+Fuck.
+What?
+Haha.
+No.
+That kind of thing didn’t happen to the protagonist’s party.
+Jhansi shook her head.
+“My friends are going to be fine.”
+Captain’s single eye blinked.
+And searched Jhansi’s face.
+Jhansi stared back.
+The eye roved between both of hers, then down across her mouth, then back up to her eyes.
+Captain tilted their head.
+“You really fucking think that, don’t you?”
+Jhansi nodded.
+“Yes.”
+Captain laughed.
+They took a step back from Jhansi and guffawed into the sky.
+The sound rolled across the terminal.
+It hit Jhansi right in the stomach.
+Captain’s voice strained.
+Each percussion arrived with jagged edges.
+Haunting and violent barks.
+The laughter faded by degrees.
+Fuck.
+Captain brought a hand to their forehead.
+“You poor fucking girl.”
+They looked down at Jhansi.
+“I don’t believe this.”
+They looked at Cardner and Tallboy.
+“Get these morons out of my sight.”
+Both Cardner and Tallboy saluted.
+“Yes, sir.”
+Captain turned to Jhansi.
+“I hope you appreciate your friends.”
+What?
+Jhansi blinked.
+“Of course I do.”
+Captain shrugged.
+“Whatever.”
+They turned and headed away toward the commotion, flanked by their escort.
+Cardner, Tallboy, and the Asterlings watched them walk away.
 Binyelum shrugged.
 “I really am sorry.”
-Carden said, “Shut up.”
+Cardner said, “Shut the fuck up.”
 They gestured over their shoulder.
 “Get moving.”
 Binyelum said, “Where to?”
@@ -3269,249 +3462,392 @@ Binyelum’s face lit up.
 “That’s why you’re here!”
 Tallboy huffed.
 “Whatever.”
-Carden gestured.
-“Come on. Move it.”
-Binyelum nodded at the Asterlings.
-“You heard ‘em.”
-They headed back the way they’d come, away from the circle of headlights, back into the oppressive dark.
+They shoved Binyelum’s shoulders.
+“Get moving.”
+Cardner gestured.
+“Yeah. Move it.”
+Binyelum made a face at Tallboy, then nodded at the Asterlings.
+“Law’s been laid, friends.”
+Binyelum’s gaze landed on Jhansi and lingered for a second.
+She didn’t understand their expression at all.
+The Asterlings moved and Jhansi followed, away from the circle of headlights and back into the oppressive dark.
 Binyelum said, “You’re not gonna watch my Nissan, are you?”
-Carden laughed.
+Cardner laughed.
 Binyelum nodded.
 “Figures.”
 Tallboy said, “You can park it down with the others.”
 Binyelum nodded again.
-Carden gestured out into the night.
-“Alright. Step off the concrete here. Head toward the grain elevator. Underneath it you’ll–”
+Cardner gestured lazily out into the night.
+“Alright.”
+They gestured vaguely in front of them.
+“Off the concrete here–”
+They gestured vaguely into the distance.
+“–you’ll head toward a grain elevator over there. Underneath it you’ll–”
+Wait!
 Jhansi interrupted.
-“The one where that alterling was crawling around?!”
-Carden laughed.
-“Yep.”
+“There’s an alterling out there!”
+Cardner shrugged.
+“And?”
 Jhansi looked at Binyelum.
-She couldn’t get the picture of the alterling from the Washington Tower out of her head.
-Binyelum put their hand on her shoulder.
-“It’ll be fine.”
+Binyelum gave her another indecipherable expression and put a hand on her shoulder.
+Fuck.
+Heat rose in her cheeks.
+Could anybody tell?
+Binyelum said, “It’ll be fine.”
 Tallboy said, “No wonder she pissed herself.”
-Jhansi said, “Shut up!”
+Ugh!
+Jhansi shouted, “Shut up!”
 Tallboy laughed.
-Carden said, “Underneath the grain elevator, the ground will start sloping toward the water. Turn left and it should be pretty obvious from there.”
+Cardner said, “Anyway. Underneath the grain elevator, the ground will start sloping toward the water. Turn left and it should be pretty obvious from there.”
 Binyelum nodded.
 “Thanks.”
-Carden shrugged.
+Cardner shrugged.
 “Following orders.”
 Binyelum nodded again.
-“I get that.”
-They paused, then added, “I hope you make it to the end.”
-Carden shook their head.
-“Tch.”
-They turned to Tallboy, exchanged a look, and both headed back toward their compatriots.
+“Roger dodger.”
+They paused.
+ “I hope you make it to the end.”
+Cardner shook their head.
+“Whatever.”
+They turned to Tallboy, exchanged a look, and both headed back toward the headlights.
 Binyelum watched them go.
-Jhansi said, “What’s a windshield painter?”
+Well.
+That had really kinda sucked.
+Jhansi said, “Okay, what’s that word mean?”
+Oren looked at her.
+“Jerger?”
+Jhansi nodded.
+“Yeah. That one.”
+Oren rolled his eyes.
+“Jerkoff greasers.”
+Excuse me?
+Heat rose in Jhansi’s cheeks.
+A chuckle forced its way past her lips in spite of her embarrassment.
+What a stupid phrase.
+Jhansi shook her head.
+“What?”
+Oren nodded.
+“Yep.”
+He shrugged.
+“It’s like, I dunno, you’re a disposable but briefly useful distraction.”
+Wow.
+Jhansi blinked.
+“Okay.”
+Oren nodded.
+“Yep.”
+Jhansi said, “Then what’s a windshield painter?”
 Binyelum laughed.
 Sebastian said, “It means you’re birdshit.”
 Jhansi made a face.
 “You’re birdshit.”
 Sebastian snorted.
 Oren said, “It means you died on your very first night as an endling.”	
+What?
 Jhansi frowned.
 “What?”
 Binyelum wiggled their index finger at her.
 “It means you’re a worm.”
+Wait what?
 Jhansi scowled.
-“Fuck off. I was never an endling.”
-Binyelum shook their head.
+“Fuck off.”
+She glared around at no one.
+“That’s bullshit anyway. I was never an endling.”
+Binyelum paused.
+They stared at Jhansi.
+They looked around at the Asterlings.
+Sebastian held Binyelum’s gaze the longest.
+Binyelum looked back at Jhansi.
+They shook their head.
 “Sure thing, wormling.”
+What?
+What the hell did that mean?
 Jhansi glowered.
 “No. No way. Absolutely not.”
-Binyelum giggled.
+Binyelum shrugged.
 “You’re the one who asked for a new title. I’m just trying to work with you.”
 Static lashed throughout Jhansi’s interior space.
 “You’re being a dick!”
 Binyelum’s mouth fell into a hard line.
-They raised both hands.
+They exhaled slowly.
 “Fine, whatever.”
-Everyone stared at Jhansi.
-Static stabbed through the back of her chest.
+Everyone stared at Binyelum.
+Then Jhansi.
+Static stabbed straight through Jhansi from the direction of every eye.
 Fuck.
 Jhansi crossed her arms.
-She sneered, “Why’d you let them think I painted a windshield?”
-Sebastian corrected, “You’re a windshield painter.”
-Binyelum sighed.
-“Better than trying to explain why you think you weren’t ever an endling.”
-Jhansi groaned.
-“Guys. I wasn’t.”
-Binyelum raised both hands.
-They deadpanned, “Right, right.”
+“Why’d you let them think I painted a windshield?”
+She glared at Binyelum.
+“Why do you lie about fucking everything?”
+A sweeping breeze rushed across Jhansi’s skin.
+Binyelum blinked.
+They stared at Jhansi with an expression she had never seen them use before.
+Sebastian glanced around.
+“Pej, Jhansi, give us an encore, shout it loud enough for those all the way in the back!”
+Ugh.
 Jhansi rolled her eyes.
-Velocity said, “Are we gonna do this all night?”
-Binyelum shook their head.
-“No. Let’s go join the party.”
+Binyelum crossed their arms.
+“I don’t lie about everything.”
+Jhansi blinked.
+Binyelum held her gaze.
+“In case you hadn’t noticed, power is a scarce resource. When I get it, I like to keep it. Knowledge is one of the few things we can actually access, I’m not giving it away if I don’t have to.”
+What?
+Jhansi blinked.
+No.
+That shouldn’t matter.
+Jhansi shook her head.
+“But that doesn’t matter.”
+She gestured around.
+“We’re doing something special here.”
+Velocity snorted.
+Sebastian sighed.
+Oren stepped forward.
+Bineylum spoke first.
+“We can’t do something special if we don’t survive.”
+Well.
+Yeah.
+Right.
+Binyelum’s job.
+Jhansi nodded.
+“Right, right. I get it.”
+Sebastian laughed.
+Ugh!
+Jhansi whirled around.
+“Asshole!”
+Binyelum snapped their fingers.
+“Come on, we’re done with this.”
+They gestured.
+“We have something special to do.”
+Sebastian groaned.
 Oren said, “You still haven’t told us where we’re going next.”
 Binyelum paused.
 They looked out toward the water.
-They kept silent.
-Velocity said, “Um. Hello?”
-Bineylum said, “Let’s join the party first.”
-Sebastian said, “After all that, you’re gonna leave Kiran hanging?”
+“Let’s join the party first.”
+Sebastian blinked.
+“After all that–”
+He gestured around at the night.
+“–you’re gonna leave Kiran hanging?”
 Binyelum’s features shifted into an expression Jhansi didn’t understand.
-They waited a long moment before replying.
 “I think we could use the break.”
 Oren gave Bineylum a long look.
 Velocity shrugged.
 “Fine by me.”
 Sebastian raised both eyebrows.
-“I can hang.”
+“I’m not going to argue.”
 Nancy’s mouth flattened into a line.
 Binyelum said, “Let’s go.”
-The Asterlings ducked back into Mambele. Jhansi again ended up on Oren’s lap. The deck of playing cards stared up at her from the floor behind the passenger’s seat. She grabbed it, and found the Sharpie lying in the darkness beside it.
-The marker looked black.
+The Asterlings ducked back into Mambele.
+Jhansi again ended up on Oren’s lap.
+She reached to fold her skirt and blinked.
+Her deck of playing cards stared phantasmically up at her from the floor.
+She grabbed it, and found the black Sharpie lying in the darkness beside it.
 Waitaminute.
-Mambele reversed, then trundled toward the grain elevator, dismounting the concrete and crunching through the gravel.
-Oren said, “Lucky break.”
+Not red?
+Binyelum guided Mambele off the concrete and across the crunching gravel.
+They weaved slowly through the forest of slanted steel with the dark expanse of the bay sliding past on the passenger’s side.
+Oren leaned forward.
+“Lucky break.”
 Binyelum nodded.
-“Money in the bank.”
+“Broken and reborn anew.”
 Oren cocked his head.
+“What?”
+He shook his head and laughed.
 “I meant us.”
-Binyelum looked in the rearview mirror.
+Binyelum looked at Oren in the rearview mirror.
 “You think?”
-Oren knit his brows.
-“They took care of that thing. You like the idea of having it prowling around all night with a fucking chip on its shoulder?”
+Oren gestured out the rear windshield.
+“They took care of that thing.”
+He waved a hand.
+“Grateful to not have it prowling around with a fucking chip on its shoulder.”
 Velocity said, “Boulder shoulder.”
-Sebastian said, “What?”
-Velocity reached across Jhansi and punched Sebastian’s shoulder.
-Velocity said, “Because it’s an island.”
+They paused.
+“Because it’s an island.”
 Sebastian deadpanned, “Wow.”
-Binyelum said to Oren, “I dunno. Maybe it would’ve taken care of some other problems for us.”
-Oren rolled his eyes.
-“Tch.”
-Binyelum narrowed their eyes.
-“What’s going on back there?”
-Oren shook his head.
-“Nothing.”
-Binyelum raised both eyebrows.
-“Top ten signs your man is hiding something number fucking two, buddy.”
-Oren let his head fall back against the car seat.
-They passed beneath the grain elevator.
+Binyelum said to Oren, “I dunno. Maybe it would’ve taken care of some other future problem for us.”
+Oren groaned in his throat.
+He leaned back against the seat.
+“Whatever.”
+The unseen weight of the grain elevator unfurled above them.
+It seemed to stretch in every direction.
 Jhansi swallowed.
-Somewhere up there a disgusting alterling crept around, insect legs clinging to old metal as it leaned to watch them, Mambele reflected a thousand times in its bulging compound eyes.
-A large, glistening barb punctured straight through Mambele’s roof, plunging into Oren’s skull, crushing his forehead, forcing both eyeballs from their sockets, a gush of blood spurting from his open mouth.
+Somewhere up there an alterling crept around, four or six or eight disgusting insect legs clinging to old metal as the monster leaned to watch them, Mambele reflected a thousand times in its bulging compound eyes.
+A glistening barb punctured straight through Mambele’s roof and plunged into Oren’s skull, crushing his forehead, forcing both his eyeballs from their sockets, forcing a slick gush of blood from his open mouth.
+What?!
+Jhansi opened her mouth to scream.
 Oren said, “I just feel bad.”
-Wait, what?
+Wait.
+What?
 Jhansi swallowed again.
-Her entire body shivered.
-Fuck, she hated that.
-Binyelum smiled warmly.
-“You feel bad?”
+A shiver ran through her entire body.
+The dark shape laughed.
+Fuck.
+She hated that.
+Oren added, “I want it to have been worth it.”
+Binyelum looked in the rearview mirror and raised their eyebrows.
+“Worth it?”
 Oren shrugged.
 “Yeah.”
-Binyelum cocked their head.
-“About what?”
-Oren shrugged again.
+Binyelum cocked their h
+He gestured out the rear windshield.
+“That. Them.”
+He paused.
 “The Final Hand guys.”
 Binyelum nodded slowly.
-“Ah. Yes. You would.”
-Oren sat up and angrily threw his hands in the air.
+“Ah.”
+They looked ahead.
+“You would.”
+Oren lifted his arms and let them fall.
 “I just–”
 He closed his mouth.
-Binyelum said, “Everyone on the ground floor has it tough. You know that.”
-Oren shrugged.
-“They just get the shit end of everything.”
+Binyelum said, “Everyone on the ground floor has it rough. You know that.”
+Oren gestured.
+“Because there’s not already enough shit to wade through down here.”
+He sighed.
+“Just sucks to give it all up for someone else.”
 Binyelum nodded.
-“That’s their choice.”
-Mambele’s headlights dipped over a sudden dropoff, marked by a short concrete barricade. Binyelum turned the wheel to the left. The headlights found solid ground again, sloping away from them, down toward a semicircle of ten pairs of beaming headlights. Colored lights flickered in the center of the scene, not nebulites, but ones that strobed and swirled and danced, transitioning from hue to hue. The thump of uptempo music echoed up the slope.
-Oren huffed.
-“Is it?”
-Binyelum shrugged.
-“They could be out here with us.”
-Oren shook his head.
-“That’s not what I mean. I mean …”
-He gestured again.
-Binyelum said, “You mean, everyone sitting on top of them?”
-Oren punched the seat with both fists.
-“Yes!”
-Binyelum nodded.
-“I get that.”
-They added, “But it’s not like it’s a secret.”
-Oren sighed.
-“I know.”
-He added, “It still sucks.”
-Jhansi pointed to the vortex of color.
-“What’s that?”
-Velocity said, “The Idea of a Place We’ve Never Been.”
-Jhansi rocked her head back and forth between her shoulders.
-“Yeah yeah yeah, but what is it?”
-Binyelum said, “Party kids.”
-Jhansi blinked.
-“Party kids?”
+“Everyone makes their own choices.”
+Oren stared at Binyelum.
+“I’m beginning to wonder about that.”
+Binyelum glanced in the rearview mirror, but stayed silent.
+The field of riveted supports cleared. The press of the grain elevator lifted. Mambele’s headlights dipped over a sudden dropoff marked by a short concrete barricade. Binyelum turned the wheel to the left. The headlights found solid ground again, the land sloping away down toward a large semicircle of beaming headlights.
+Ugh.
+What now?
+Jhansi crossed her arms and looked closer.
+Nebulites flickered in the center of the scene.
+Wait, no.
+Not nebulites.
+The bright colors strobed and swirled and danced, blurring from hue to hue in patterns that left sharp afterimages burning in their wake. 
+The thump of uptempo music echoed up the slope.
+Oh.
+Fuck.
+Binyelum had said something about a party.
+Jhansi pointed.
+“What’s this?”
 Velocity grinned.
-“Sex, drugs, rock and roll. You know, all that stuff you do in your free time.”
-Jhansi’s eyes shot wide.
-“What?”
-She looked at Binyelum.
-“Why?”
-Binyelum laughed.
-“Why what, princess?”
+“The Idea of a Place We’ve Never Been.”
+Jhansi blinked.
+“That explains so much.”
+Binyelum said, “Party kids.”
+Jhansi’s mouth fell into a flat line.
+“Again, so helpful.”
+Velocity grinned.
+“Sex, drugs, rock and roll.”
+They held up a pair of finger guns.
+“No chaperones here.”
+Hold on.
 Jhansi made a face.
-“Why would anyone want to do any of that stuff?”
-Binyelum smirked.
-“Why indeed, prudeling.”
-Jhansi huffed.
-“I mean tonight.”
-Binyelum nodded.
-“Me too.”
+“That’s all they do?”
+Velocity blinked.
+“Not enough to keep you busy? Princess is such a viceling.”
+Ugh.
 Jhansi rolled her eyes.
-“What the hell, Binyelum.”
-Binyelum shrugged.
-“Why is this different from any other night?”
-Jhansi gestured around floppily.
-“Because they’re going to fucking die!”
-Binyelum raised both eyebrows.
-“Don’t you want to have sex, do drugs, and listen to rock and roll before you die?”
-Jhansi scowled.
+“I mean, why would anyone want to do any of that stuff?”
+Binyelum smirked.
+“Why indeed, prudeling?”
+For fuck’s sake!
+Jhansi huffed.
+“I mean tonight. Why would anyone waste their time doing any of that shit tonight, here, in the motherfucking netherlume shift.”
+Binyelum’s smirk widened.
+“Why’s this different from any other night?”
+Come on!
+Jhansi waggled her hands.
+“They’re going to fucking die!”
+Binyelum blinked.
+“Don’t you want to have sex, do drugs, and be transformed by rock and roll before you die?”
+What?
+Hah.
+No.
+Absolutely fucking not.
+The dark shape leered.
+{“Be a better liar.”}
+Jhansi screamed, {“Shut the fuck up!”}
+Ugh.
+Fuck.
+Whatever.
+It didn’t matter.
+Jhansi didn’t belong in that world.
 “I–”
 She crossed her arms.
 Velocity laughed.
-Sebastian said, “Wee woo, wee woo, purity police.”
-Jhansi shot him a look.
+Sebastian said, “Wee woo, wee woo, watch out for the purity police.”
+Jhansi shot Sebastian a look.
 “It’s not like that! I just–”
-She gestured around again.
-“–think people should have different priorities.”
-Binyelum chuckled.
-“That’s your prerogative, prudeling.”
+She just what?
+Ugh.
+Jhansi gestured.
+“I just think people should have different priorities.”
+Binyelum chuckled and shrugged.
+“Your prerogative, prudeling.”
+Well yeah.
+But.
 Jhansi blinked.
 “Wait.”
 She narrowed her eyes.
 “You’re not–”
 She looked around at everyone else.
+“Is that why we’re here?”
+A chilling vice gripped her stomach.
 “You’re all gonna do that stuff?”
-All the other Asterlings shrugged in unison, even Nancy, who hadn’t turned around once during the conversation.
+All the other Asterlings shrugged in unison.
+Even Nancy, who hadn’t turned around once during the conversation.
 Fuck.
-Jhansi blushed.
+Fuck.
+Fuck!
+Motherfucker!
+Jhansi’s face burned.
 Binyelum said, “You’re welcome to join.”
-Jhansi said nothing.
-She tried to imagine hitting a joint or whatever with Binyelum.
-Static fucking roiled through her interior space, slashing across her back and arms.
+Hah.
+Right.
+And fucking humiliate herself in front of everyone?
+Static hummed to life throughout Jhansi’s interior space
 Fuck.
-The music grew louder, and with it came the sound of voices.
-Jhansi leaned forward, curious in spite of her anxiety.
-Three more red Infiniti G20s sat idling in the semicircle, a 1995 model, a 1996 model, and a 2002 model. A wide variety of other vehicles crowded in and around those. Jhansi noticed a beige 1981 Toyota Cressida, a light blue 1989 Honda Civic, and a lime green 1993 Isuzu Amigo, before something else pulled her attention.
-Two pairs of teenagers stood in the center of the crowd, clasping hands and bobbing their heads with the music. The white light strobing across the scene beamed from the body of the long-haired teenager in the first pair, every exposed inch of their skin bursting with light patterned to emphasize the rhythm and drops in the music. The colored lights spiraling across the scene beamed from the eyes and mouth of the tattooed teenager in the second pair, hues shifting to emphasize tonal changes in the music.
-The music itself emanated from another pair of teenagers who stood further back on the beach, clasping both each other’s hands and dancing together. The shorter of the two seemed to lead, their partner responding with liquid grace to their wild, jerky gyrations. Tiny Dancer’s movements synchronized perfectly with the music, and as Jhansi watched she realized that TD probably created the music with their movements.
-Jhansi’s mouth fell open.
-“Gifts?”
+No.
+Absolutely fucking not.
+Slow waves of voltage roiled and crashed.
+Jhansi said nothing.
+Fuck.
+Mambele’s tires pushed gently into rough sand.
+The music grew louder.
+The hemisphere of cars came into better focus.
+A beige 1981 Toyota Cressida.
+A light blue 1989 Honda Civic.
+A lime green 1993 Isuzu Amigo.
+And on.
+And on.
+Jhansi lost count after the twenty-fifth.
+Ugh.
+Five more red Integras and another red Blazer idled within the menagerie.
+Huh.
+A crowd swayed at the center of the scene.
+More than a hundred bodies bucked against each other.
+A heaving organism fixed in place by beaming headlight radiance.
+Binyelum rolled down the driver’s side window and leaned out into the night.
+The sound of voices swelled on the wind.
+Two pairs of special ones stood with clasped hands and bobbing heads at the heart of the hemisphere. A blinding white light strobed from the body of a long-haired teenager in the first pair. Their skin flickered with patterns that emphasized the rhythm of the music. Spiraling colored lights streamed from the eyes and mouth of the tattooed teenager in the second pair. The hues shifted with the tone of the music, bright reds flaring against shimmering leads, dark greens and blues precipitating thunderous drops.
+Another pair of special ones stood with clasped hands atop a raised dais near the back of the hemisphere. The taller of the pair held their mouth shockingly wide. Music blared from the orifice. The teenager swayed with an elegant irregularity, as though somehow hearing a completely different rhythm than the one emanating from their mouth. The shorter of the pair appeared to lead. They squeezed their partner’s hand hard as they jerked and flailed in perfect synchronicity with the music. As Jhansi watched, she realized that Tiny Dancer probably created the music with their movements.
+Wow.
+Holy fuck.
+Jhansi pointed.
+“Those are gifts?”
 Binyelum grinned.
-“Yep. Gifts.”
+“Yep.”
+What the fuck?
 Jhansi looked around at everyone.
-“How’s that help you fight Egaeus?”
+“That’s fucking useless!”
 Velocity said, “Helps you have a good time.”
-Sebastian said, “How’s your gift help us fight Egaeus?”
-Jhansi made a face.
-Binyelum parked Mambele outside the semicircle, but made sure to point the headlights toward the center.
-They left the key in the ignition and popped open their door.
+Sebastian said, “How useful is your gift, princess?”
+Static stabbed straight through Jhansi’s chest.
+Jhansi scowled.
+“Fuck off.”
+Binyelum parked Mambele several car lengths outside the hemisphere, but kept her headlights pointed toward the party.
+They left the key in the ignition.
 “Let’s go make a scene.”
-They stood, dramatically running a hand through their hair.
-Nancy, Sebastian, and Velocity all filed out of Mambele.
+They opened the door and stepped onto the sand.
+Velocity, Sebastian, and Nancy all followed.
 Jhansi stayed put.
-Oren said, “I do kind of want to go.”
+Oren blinked at her.
+“I do kind of want to go.”
+Oh.
+Right.
 Jhansi blinked at him.
 “Sorry.”
 She climbed out into the night.
