@@ -11,14 +11,10 @@
   <app-lov-paged [entryId]="entryId"></app-lov-paged>
   <div class="sad-page">
     <div class="sad-content">
-      <div class="sad-content-fulltext" style="margin-bottom: 10px; text-align: center;">
-        This page currently has issues displaying correctly on Firefox and mobile.
-      </div>
       @if (node) {
         @for (content of node.entry.content; track content) {
-          <div class="sad-content-image">
-            <img src="{{content}}" />
-          </div>
+          <div class="sad-content-fulltext">{{content}}</div>
+          <br />
         }
         @if (node.entry.references?.length) {
           <div class="sad-content-fulltext" style="margin-top: 10px; margin-bottom: 10px;">

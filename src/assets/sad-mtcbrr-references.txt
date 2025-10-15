@@ -39,15 +39,14 @@ It | written by Stephen King
 Jerusalem | written by Alan Moore
 Killer7 | developed by Grasshopper Manufacture and Capcom
 The King of Dragons | developed by Capcom
+La Blue Girl | written by Toshio Maeda
 The Legend of Zelda: Breath of the Wild | developed by Nintendo EPD
 Made in Abyss | written by Akihito Tsukushi
-The Magicians Trilogy | written by Lev Grossman
+The Magicians trilogy | written by Lev Grossman
 The Matrix series | created by Lana Wachowski and Lilly Wachowski
 Mega Man Legends | developed by Capcom Production Studio 2
-Mega Man Zero | developed by Inti Creates
-Metal Gear Solid | developed by Konami Computer Entertainment Japan
-Metal Gear Solid 4: Guns of the Patriots | developed by Kojima Productions
-Metal Gear Solid V: The Phantom Pain | developed by Konami Digital Entertainment
+Mega Man Zero series | developed by Inti Creates
+Metal Gear Solid series | developed by Konami Computer Entertainment Japan, Kojima Productions, Konami Digital Entertainment Co., and Konami Digital Entertainment
 Mistborn: The Final Empire | written by Brandon Sanderson
 Neon Genesis Evangelion | produced by Gainax
 Outlaw Star | produced by Sunrise
@@ -73,5 +72,6 @@ The Strange Bird: A Borne Story | written by Jeff VanderMeer
 Strange Desire | recorded by Bleachers
 UGLY DEATH NO REDEMPTION ANGEL CURSE I LOVE YOU | recorded by Ada Rook
 Welcome to Night Vale | created by Joseph Fink and Jeffrey Cranor
+A Wizard of Earthsea | written by Ursula K. Le Guin
 Worm | written by John C. "Wildbow" McCrae
 Yona of the Dawn | written by Mizuho Kusanagi

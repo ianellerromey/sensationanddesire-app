@@ -28,24 +28,34 @@ export class SrvLovService extends SrvPagedService<Lov> {
   protected override completeEntry(entry: PagedEntry): Promise<Lov> {
     return new Promise(resolve => {
       const locationSplit = entry.location.split(';').map(x => `../../../assets/${x}`);
-      const content = locationSplit.filter((x: string) => x.endsWith('.jpg'));
-      const references = locationSplit.filter((x: string) => x.endsWith('references.txt'));
+      const content = locationSplit.filter((x: string) => x.endsWith('.lov'));
+      const references = locationSplit.filter((x: string) => x.endsWith('.txt'));
+
+      const contentFetched = new Array(content.length);
+      var fetchAllContent = Promise.all(content.map((x, index) => {
+        return fetch(x).then((response: Response) => response.text()).then((y: string) => contentFetched[index] = y);
+      }));
+
       if(references.length == 1) {
         fetch(references[0])
           .then((response: Response) => response.text())
           .then((x: string) => {
-            resolve({
-              ...entry,
-              content,
-              references: x.split('\r\n')
+            fetchAllContent.then(() => {
+              resolve({
+                ...entry,
+                content: contentFetched,
+                references: x.split('\r\n')
+              });
             });
           });
       }
       else {
-        resolve({
-          ...entry,
-          content,
-          references: []
+        fetchAllContent.then(() => {
+          resolve({
+            ...entry,
+            content: contentFetched,
+            references: []
+          });
         });
       }
     });

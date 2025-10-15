@@ -11,27 +11,28 @@ function Get-MtcbrrEntryArray($FileExtension, $StartingId) {
 
 function Add-LovEntryMap($LovMap, $LovFile, $LovFileRegex) {
     $LovFileMatches = [regex]::Matches($LovFile, $LovFileRegex)
-    $LovDate = $LovFileMatches.Groups[1].Value
+    $LovTitle = $LovFileMatches.Groups[1].Value
     $LovValue = $LovFileMatches.Groups[2].Value
-    if(!$LovMap.ContainsKey($LovDate)) {
-      $LovMap.Add($LovDate, [System.Collections.ArrayList]::new())
+    if(!$LovMap.ContainsKey($LovTitle)) {
+      $LovMap.Add($LovTitle, [System.Collections.ArrayList]::new())
     }
-    $LovMap[$LovDate].Add($LovValue)
+    $LovMap[$LovTitle].Add($LovValue)
 }
 
 function main {
   # Moontide Crossbridge Revelry
-  $SadMtcbrrArray = Get-MtcbrrEntryArray -FileExtension '.txt' -StartingId 0
+  $SadMtcbrrArray = Get-MtcbrrEntryArray -FileExtension '.mtcbrr' -StartingId 0
 
   # Moontide Crossbridge Revelry drafts
   $SadMtcbrrDraftArray = Get-MtcbrrEntryArray -FileExtension '.draft' -StartingId $SadMtcbrrArray.Count
 
   # Logs of Vates
   $SadLovMap = @{}
-  $SadLovFiles = Get-ChildItem -Path '.\src\assets\lovs' -Recurse -Include '*.jpg' -File  | % { $_.FullName } | Resolve-Path -Relative
+  $SadLovFiles = Get-ChildItem -Path '.\src\assets\lovs' -Recurse -Include '*.lov' -File  | % { $_.FullName } | Resolve-Path -Relative
   foreach($SadLovFile in $SadLovFiles) {
-    Add-LovEntryMap -LovMap $SadLovMap -LovFile $SadLovFile -LovFileRegex '\.\\src\\assets\\lovs\\(\d+)\\(\d+\.jpg)'
+    Add-LovEntryMap -LovMap $SadLovMap -LovFile $SadLovFile -LovFileRegex '\.\\src\\assets\\lovs\\(\w+)\\(\w+\d+\.lov)'
   }
+  
   $SadLovReferenceFiles = Get-ChildItem -Path '.\src\assets\lovs' -Recurse -Include '*.txt' -File  | % { $_.FullName } | Resolve-Path -Relative
   foreach($SadLovReferenceFile in $SadLovReferenceFiles) {
     Add-LovEntryMap -LovMap $SadLovMap -LovFile $SadLovReferenceFile -LovFileRegex '\.\\src\\assets\\lovs\\(\d+)\\(\w+\.txt)'
@@ -40,7 +41,7 @@ function main {
     $Key = $_.Key
     @{
       id = $i
-      title = ([DateTime]::Parse('1970-01-01T00:00:00Z').AddTicks(([long]$Key) * 10000)).ToShortDateString()
+      title = $Key
       location = @($_.Value | ForEach-Object {
         Join-Path -Path (Join-Path -Path 'lovs' -ChildPath $Key) -ChildPath $_
       }) -join ';'

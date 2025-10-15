@@ -20,6 +20,7 @@ export class LovPagedComponent extends PagedComponent<Lov> {
   }
 
   protected override disableScrollingCheck(): boolean {
+    /* TODO: Update for the way we render one-shots
     const _mtcbrrService: SrvLovService = this._pagedService as SrvLovService;
 
     const { document: { body } } = window;
@@ -51,6 +52,8 @@ export class LovPagedComponent extends PagedComponent<Lov> {
     tempSadPage.remove();
 
     return disable;
+    */
+   return false;
   }
 
   protected override navigateToEntry(entryId: number): void
