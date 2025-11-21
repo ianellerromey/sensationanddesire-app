@@ -10,9 +10,11 @@ Bloodborne | developed by FromSoftware
 Blood Meridian; or, The Evening Redness in the West | written by Cormac McCarthy
 Born to Die | recorded by Lana Del Rey
 Breath of Fire: Dragon Quarter | Capcom Production Studio 3
+The Brothers Karamazov | written by Fyodor Dostoevsky
 Castlevania: Symphony of the Night | developed by Konami Computer Entertainment Tokyo
 Danganronpa: Trigger Happy Havoc | developed by Spike
 Danger Days: The True Lives of the Fabulous Killjoys | recorded by My Chemical Romance
+Death Stranding | developed by Kojima Productions
 Deliver Us | recorded by Darkest Hour
 Devil May Cry | developed by Capcom Production Studio 4
 Dino Crisis | developed by Capcom Production Studio 4
@@ -37,6 +39,7 @@ Hyper Light Drifter | developed by Heart Machine
 The Illusion of Gaia | developed by Quintet
 It | written by Stephen King
 Jerusalem | written by Alan Moore
+JK Taimabu | written by fan no hitori
 Killer7 | developed by Grasshopper Manufacture and Capcom
 The King of Dragons | developed by Capcom
 La Blue Girl | written by Toshio Maeda
@@ -73,5 +76,6 @@ Strange Desire | recorded by Bleachers
 UGLY DEATH NO REDEMPTION ANGEL CURSE I LOVE YOU | recorded by Ada Rook
 Welcome to Night Vale | created by Joseph Fink and Jeffrey Cranor
 A Wizard of Earthsea | written by Ursula K. Le Guin
+Wolf's Rain | produced by Bones
 Worm | written by John C. "Wildbow" McCrae
 Yona of the Dawn | written by Mizuho Kusanagi
