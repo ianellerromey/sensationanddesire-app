@@ -1,0 +1,63 @@
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { Short, SrvShortsService } from '../../../../services/srv-shorts.service';
+import { PagedComponent } from '../../paged/paged.component';
+
+@Component({
+  selector: 'app-shorts-paged',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: '../../paged/paged.component.html',
+  styleUrl: '../../paged/paged.component.scss'
+})
+export class ShortsPagedComponent extends PagedComponent<Short> {
+  constructor(
+    private _router: Router,
+    _lovService: SrvShortsService
+  ) {
+    super(_lovService);
+  }
+
+  protected override disableScrollingCheck(): boolean {
+    /* TODO: Update for the way we render one-shots
+    const _mtcbrrService: SrvLovService = this._pagedService as SrvLovService;
+
+    const { document: { body } } = window;
+
+    const tempSadContent = document.createElement('div');
+    tempSadContent.className = 'sad-content';
+
+    _mtcbrrService.node?.entry.content?.forEach((content: string) => {
+      const tempSadContentImageDiv = document.createElement('div');
+      tempSadContentImageDiv.className = 'sad-content-image';
+
+      const tempSadContentImage = document.createElement('img');
+      tempSadContentImage.src = content || '';
+
+      tempSadContentImageDiv.appendChild(tempSadContentImage);
+      
+      tempSadContent.appendChild(tempSadContentImageDiv);
+    })
+
+    const tempSadPage = document.createElement('div');
+    tempSadPage.className = 'sad-page';
+    tempSadPage.appendChild(tempSadContent);
+
+    body.appendChild(tempSadPage);
+
+    const disable = tempSadPage.offsetHeight <= window.innerHeight;
+
+    body.removeChild(tempSadPage);
+    tempSadPage.remove();
+
+    return disable;
+    */
+   return false;
+  }
+
+  protected override navigateToEntry(entryId: number): void
+  {
+    this._router.navigate([`/shorts/${entryId}`]);
+  }
+}

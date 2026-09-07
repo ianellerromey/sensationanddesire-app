@@ -19,7 +19,7 @@ body {
 
   .sad-title {
     font-size: 36px;
-    text-shadow: -2px -2px 3px #FFE790;
+    text-shadow: -2px -2px 3px #FDFFCF;
 
     div {
       display: inline-block;
@@ -28,21 +28,17 @@ body {
     };
 
     .sad-title-1 {
-      color: #20049F;
+      color: #FFF;
     };
 
     .sad-title-2 {
-      color: #5D029A;
-    };
-
-    .sad-title-3 {
-      color: #B5006E;
+      color: #FFF;
     };
   };
 
   .sad-subtitle {
     color: aliceblue;
-    text-shadow: -2px -2px 3px #FFE790;
+    text-shadow: -2px -2px 3px #FDFFCF;
     padding-bottom: 3px;
   };
 
@@ -95,13 +91,13 @@ body {
   };
 
   .sad-update.prev {
-    filter: drop-shadow(1px 1px 3px rgba(62, 26, 225, .90));
+    filter: drop-shadow(1px 1px 3px rgba(255, 255, 255, .90));
     border-radius: 50%;
     cursor: pointer;
   };
 
   .sad-update.next {
-      filter: drop-shadow(1px 1px 3px rgba(233, 0, 141, .90));
+      filter: drop-shadow(1px 1px 3px rgba(255, 255, 255, .90));
       border-radius: 50%;
       cursor: pointer;
   };

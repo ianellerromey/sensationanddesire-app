@@ -27,9 +27,11 @@ export class PortalComponent extends MenuedComponent {
         ...mo,
         this.disclaimerDialogMenuOption,
         this.acknowledgementsDialogMenuOption,
+        this.referencesDialogMenuOption,
+        this.lilacLinkMenuOption,
         this.mtcbrrLinkMenuOption,
-        this.lovLinkMenuOption,
-        this.patreonLink,
+        this.yanLinkMenuOption,
+        this.shortLinkMenuOption,
         this.instagramLinkMenuOption,
         this.audioToggleMenuOption
       ]
@@ -51,11 +53,19 @@ export class PortalComponent extends MenuedComponent {
     );
   }
 
+  handleLilacLink(): void {
+    this._router.navigate([`/lilac/0`]);
+  }
+
   handleMtcbrrLink(): void {
     this._router.navigate([`/mtcbrr/0`]);
   }
 
-  handleLovLink(): void {
-    this._router.navigate([`/lov/0`]);
+  handleYanLink(): void {
+    this._router.navigate([`/yan/0`]);
+  }
+
+  handleShortsLink(): void {
+    this._router.navigate([`/shorts/0`]);
   }
 }

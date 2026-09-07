@@ -3,14 +3,6 @@ import { BehaviorSubject } from 'rxjs';
 
 export type SrvConfig = {
   sadMapFile: string;
-  draftUnlocking: {
-    password: string | null;
-    encrypted: {
-      iv: number[] | null;
-      key: number[] | null;
-      passwordEncrypted: string | null;
-    } | null;
-  };
 };
 
 @Injectable({
@@ -22,18 +14,6 @@ export class SrvConfigService {
 
   get sadMapFile(): string | null {
     return this._config?.sadMapFile || null;
-  }
-
-  get draftUnlockingPassword(): string | null {
-    return this._config?.draftUnlocking?.password || null;
-  }
-
-  get draftUnlockingEncrypted(): {
-    iv: number[] | null;
-    key: number[] | null;
-    passwordEncrypted: string | null;
-  } | null {
-    return this._config?.draftUnlocking?.encrypted || null;
   }
 
   get loaded(): BehaviorSubject<SrvConfig | null> {

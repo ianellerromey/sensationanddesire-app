@@ -1,49 +1,50 @@
-function Get-MtcbrrEntryArray($FileExtension, $StartingId) {
-  $MtcbrrFiles = Get-ChildItem -Path '.\src\assets\mtcbrrs' -Name ('mtcbrr*' + $FileExtension) -File
-  $MtcbrrEntryArray = @($MtcbrrFiles | ForEach-Object { $i = 0 } {
+function Get-NovelEntryArray {
+  param (
+    [string]$AssetsDirectory,  
+    [string]$FileNameStartsWith,
+    [string]$FileExtension,
+    [int]$StartingId
+  )
+  $NovelFiles = Get-ChildItem -Path ".\src\assets\$AssetsDirectory" -Name "$FileNameStartsWith*$FileExtension" -File
+  $NovelEntryArray = @($NovelFiles | ForEach-Object { $i = 0 } {
     @{
       id = $StartingId + $i
-      title = [regex]::Matches($_, ('mtcbrr_\d+_(.+)\' + $FileExtension)).Groups[1].Value
-      location = Join-Path -Path 'mtcbrrs' -ChildPath $_.ToString()
+      title = [regex]::Matches($_, "$FileNameStartsWith_\d+_(.+)\$FileExtension").Groups[1].Value
+      location = Join-Path -Path $AssetsDirectory -ChildPath $_.ToString()
     }; $i++ })
-  $MtcbrrEntryArray
+  $NovelEntryArray
 }
 
-function Add-LovEntryMap($LovMap, $LovFile, $LovFileRegex) {
-    $LovFileMatches = [regex]::Matches($LovFile, $LovFileRegex)
-    $LovTitle = $LovFileMatches.Groups[1].Value
-    $LovValue = $LovFileMatches.Groups[2].Value
-    if(!$LovMap.ContainsKey($LovTitle)) {
-      $LovMap.Add($LovTitle, [System.Collections.ArrayList]::new())
+function Add-ShortEntryMap($ShortMap, $ShortFile, $ShortFileRegex) {
+    $ShortFileMatches = [regex]::Matches($ShortFile, $ShortFileRegex)
+    $ShortTitle = $ShortFileMatches.Groups[1].Value
+    $ShortValue = $ShortFileMatches.Groups[2].Value
+    if(!$ShortMap.ContainsKey($ShortTitle)) {
+      $ShortMap.Add($ShortTitle, [System.Collections.ArrayList]::new())
     }
-    $LovMap[$LovTitle].Add($LovValue)
+    $ShortMap[$ShortTitle].Add($ShortValue)
 }
 
 function main {
-  # Moontide Crossbridge Revelry
-  $SadMtcbrrArray = Get-MtcbrrEntryArray -FileExtension '.mtcbrr' -StartingId 0
+  # Novels
+  $SadYanArray = Get-NovelEntryArray -AssetsDirectory 'yans' -FileNameStartsWith 'yan' -FileExtension '.yan' -StartingId 0
+  $SadMtcbrrArray = Get-NovelEntryArray -AssetsDirectory 'mtcbrrs' -FileNameStartsWith 'mtcbrr' -FileExtension '.mtcbrr' -StartingId 0
+  $SadLilacArray = Get-NovelEntryArray -AssetsDirectory 'lilacs' -FileNameStartsWith 'lilac' -FileExtension '.lilac' -StartingId 0
 
-  # Moontide Crossbridge Revelry drafts
-  $SadMtcbrrDraftArray = Get-MtcbrrEntryArray -FileExtension '.draft' -StartingId $SadMtcbrrArray.Count
-
-  # Logs of Vates
-  $SadLovMap = @{}
-  $SadLovFiles = Get-ChildItem -Path '.\src\assets\lovs' -Recurse -Include '*.lov' -File  | % { $_.FullName } | Resolve-Path -Relative
-  foreach($SadLovFile in $SadLovFiles) {
-    Add-LovEntryMap -LovMap $SadLovMap -LovFile $SadLovFile -LovFileRegex '\.\\src\\assets\\lovs\\(\w+)\\(\w+\d+\.lov)'
+  # Shorts
+  $SadShortMap = @{}
+  $SadShortFiles = Get-ChildItem -Path '.\src\assets\shorts' -Recurse -Include '*.short' -File  | % { $_.FullName } | Resolve-Path -Relative
+  foreach($SadShortFile in $SadShortFiles) {
+    Add-ShortEntryMap -ShortMap $SadShortMap -ShortFile $SadShortFile -ShortFileRegex '\.\\src\\assets\\shorts\\(\d+_-_\w+)\\(\w+\d+\.short)'
   }
   
-  $SadLovReferenceFiles = Get-ChildItem -Path '.\src\assets\lovs' -Recurse -Include '*.txt' -File  | % { $_.FullName } | Resolve-Path -Relative
-  foreach($SadLovReferenceFile in $SadLovReferenceFiles) {
-    Add-LovEntryMap -LovMap $SadLovMap -LovFile $SadLovReferenceFile -LovFileRegex '\.\\src\\assets\\lovs\\(\d+)\\(\w+\.txt)'
-  }
-  $SadLovArray = @($SadLovMap.GetEnumerator() | Sort-Object -Property Key -Descending | ForEach-Object { $i = 0 } {
+  $SadShortArray = @($SadShortMap.GetEnumerator() | Sort-Object -Property Key -Descending | ForEach-Object { $i = 0 } {
     $Key = $_.Key
     @{
       id = $i
       title = $Key
       location = @($_.Value | ForEach-Object {
-        Join-Path -Path (Join-Path -Path 'lovs' -ChildPath $Key) -ChildPath $_
+        Join-Path -Path (Join-Path -Path 'shorts' -ChildPath $Key) -ChildPath $_
       }) -join ';'
     }; $i++ })
 
@@ -56,14 +57,18 @@ function main {
     notice = $SadNotice
     disclaimer = Get-Content -Path '.\src\assets\sad-disclaimer.txt' | Out-String
     acknowledgements = Get-Content -Path '.\src\assets\sad-acknowledgements.txt' | Out-String
-    mtcbrrAbout = Get-Content -Path '.\src\assets\sad-mtcbrr-about.txt' | Out-String
-    mtcbrrUpdates = Get-Content -Path '.\src\assets\sad-mtcbrr-updates.txt' | Out-String
-    mtcbrrReferences = Get-Content -Path '.\src\assets\sad-mtcbrr-references.txt' | Out-String
+    references = Get-Content -Path '.\src\assets\sad-references.txt' | Out-String
+    yanAbout = Get-Content -Path '.\src\assets\yans\_about-yan.txt' | Out-String
+    yanUpdates = Get-Content -Path '.\src\assets\yans\_updates-yan.txt' | Out-String
+    mtcbrrAbout = Get-Content -Path '.\src\assets\mtcbrrs\_about-mtcbrr.txt' | Out-String
+    mtcbrrUpdates = Get-Content -Path '.\src\assets\mtcbrrs\_updates-mtcbrr.txt' | Out-String
+    lilacAbout = Get-Content -Path '.\src\assets\lilacs\_about-lilac.txt' | Out-String
+    lilacUpdates = Get-Content -Path '.\src\assets\lilacs\_updates-lilac.txt' | Out-String
     linkInstagram = 'https://www.instagram.com/sensationanddesire'
-    linkPatreon = 'https://www.patreon.com/SensationandDesire'
-    lovs = $SadLovArray
+    shorts = $SadShortArray
+    yans = $SadYanArray
     mtcbrrs = $SadMtcbrrArray
-    drafts = $SadMtcbrrDraftArray
+    lilacs = $SadLilacArray
   }
 
   $CurrentTicks = (Get-Date).Ticks.ToString()

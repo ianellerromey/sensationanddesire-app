@@ -9,9 +9,13 @@ export class SrvStaticTextService extends SrvSadmapService {
   private _notice: string = '';
   private _disclaimer: string = '';
   private _acknowledgements: string = '';
+  private _references: string = '';
+  private _yanAbout: string = '';
+  private _yanUpdates: string = '';
   private _mtcbrrAbout: string = '';
   private _mtcbrrUpdates: string = '';
-  private _mtcbrrReferences: string = '';
+  private _lilacAbout: string = '';
+  private _lilacUpdates: string = '';
 
   get notice(): string {
     return this._notice;
@@ -25,6 +29,18 @@ export class SrvStaticTextService extends SrvSadmapService {
     return this._acknowledgements;
   }
 
+  get references(): string {
+    return this._references;
+  }
+
+  get yanAbout(): string {
+    return this._yanAbout;
+  }
+
+  get yanUpdates(): string {
+    return this._yanUpdates;
+  }
+
   get mtcbrrAbout(): string {
     return this._mtcbrrAbout;
   }
@@ -33,8 +49,12 @@ export class SrvStaticTextService extends SrvSadmapService {
     return this._mtcbrrUpdates;
   }
 
-  get mtcbrrReferences(): string {
-    return this._mtcbrrReferences;
+  get lilacAbout(): string {
+    return this._lilacAbout;
+  }
+
+  get lilacUpdates(): string {
+    return this._lilacUpdates;
   }
 
   constructor(
@@ -52,17 +72,25 @@ export class SrvStaticTextService extends SrvSadmapService {
           notice,
           disclaimer,
           acknowledgements,
+          references,
+          yanAbout,
+          yanUpdates,
           mtcbrrAbout,
           mtcbrrUpdates,
-          mtcbrrReferences
+          lilacAbout,
+          lilacUpdates
         } = sadMap;
 
         this._notice = notice;
         this._disclaimer = disclaimer;
         this._acknowledgements = acknowledgements;
+        this._references = references;
+        this._yanAbout = yanAbout;
+        this._yanUpdates = yanUpdates;
         this._mtcbrrAbout = mtcbrrAbout;
         this._mtcbrrUpdates = mtcbrrUpdates;
-        this._mtcbrrReferences = mtcbrrReferences;
+        this._lilacAbout = lilacAbout;
+        this._lilacUpdates = lilacUpdates;
       });
   }
 }

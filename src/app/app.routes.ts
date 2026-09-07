@@ -1,7 +1,9 @@
 import { Routes } from '@angular/router';
-import { LovComponent } from './components/pages/lov/lov.component';
+import { LilacComponent } from './components/pages/lilac/lilac.component';
 import { MtcbrrComponent } from './components/pages/mtcbrr/mtcbrr.component';
 import { PortalComponent } from './components/pages/portal/portal.component';
+import { ShortsComponent } from './components/pages/shorts/shorts.component';
+import { YanComponent } from './components/pages/yan/yan.component';
 
 export const routes: Routes = [
   {
@@ -9,11 +11,19 @@ export const routes: Routes = [
     component: PortalComponent
   },
   {
+    path: 'lilac/:entryId',
+    component: LilacComponent
+  },
+  {
     path: 'mtcbrr/:entryId',
     component: MtcbrrComponent
   },
   {
-    path: 'lov/:entryId',
-    component: LovComponent
-  }
+    path: 'yan/:entryId',
+    component: YanComponent
+  },
+  {
+    path: 'shorts/:entryId',
+    component: ShortsComponent
+  },
 ];

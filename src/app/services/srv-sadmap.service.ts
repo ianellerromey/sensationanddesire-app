@@ -12,14 +12,18 @@ export type SadMap = {
   notice: string;
   disclaimer: string;
   acknowledgements: string;
+  references: string;
+  yanAbout: string;
+  yanUpdates: string;
   mtcbrrAbout: string;
   mtcbrrUpdates: string;
-  mtcbrrReferences: string;
+  lilacAbout: string;
+  lilacUpdates: string;
   linkInstagram: string;
-  linkPatreon: string;
-  lovs: PagedEntry[];
+  shorts: PagedEntry[];
+  yans: PagedEntry[];
   mtcbrrs: PagedEntry[];
-  drafts: PagedEntry[];
+  lilacs: PagedEntry[];
 }
 
 @Injectable({

@@ -33,6 +33,22 @@ export class MenuedComponent {
     };
   }
 
+  protected get referencesDialogMenuOption(): AnyMenuOption {
+    return {
+      type: MenuOptionType.ViewText,
+      text: 'references',
+      handler: this.getReferencesDialogHandler()
+    };
+  }
+
+  protected get lilacLinkMenuOption(): AnyMenuOption {
+    return {
+      type: MenuOptionType.Navigate,
+      text: 'lilac, "love is like a curse"',
+      handler: this.getLilacLinkHandler()
+    };
+  }
+
   protected get mtcbrrLinkMenuOption(): AnyMenuOption {
     return {
       type: MenuOptionType.Navigate,
@@ -41,11 +57,19 @@ export class MenuedComponent {
     };
   }
 
-  protected get lovLinkMenuOption(): AnyMenuOption {
+  protected get yanLinkMenuOption(): AnyMenuOption {
     return {
       type: MenuOptionType.Navigate,
-      text: 'Logs of Vates',
-      handler: this.getLovLinkHandler()
+      text: 'Youth at Night',
+      handler: this.getYanLinkHandler()
+    };
+  }
+
+  protected get shortLinkMenuOption(): AnyMenuOption {
+    return {
+      type: MenuOptionType.Navigate,
+      text: 'Shorts',
+      handler: this.getShortLinkHandler()
     };
   }
 
@@ -54,14 +78,6 @@ export class MenuedComponent {
       type: MenuOptionType.Navigate,
       text: 'instagram',
       handler: this.getInstagramLinkHandler()
-    };
-  }
-
-  protected get patreonLink(): AnyMenuOption {
-    return {
-      type: MenuOptionType.Navigate,
-      text: 'patreon',
-      handler: this.getPatreonLinkHandler()
     };
   }
 
@@ -101,27 +117,39 @@ export class MenuedComponent {
     };
   }
 
+  getReferencesDialogHandler(): () => void {
+    return () => {
+      this.openDialogText(this._staticTextService.references);
+    };
+  }
+
+  getLilacLinkHandler(): () => void {
+    return () => {
+      this._router.navigate([`/lilac/0`]);
+    };
+  }
+
   getMtcbrrLinkHandler(): () => void {
     return () => {
       this._router.navigate([`/mtcbrr/0`]);
     };
   }
 
-  getLovLinkHandler(): () => void {
+  getYanLinkHandler(): () => void {
     return () => {
-      this._router.navigate([`/lov/0`]);
+      this._router.navigate([`/yan/0`]);
+    };
+  }
+
+  getShortLinkHandler(): () => void {
+    return () => {
+      this._router.navigate([`/short/0`]);
     };
   }
 
   getInstagramLinkHandler(): () => void {
     return () => {
       window.open(this._externalLinkService.linkInstagram, '_blank');
-    };
-  }
-
-  getPatreonLinkHandler(): () => void {
-    return () => {
-      window.open(this._externalLinkService.linkPatreon, '_blank');
     };
   }
 

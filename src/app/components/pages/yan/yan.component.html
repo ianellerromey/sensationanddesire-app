@@ -1,0 +1,22 @@
+<div>
+  <app-header [menuOptions]="menuOptions">
+    <div class="sad-title">
+      <div class="sad-title-1">Youth</div>
+      <div class="sad-title-2">at</div>
+      <div class="sad-title-1">Night</div>
+    </div>
+    <div class="sad-subtitle" title="i wrote this to call forth a future of my own">
+      cemetery gates summoning ritual
+    </div>
+  </app-header>
+</div>
+<div>
+  <app-yan-paged [entryId]="entryId"></app-yan-paged>
+  <div class="sad-page">
+    <div class="sad-content">
+      @if (node) {
+        <div class="sad-content-fulltext">{{node.entry.content}}</div>
+      }
+    </div>
+  </div>
+</div>

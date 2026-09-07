@@ -1,0 +1,20 @@
+<div>
+  <app-header [menuOptions]="menuOptions">
+    <div class="sad-title">
+      <div class="sad-title-1">lilac, "love is like a curse"</div>
+    </div>
+    <div class="sad-subtitle" title="this is how it feels">
+      a poem
+    </div>
+  </app-header>
+</div>
+<div>
+  <app-lilac-paged [entryId]="entryId"></app-lilac-paged>
+  <div class="sad-page">
+    <div class="sad-content">
+      @if (node) {
+        <div class="sad-content-fulltext">{{node.entry.content}}</div>
+      }
+    </div>
+  </div>
+</div>

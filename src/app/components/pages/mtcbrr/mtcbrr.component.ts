@@ -1,9 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { MatSlideToggle } from '@angular/material/slide-toggle';
 import { Router } from '@angular/router';
 import { SrvAudioService } from '../../../services/srv-audio.service';
-import { SrvConfigService } from '../../../services/srv-config.service';
 import { SrvExternalLinkService } from '../../../services/srv-externallink.service';
 import { Mtcbrr, SrvMtcbrrService } from '../../../services/srv-mtcbrr.service';
 import { PagedEntryOrNull } from '../../../services/srv-paged.service';
@@ -12,66 +10,6 @@ import { HeaderComponent } from '../../header/header.component';
 import { AnyMenuOption, MenuOptionType } from '../../menu/menu.component';
 import { MenuedComponent } from '../menued/menued.component';
 import { MtcbrrPagedComponent } from './mtcbrr-paged/mtcbrr-paged.component';
-
-async function encryptNewPassword(password: string): Promise<{
-  iv: number[],
-  key: number[],
-  passwordEncrypted: string
-}> {
-  const iv = window.crypto.getRandomValues(new Uint8Array(16));
-  const key = window.crypto.getRandomValues(new Uint8Array(16));
-  const keyEncoded = await window.crypto.subtle.importKey(
-    "raw",
-    key.buffer,
-    "AES-CTR",
-    false,
-    ["encrypt", "decrypt"],
-  );
-  const passwordBuffer = (new TextEncoder()).encode(password);
-  const passwordEncrypted = await window.crypto.subtle.encrypt(
-    {
-      name: "AES-CTR",
-      counter: iv,
-      length: 128,
-    },
-    keyEncoded,
-    passwordBuffer
-  );
-  const decoder = new TextDecoder('utf-8');
-
-  return {
-    iv: [...iv],
-    key: [...key],
-    passwordEncrypted: decoder.decode(passwordEncrypted)
-  };
-};
-
-async function encryptInputPassword(
-  iv: number[],
-  key: number[],
-  password: string
-): Promise<string> {
-  const keyEncoded = await window.crypto.subtle.importKey(
-    "raw",
-    (new Uint8Array(key)).buffer,
-    "AES-CTR",
-    false,
-    ["encrypt", "decrypt"],
-  );
-  const passwordBuffer = (new TextEncoder()).encode(password);
-  const passwordEncrypted = await window.crypto.subtle.encrypt(
-    {
-      name: "AES-CTR",
-      counter: (new Uint8Array(iv)).buffer,
-      length: 128,
-    },
-    keyEncoded,
-    passwordBuffer
-  );
-  const decoder = new TextDecoder('utf-8');
-
-  return decoder.decode(passwordEncrypted);
-}
 
 @Component({
   selector: 'app-mtcbrr',
@@ -97,30 +35,20 @@ export class MtcbrrComponent extends MenuedComponent {
         ...mo,
         this.disclaimerDialogMenuOption,
         this.acknowledgementsDialogMenuOption,
+        this.referencesDialogMenuOption,
         {
           type: MenuOptionType.ViewText,
-          text: 'about',
+          text: 'about mtcbrr',
           handler: this.getMtcbrrAboutDialogHandler()
         },
         {
           type: MenuOptionType.ViewText,
-          text: 'updates',
+          text: 'mtcbrr updates',
           handler: this.getMtcbrrUpdatesDialogHandler()
         },
-        {
-          type: MenuOptionType.ViewText,
-          text: 'references',
-          handler: this.getMtcbrrReferencesDialogHandler()
-        },
-        this.lovLinkMenuOption,
-        this.patreonLink,
+        this.lilacLinkMenuOption,
+        this.yanLinkMenuOption,
         this.instagramLinkMenuOption,
-        /*{
-          type: MenuOptionType.Toggle,
-          text: 'drafts',
-          onOrOff: this.getDraftsOnOrOffHandler(),
-          handler: this.getDraftsToggleHandler()
-        },*/
         this.audioToggleMenuOption,
       ]
   }
@@ -133,8 +61,7 @@ export class MtcbrrComponent extends MenuedComponent {
     _staticTextService: SrvStaticTextService,
     _externalLinkService: SrvExternalLinkService,
     _dialog: MatDialog,
-    private _mtcbrrService: SrvMtcbrrService,
-    private _configService: SrvConfigService
+    private _mtcbrrService: SrvMtcbrrService
   ) {
     super(
       _router,
@@ -143,15 +70,6 @@ export class MtcbrrComponent extends MenuedComponent {
       _audioService,
       _dialog
     );
-
-    setTimeout(async () => {
-      /*if(this._configService.password) {
-        const encrypted = await encryptNewPassword(this._configService.password);
-        console.log(
-          encrypted
-        );
-      }*/
-    });
   }
 
   getMtcbrrAboutDialogHandler(): () => void {
@@ -163,52 +81,6 @@ export class MtcbrrComponent extends MenuedComponent {
   getMtcbrrUpdatesDialogHandler(): () => void {
     return () => {
       this.openDialogText(this._staticTextService.mtcbrrUpdates);
-    };
-  }
-
-  getMtcbrrReferencesDialogHandler(): () => void {
-    return () => {
-      this.openDialogText(this._staticTextService.mtcbrrReferences)
-    };
-  }
-
-  getDraftsOnOrOffHandler(): () => boolean {
-    return () => this._mtcbrrService.draftsUnlocked;
-  }
-
-  getDraftsToggleHandler(): (value?: any) => void {
-    return (value: any) => {
-      const { checked, source }: { checked: boolean, source: MatSlideToggle } = value;
-
-      if(checked) {
-        /*this.openDialogInput(
-          'unlock Moontide Crossbridge Revelry draft chapters',
-          'input the secret password'
-        ).subscribe(async (inputValue: string) => {
-          const encrypted = await encryptInputPassword(
-            this._configService.draftUnlockingEncrypted?.iv || [],
-            this._configService.draftUnlockingEncrypted?.key || [],
-            inputValue);
-
-          if(encrypted === this._configService.draftUnlockingEncrypted?.passwordEncrypted) {
-            this._mtcbrrService.draftsUnlocked = true;
-
-            this.openDialogText('unlocked!');
-          }
-          else {
-            source.checked = false;
-            this._mtcbrrService.draftsUnlocked = false;
-
-            inputValue && this.openDialogText('sorry ...');
-          }
-        });*/
-        this._mtcbrrService.draftsUnlocked = true;
-
-        this.openDialogText('unlocked!');
-      }
-      else {
-        this._mtcbrrService.draftsUnlocked = false;
-      }
     };
   }
 }
