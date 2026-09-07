@@ -52,7 +52,7 @@ export class MenuedComponent {
   protected get mtcbrrLinkMenuOption(): AnyMenuOption {
     return {
       type: MenuOptionType.NavigateInternal,
-      text: '2023 - Moontide Crossbridge Revelry',
+      text: '2023 - MOONTIDE CROSSBRIDGE REVELRY',
       handler: this.getMtcbrrLinkHandler()
     };
   }
