@@ -68,7 +68,7 @@ export class MenuedComponent {
   protected get shortsLinkMenuOption(): AnyMenuOption {
     return {
       type: MenuOptionType.NavigateInternal,
-      text: 'Shorts',
+      text: 'shorts',
       handler: this.getShortsLinkHandler()
     };
   }
