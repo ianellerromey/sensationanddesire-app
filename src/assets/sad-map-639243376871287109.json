@@ -34,9 +34,9 @@
     "mtcbrrAbout":  "{{author\u0027s notes:\r\n\r\nan unfinished trilogy}}\r\n",
     "lilacs":  [
                    {
-                       "title":  "first_book_dedication",
+                       "title":  "disc_one_dedication",
                        "id":  0,
-                       "location":  "lilacs\\lilac_00_first_book_dedication.lilac"
+                       "location":  "lilacs\\lilac_00_disc_one_dedication.lilac"
                    },
                    {
                        "title":  "disc_one_epigraph",
