@@ -65,11 +65,11 @@ export class MenuedComponent {
     };
   }
 
-  protected get shortLinkMenuOption(): AnyMenuOption {
+  protected get shortsLinkMenuOption(): AnyMenuOption {
     return {
       type: MenuOptionType.NavigateInternal,
       text: 'Shorts',
-      handler: this.getShortLinkHandler()
+      handler: this.getShortsLinkHandler()
     };
   }
 
@@ -141,9 +141,9 @@ export class MenuedComponent {
     };
   }
 
-  getShortLinkHandler(): () => void {
+  getShortsLinkHandler(): () => void {
     return () => {
-      this._router.navigate([`/short/0`]);
+      this._router.navigate([`/shorts/0`]);
     };
   }
 

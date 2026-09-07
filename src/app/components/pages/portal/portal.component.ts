@@ -31,7 +31,7 @@ export class PortalComponent extends MenuedComponent {
         this.lilacLinkMenuOption,
         this.mtcbrrLinkMenuOption,
         this.yanLinkMenuOption,
-        this.shortLinkMenuOption,
+        this.shortsLinkMenuOption,
         this.instagramLinkMenuOption,
         this.audioToggleMenuOption
       ]

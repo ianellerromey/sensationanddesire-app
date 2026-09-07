@@ -48,6 +48,7 @@ export class LilacComponent extends MenuedComponent {
         },
         this.mtcbrrLinkMenuOption,
         this.yanLinkMenuOption,
+        this.shortsLinkMenuOption,
         this.instagramLinkMenuOption,
         this.audioToggleMenuOption,
       ]

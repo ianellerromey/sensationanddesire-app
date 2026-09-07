@@ -48,6 +48,7 @@ export class YanComponent extends MenuedComponent {
         },
         this.lilacLinkMenuOption,
         this.mtcbrrLinkMenuOption,
+        this.shortsLinkMenuOption,
         this.instagramLinkMenuOption,
         this.audioToggleMenuOption,
       ]

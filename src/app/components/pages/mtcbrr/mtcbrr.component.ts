@@ -48,6 +48,7 @@ export class MtcbrrComponent extends MenuedComponent {
         },
         this.lilacLinkMenuOption,
         this.yanLinkMenuOption,
+        this.shortsLinkMenuOption,
         this.instagramLinkMenuOption,
         this.audioToggleMenuOption,
       ]
