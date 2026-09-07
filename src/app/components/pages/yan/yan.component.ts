@@ -37,12 +37,12 @@ export class YanComponent extends MenuedComponent {
         this.acknowledgementsDialogMenuOption,
         this.referencesDialogMenuOption,
         {
-          type: MenuOptionType.ViewText,
+          type: MenuOptionType.ViewTextLocal,
           text: 'about yan',
           handler: this.getYanAboutDialogHandler()
         },
         {
-          type: MenuOptionType.ViewText,
+          type: MenuOptionType.ViewTextLocal,
           text: 'yan updates',
           handler: this.getYanUpdatesDialogHandler()
         },

@@ -4,8 +4,10 @@ import { MAT_DIALOG_DATA, MatDialogModule, MatDialogRef } from '@angular/materia
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 export enum MenuOptionType {
-  ViewText,
-  Navigate,
+  ViewTextGlobal,
+  ViewTextLocal,
+  NavigateInternal,
+  NavigateExternal,
   Toggle
 };
 
@@ -15,12 +17,20 @@ type MenuOption = {
   handler: (value?: any) => void;
 };
 
-export type MenuOptionViewText = MenuOption & {
-  type: MenuOptionType.ViewText;
+export type MenuOptionViewTextGlobal = MenuOption & {
+  type: MenuOptionType.ViewTextGlobal;
 }
 
-export type MenuOptionNavigate = MenuOption & {
-  type: MenuOptionType.Navigate;
+export type MenuOptionViewTextLocal = MenuOption & {
+  type: MenuOptionType.ViewTextLocal;
+}
+
+export type MenuOptionNavigateInternal = MenuOption & {
+  type: MenuOptionType.NavigateInternal;
+}
+
+export type MenuOptionNavigateExternal = MenuOption & {
+  type: MenuOptionType.NavigateExternal;
 }
 
 export type MenuOptionToggle = MenuOption & {
@@ -29,8 +39,10 @@ export type MenuOptionToggle = MenuOption & {
 }
 
 export type AnyMenuOption =
-  MenuOptionViewText |
-  MenuOptionNavigate |
+  MenuOptionViewTextGlobal |
+  MenuOptionViewTextLocal |
+  MenuOptionNavigateInternal |
+  MenuOptionNavigateExternal |
   MenuOptionToggle;
 
 @Component({
@@ -43,12 +55,20 @@ export type AnyMenuOption =
 export class MenuComponent {
   private _menuOptionsSorted: AnyMenuOption[] = [];
 
-  get MenuOptionTypeViewText(): number {
-    return MenuOptionType.ViewText;
+  get MenuOptionTypeViewTextGlobal(): number {
+    return MenuOptionType.ViewTextGlobal;
   }
 
-  get MenuOptionTypeNavigate(): number {
-    return MenuOptionType.Navigate;
+  get MenuOptionTypeViewTextLocal(): number {
+    return MenuOptionType.ViewTextLocal;
+  }
+
+  get MenuOptionTypeNavigateInternal(): number {
+    return MenuOptionType.NavigateInternal;
+  }
+
+  get MenuOptionTypeNavigateExternal(): number {
+    return MenuOptionType.NavigateExternal;
   }
 
   get MenuOptionTypeToggle(): number {
@@ -64,7 +84,8 @@ export class MenuComponent {
     @Inject(MAT_DIALOG_DATA) public menuOptions: AnyMenuOption[]
   ) {
     this._menuOptionsSorted = menuOptions.map(x => {
-      if(x.type === MenuOptionType.Navigate) {
+      if(x.type === MenuOptionType.NavigateInternal ||
+        x.type === MenuOptionType.NavigateExternal) {
         return {
           ...x,
           handler: (value: any) => {

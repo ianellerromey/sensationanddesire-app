@@ -11,7 +11,7 @@ import { AnyMenuOption, MenuOptionType } from '../../menu/menu.component';
 export class MenuedComponent {
   protected get noticeDialogMenuOption(): AnyMenuOption {
     return {
-      type: MenuOptionType.ViewText,
+      type: MenuOptionType.ViewTextGlobal,
       text: 'notice',
       handler: this.getNoticeDialogHandler()
     };
@@ -19,7 +19,7 @@ export class MenuedComponent {
 
   protected get disclaimerDialogMenuOption(): AnyMenuOption {
     return {
-      type: MenuOptionType.ViewText,
+      type: MenuOptionType.ViewTextGlobal,
       text: 'disclaimer',
       handler: this.getDisclaimerDialogHandler()
     };
@@ -27,7 +27,7 @@ export class MenuedComponent {
 
   protected get acknowledgementsDialogMenuOption(): AnyMenuOption {
     return {
-      type: MenuOptionType.ViewText,
+      type: MenuOptionType.ViewTextGlobal,
       text: 'acknowledgements',
       handler: this.getAcknowledgementsDialogHandler()
     };
@@ -35,7 +35,7 @@ export class MenuedComponent {
 
   protected get referencesDialogMenuOption(): AnyMenuOption {
     return {
-      type: MenuOptionType.ViewText,
+      type: MenuOptionType.ViewTextGlobal,
       text: 'references',
       handler: this.getReferencesDialogHandler()
     };
@@ -43,31 +43,31 @@ export class MenuedComponent {
 
   protected get lilacLinkMenuOption(): AnyMenuOption {
     return {
-      type: MenuOptionType.Navigate,
-      text: 'lilac, "love is like a curse"',
+      type: MenuOptionType.NavigateInternal,
+      text: '2026 - lilac, "love is like a curse"',
       handler: this.getLilacLinkHandler()
     };
   }
 
   protected get mtcbrrLinkMenuOption(): AnyMenuOption {
     return {
-      type: MenuOptionType.Navigate,
-      text: 'Moontide Crossbridge Revelry',
+      type: MenuOptionType.NavigateInternal,
+      text: '2023 - Moontide Crossbridge Revelry',
       handler: this.getMtcbrrLinkHandler()
     };
   }
 
   protected get yanLinkMenuOption(): AnyMenuOption {
     return {
-      type: MenuOptionType.Navigate,
-      text: 'Youth at Night',
+      type: MenuOptionType.NavigateInternal,
+      text: '2017 - Youth at Night',
       handler: this.getYanLinkHandler()
     };
   }
 
   protected get shortLinkMenuOption(): AnyMenuOption {
     return {
-      type: MenuOptionType.Navigate,
+      type: MenuOptionType.NavigateInternal,
       text: 'Shorts',
       handler: this.getShortLinkHandler()
     };
@@ -75,7 +75,7 @@ export class MenuedComponent {
 
   protected get instagramLinkMenuOption(): AnyMenuOption {
     return {
-      type: MenuOptionType.Navigate,
+      type: MenuOptionType.NavigateExternal,
       text: 'instagram',
       handler: this.getInstagramLinkHandler()
     };

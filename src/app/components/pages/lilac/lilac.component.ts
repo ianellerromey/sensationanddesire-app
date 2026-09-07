@@ -37,12 +37,12 @@ export class LilacComponent extends MenuedComponent {
         this.acknowledgementsDialogMenuOption,
         this.referencesDialogMenuOption,
         {
-          type: MenuOptionType.ViewText,
+          type: MenuOptionType.ViewTextLocal,
           text: 'about lilac',
           handler: this.getLilacAboutDialogHandler()
         },
         {
-          type: MenuOptionType.ViewText,
+          type: MenuOptionType.ViewTextLocal,
           text: 'lilac updates',
           handler: this.getLilacUpdatesDialogHandler()
         },

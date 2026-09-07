@@ -37,12 +37,12 @@ export class MtcbrrComponent extends MenuedComponent {
         this.acknowledgementsDialogMenuOption,
         this.referencesDialogMenuOption,
         {
-          type: MenuOptionType.ViewText,
+          type: MenuOptionType.ViewTextLocal,
           text: 'about mtcbrr',
           handler: this.getMtcbrrAboutDialogHandler()
         },
         {
-          type: MenuOptionType.ViewText,
+          type: MenuOptionType.ViewTextLocal,
           text: 'mtcbrr updates',
           handler: this.getMtcbrrUpdatesDialogHandler()
         },

@@ -2,12 +2,22 @@
   <div class="sad-menu-content">
     @for (menuOption of menuOptionsSorted; track menuOption.text; let i = $index) {
       @switch(menuOption.type) {
-        @case (MenuOptionTypeViewText) {
+        @case (MenuOptionTypeViewTextGlobal) {
           <div class="sad-menu-viewtext" (click)="menuOption.handler()">
             {{menuOption.text}}
           </div>
         }
-        @case (MenuOptionTypeNavigate) {
+        @case (MenuOptionTypeViewTextLocal) {
+          <div class="sad-menu-viewtext" (click)="menuOption.handler()">
+            {{menuOption.text}}
+          </div>
+        }
+        @case (MenuOptionTypeNavigateInternal) {
+          <div class="sad-menu-navigate" (click)="menuOption.handler()">
+            {{menuOption.text}}
+          </div>
+        }
+        @case (MenuOptionTypeNavigateExternal) {
           <div class="sad-menu-navigate" (click)="menuOption.handler()">
             {{menuOption.text}}
           </div>
