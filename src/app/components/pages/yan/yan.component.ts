@@ -46,6 +46,7 @@ export class YanComponent extends MenuedComponent {
           text: 'yan updates',
           handler: this.getYanUpdatesDialogHandler()
         },
+        this.homeLinkMenuOption,
         this.lilacLinkMenuOption,
         this.mtcbrrLinkMenuOption,
         this.shortsLinkMenuOption,

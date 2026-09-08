@@ -46,6 +46,7 @@ export class MtcbrrComponent extends MenuedComponent {
           text: 'mtcbrr updates',
           handler: this.getMtcbrrUpdatesDialogHandler()
         },
+        this.homeLinkMenuOption,
         this.lilacLinkMenuOption,
         this.yanLinkMenuOption,
         this.shortsLinkMenuOption,

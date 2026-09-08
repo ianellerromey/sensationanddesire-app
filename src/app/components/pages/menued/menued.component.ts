@@ -41,6 +41,14 @@ export class MenuedComponent {
     };
   }
 
+  protected get homeLinkMenuOption(): AnyMenuOption {
+    return {
+      type: MenuOptionType.NavigateInternal,
+      text: 'home',
+      handler: this.getHomeLinkHandler()
+    };
+  }
+
   protected get lilacLinkMenuOption(): AnyMenuOption {
     return {
       type: MenuOptionType.NavigateInternal,
@@ -120,6 +128,12 @@ export class MenuedComponent {
   getReferencesDialogHandler(): () => void {
     return () => {
       this.openDialogText(this._staticTextService.references);
+    };
+  }
+
+  getHomeLinkHandler(): () => void {
+    return () => {
+      this._router.navigate([`/`]);
     };
   }
 

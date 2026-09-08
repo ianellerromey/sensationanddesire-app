@@ -35,6 +35,7 @@ export class ShortsComponent extends MenuedComponent {
         this.disclaimerDialogMenuOption,
         this.acknowledgementsDialogMenuOption,
         this.referencesDialogMenuOption,
+        this.homeLinkMenuOption,
         this.lilacLinkMenuOption,
         this.mtcbrrLinkMenuOption,
         this.yanLinkMenuOption,

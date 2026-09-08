@@ -46,6 +46,7 @@ export class LilacComponent extends MenuedComponent {
           text: 'lilac updates',
           handler: this.getLilacUpdatesDialogHandler()
         },
+        this.homeLinkMenuOption,
         this.mtcbrrLinkMenuOption,
         this.yanLinkMenuOption,
         this.shortsLinkMenuOption,
